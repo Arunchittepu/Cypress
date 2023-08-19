@@ -15,6 +15,7 @@ describe('Home page test', () => {
     homepage.clickstorieslnk();
     homepage.clickaboutlnk();
     homepage.clickcareerslink();  
+    //test
     
       })
     })
