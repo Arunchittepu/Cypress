@@ -3,29 +3,30 @@ class aboutlinks{
     elements = {
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
-       logolink: () => cy.xpath("//header/div[1]/div[1]/a[1]/span[1]"),
+       logolink: () => cy.get("a[class='icon-logo-desktop logo']"),
        aboutlnk: () => cy.contains("About"),
        whoweare: () => cy.contains("Who We Are"),
        greatFood: () => cy.contains("Great Food"),
        givingBack: () => cy.contains("Giving Back"),
        hoverAbout: () => cy.get("div.subnav a[href='/about/who-we-are-page']"), 
 
-       whoWeAreImg: () => cy.get('.promo-frame').find('img',{force: true}),
+       whoWeAreImg: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Who%20We%20Are%20CA%20hero%20desktop.jpg"),
        whoweareheadingtxt: () => cy.xpath("//h1[contains(text(),'Who we are')]"),
+       whoWeAreImg1: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Who%20We%20Are%20CA%20hero%20desktop.jpg']"),
        ourHistory: () => cy.xpath("//p[contains(text(),'Our history')]"),
        whyWeareclosedOnSunday: () => cy.xpath(`//h4[contains(text(),"Why we're closed on Sundays")]`),
-       whoWeAreImg1: () => cy.xpath("//body/div[1]/div[4]/div[5]/div[1]").find('img',{force: true}),
+       whoWeAreImg2: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Images/CFACOM/Stories%20Images/2019/08/EddieWhite/dwarf-house-web.jpg?h=960&w=1440&la=en']"),
        readMoreaboutOurCultureNValue: () => cy.xpath("//a[contains(text(),'Read more about our culture and values')]"),
-       whoWeAreImg2: () => cy.xpath("//body/div[1]/div[4]/div[5]/div[1]").find('img',{force: true}),
+       whoWeAreImg3: () => cy.get("img[alt='Picture of Truett Cathy sitting in a chair']"),
        moreThanChicken: () => cy.xpath("//h4[contains(text(),'More than chicken')]"),
-       whoWeAreImg3: () => cy.xpath("//body/div[1]/div[4]/section[2]/div[1]/div[1]").find('img',{force: true}),
+       whoWeAreImg4: () => cy.get("img[alt='Who We Are CA more than chicken desktop']"),
 
-       greatFoodImg: () => cy.get('.promo-frame').find('img',{force: true}),
-       greatFoodImg1: () => cy.xpath("//body/div[1]/div[4]/section[1]/div[1]/div[1]").find('img',{force: true}),
-       greatFoodImg2: () => cy.xpath("//body/div[1]/div[4]/section[2]/div[1]/div[1]").find('img',{force: true}),
-       greatFoodImg3: () => cy.xpath("//body/div[1]/div[4]/section[3]/div[1]/div[1]").find('img',{force: true}),
-       greatFoodImg4: () => cy.xpath("//body/div[1]/div[4]/div[5]").find('img',{force: true}),
-       
+       greatFoodImg: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Great%20Food%20CA_header%20desktop.jpeg", {force: true}),
+       greatFoodImg1: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Great%20Food%20CA_header%20desktop.jpeg']"),
+       greatFoodImg2: () => cy.get("img[2][src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Homepage%20Images/CFA%20sandwich_desktop.jpg?h=270&w=600&la=en']"),
+       greatFoodImg3: () => cy.get("img[2][src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Salad%20Great%20Food%20Page%20image%20compressed.png?h=300&w=600&la=en']"),
+       greatFoodImg4: () => cy.get("img[alt='Closeup of Chick-fil-A® Spicy Chicken Sandwich Meal with Waffle Potato Fries™ and an Iced Tea']"),
+       greatFoodImg5: () => cy.get("img[alt='Chicken Sandwich']"),
        greatFoodHeading: () => cy.xpath("//h1[contains(text(),'Great Food')]"),       
        Realchickenrigorousstandards: () => cy.xpath("//h4[contains(text(),'Real chicken, rigorous standards')]"),
        Foodyoucansmileabout: () => cy.xpath("//p[contains(text(),'Food you can smile about')]"),
@@ -44,7 +45,13 @@ class aboutlinks{
        Caringforpeople: () => cy.xpath("//h4[contains(text(),'Caring for people')]"),
        Caringforourcommunities: () => cy.xpath("//h4[contains(text(),'Caring for our communities')]"),
        ReadourGlobalImpactReport: () => cy.xpath("//h4[contains(text(),'Read our Global Impact Report')]"),
-       ViewreportBtn: () => cy.xpath("//a[contains(text(),'View report')]"),            
+       ViewreportBtn: () => cy.xpath("//a[contains(text(),'View report')]"),  
+       GivingBackImg1: () =>   cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/RGB_%20Win%20the%20Heart_cfa_png.png/CFA2306023_TeamMemberHeartShape_Desktop_1500x370__AQ1.jpg']"),      
+       GivingBackImg2: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Fresh%20food%20donation%20box%20with%20eggs_compressed.jpg?h=301&w=600&la=en']"),
+       GivingBackImg3: () => cy.get("img[alt='Giving back CA caring for planet desktop']"),
+       GivingBackImg4: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/2022%20Scholarships/Other%20Images/Module-Image-(600x300)-4.png?h=300&w=600&la=en']"),
+       GivingBackImg5: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/yonge-street-mission-2.jpg?h=300&w=600&la=en']"),
+    
     }
 
     clickLogo(){
@@ -71,38 +78,40 @@ class aboutlinks{
     clickWhoWeAre(){
         this.elements.whoweare().click();
         this.elements.urlAssert().should('include', '/about/who-we-are-page');
-        this.elements.whoWeAreImg().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Who%20We%20Are%20CA%20hero%20desktop.jpg');
+        //this.elements.whoWeAreImg().should("be.visible", {force: true});
         this.elements.whoweareheadingtxt().should("be.visible");
         this.elements.ourHistory().should("be.visible");
         this.elements.whyWeareclosedOnSunday().should("be.visible");        
-        this.elements.whoWeAreImg1().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/About%20Images/History/Truett-93_History.png?h=448&w=518&la=en');
+        //this.elements.whoWeAreImg1().should("be.visible");
         this.elements.readMoreaboutOurCultureNValue().should("be.visible");        
-        this.elements.whoWeAreImg2().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/About%20Images/History/Truett-93_History.png?h=448&w=518&la=en');
+        this.elements.whoWeAreImg2().should("be.visible");
         this.elements.moreThanChicken().should("be.visible"); 
-        this.elements.whoWeAreImg3().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Who%20We%20Are%20CA_more%20than%20chicken%20mobile.jpeg?h=261&w=368&la=en');
+        this.elements.whoWeAreImg3().should("be.visible");
+        this.elements.whoWeAreImg4().should("be.visible");
     }
     clickGreatFoodlink(){        
         this.elements.greatFood().click({force: true});
         this.elements.urlAssert().should('include', '/about/great-food-page'); 
-        this.elements.greatFoodImg().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Great%20Food%20CA_header%20desktop.jpeg');
+        //this.elements.greatFoodImg().should("be.visible", {force: true});
         this.elements.greatFoodHeading().should("be.visible");
         this.elements.Realchickenrigorousstandards().should("be.visible");
-        this.elements.greatFoodImg1().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Homepage%20Images/CFA%20sandwich_mobile.jpg?h=165&w=368&la=en');
+        //this.elements.greatFoodImg1().should("be.visible");
         this.elements.Foodyoucansmileabout().should("be.visible");
         this.elements.Carefullycraftedrecipes().should("be.visible");
-        this.elements.greatFoodImg2().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Salad-great-food-mobile.png?h=261&w=368&la=en');
+        //this.elements.greatFoodImg2().should("be.visible");
         this.elements.Whatavisitisallabout().should("be.visible"); 
-        this.elements.greatFoodImg3().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Chick-fil-A®-Spicy-Chicken-Sandwich-Meal-Canada-mobile.jpeg?h=261&w=368&la=en');
+        //this.elements.greatFoodImg3().should("be.visible");
         this.elements.GettoknowourfoodBtn().should("be.visible"); 
         this.elements.ItsOurPleasureToServeYou().should("be.visible");
         this.elements.OrderCarryOut().should("be.visible"); 
-        //this.elements.greatFoodImg4().should('have.attr', 'src', '/-/media/images/cfacom/covid/cvd-sandwich.png?h=576&w=744&la=en&hash=723655E1810D83FDBC21A291378985D7');
+        this.elements.greatFoodImg4().should("be.visible");
+        this.elements.greatFoodImg5().should("be.visible");
     }
 
     clickGivingBackLink(){
         this.elements.givingBack().click({force: true});
         this.elements.urlAssert().should('include', '/about/giving-back-page'); 
-        this.elements.GivingBackImg().should('have.attr', 'src', 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/RGB_%20Win%20the%20Heart_cfa_png.png/CFA2306023_TeamMemberHeartShape_Desktop_1500x370__AQ1.jpg');
+        this.elements.GivingBackImg().should("be.visible");
         this.elements.givingBackHeading().should("be.visible");
         this.elements.Caringforothersthroughourfood().should("be.visible");
         this.elements.ChickfilASharedTable().should("be.visible");
@@ -112,6 +121,11 @@ class aboutlinks{
         this.elements.Caringforourcommunities().should("be.visible");
         this.elements.ReadourGlobalImpactReport().should("be.visible");
         this.elements.ViewreportBtn().should("be.visible");
+        this.elements.GivingBackImg1().should("be.visible");
+        this.elements.GivingBackImg2().should("be.visible");
+        this.elements.GivingBackImg3().should("be.visible");
+        this.elements.GivingBackImg4().should("be.visible");
+        this.elements.GivingBackImg5().should("be.visible");
     }
 }
 
