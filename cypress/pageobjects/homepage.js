@@ -28,6 +28,19 @@ class homePage{
        aboutlnk: () => cy.contains("About"),
        careerslink: () => cy.contains("Careers"),
 
+       CustomerserviceLnk: () => cy.contains("Customer service"),
+       NutritionNAllergensLnk: () => cy.contains("Nutrition & Allergens"),
+       FranchisingLnk: () => cy.contains("Franchising"),
+       CorporateCareersLnk: () => cy.contains("Corporate Careers"),
+       PressRoomLnk: () => cy.contains("Press Room"),
+
+       Seeyousoon: () => cy.contains("See you soon!"),
+       ProceedBtn: () => cy.xpath("//a[contains(text(),'Proceed')]"),
+       CancelBtn: () => cy.xpath("//a[contains(text(),'Cancel')]"),
+
+       TermsNConditionsLnk: () => cy.xpath("//span[contains(text(),'Terms and Conditions')]"),
+       PrivacyPolicyLnk: () => cy.xpath("//span[contains(text(),'Privacy Policy')]"),
+       CookiePreferenceCenterLnk: () => cy.xpath("//a[contains(text(),'Cookie Preference Center')]"),
     }
 
     clickLogo(){
@@ -189,6 +202,115 @@ class homePage{
     }
     clickcareerslink(){
         this.elements.careerslink().click();
+    }
+
+    assertCustomerserviceLnk(){
+        this.elements.CustomerserviceLnk().should('be.visible');
+    }
+
+    clickCustomerserviceLnk(){
+        this.elements.CustomerserviceLnk().click({force: true});        
+    }
+
+    assertCustomerserviceLnkUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'customer-support');
+        cy.go('back');
+    }
+
+    assertNutritionNAllergensLnk(){
+        this.elements.CustomerserviceLnk().should('be.visible');
+    }
+
+    clickNutritionNAllergensLnk(){
+        this.elements.NutritionNAllergensLnk().click({force: true});        
+    }
+
+    assertNutritionNAllergensLnkUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'nutrition-allergens');
+        cy.go('back');
+    }
+
+    assertFranchisingLnk(){
+        this.elements.FranchisingLnk().should('be.visible');
+    }
+
+    clickFranchisingLnk(){
+        this.elements.FranchisingLnk().click({force: true});        
+    }
+
+    assertFranchisingLnkDialog(){
+        this.elements.Seeyousoon().should('be.visible');
+        this.elements.ProceedBtn().should('be.visible');
+        this.elements.CancelBtn().should('be.visible');
+    }
+
+    closeFranchisingDialog(){
+        this.elements.CancelBtn().should('be.visible');
+    }
+
+    assertCorporateCareersLnk(){
+        this.elements.CorporateCareersLnk().should('be.visible');
+    }
+
+    clickCorporateCareersLnk(){
+        this.elements.CorporateCareersLnk().click({force: true});        
+    }
+
+    assertCorporateCareersLnkUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'employment-opportunities-with-chick-fil-a-canada-ulc');
+        cy.go('back');
+    }
+
+    assertPressRoomLnk(){
+        this.elements.PressRoomLnk().should('be.visible');
+    }
+
+    clickPressRoomLnk(){
+        this.elements.PressRoomLnk().click({force: true});        
+    }
+
+    assertPressRoomLnkUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news');
+        cy.go('back');
+    }
+
+    assertTermsNConditionsLnk(){
+        this.elements.TermsNConditionsLnk().should('be.visible');
+    }
+
+    clickTermsNConditionsLnk(){
+        this.elements.TermsNConditionsLnk().click({force: true});        
+    }
+
+    assertTermsNConditionsUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'legal#terms_and_conditions');
+        cy.go('back');
+    }
+
+    assertPrivacyPolicyLnk(){
+        this.elements.PrivacyPolicyLnk().should('be.visible');
+    }
+
+    clickPrivacyPolicyLnk(){
+        this.elements.PrivacyPolicyLnk().click({force: true});        
+    }
+
+    assertPrivacyPolicyLnkUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'legal#privacy_policy');
+        cy.go('back');
+    }
+
+    assertCookiePreferenceCenterLnk(){
+        this.elements.CookiePreferenceCenterLnk().should('be.visible');
+    }
+
+    clickCookiePreferenceCenterLnk(){
+        this.elements.CookiePreferenceCenterLnk().click({force: true});        
+    }
+
+    assertCookiePreferenceCenterLnkUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '#ot-sdk-show-settings');
+        cy.go('back');
     }
 
 }

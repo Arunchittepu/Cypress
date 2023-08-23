@@ -66,4 +66,38 @@ describe("Home page test", () => {
         homepage.assertAPassonateLeader();     
         homepage.assertPeachbeveragesthroughouttheyears();
       });  
+
+      it("Test Footer links of Home page", () => {
+        homepage.assertCustomerserviceLnk();
+        homepage.clickCustomerserviceLnk();     
+        homepage.assertCustomerserviceLnkUrl();
+        homepage.assertNutritionNAllergensLnk();
+        homepage.clickNutritionNAllergensLnk();     
+        homepage.assertNutritionNAllergensLnkUrl();
+        homepage.assertFranchisingLnk();
+        homepage.clickFranchisingLnk();     
+        homepage.assertFranchisingLnkDialog();
+        homepage.closeFranchisingDialog();
+        homepage.assertCorporateCareersLnk();     
+        homepage.clickCorporateCareersLnk();
+        homepage.assertCorporateCareersLnkUrl();
+        homepage.assertPressRoomLnk();
+        homepage.clickPressRoomLnk();     
+        homepage.assertPressRoomLnkUrl();
+      });  
+
+      it("Test right side links at footer section of Home page", () => {
+        homepage.assertTermsNConditionsLnk();
+        homepage.clickTermsNConditionsLnk();     
+        homepage.assertTermsNConditionsUrl();
+        homepage.assertPrivacyPolicyLnk();
+        homepage.clickPrivacyPolicyLnk();     
+        homepage.assertPrivacyPolicyLnkUrl();
+        homepage.assertCookiePreferenceCenterLnk();
+        homepage.clickCookiePreferenceCenterLnk();     
+        homepage.assertCookiePreferenceCenterLnkUrl();
+
+      }); 
+
+
   });
