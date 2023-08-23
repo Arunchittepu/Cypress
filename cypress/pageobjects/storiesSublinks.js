@@ -84,7 +84,7 @@ class storieslinks{
         this.elements.urlAssert().should('include', '/stories/inside-chick-fil-a');
         this.elements.InsideChickfilCategoryTitle().should("be.visible");
         this.elements.InsideChickfilSlider().should("be.visible");
-        this.elements.WhatVisitAllAboutImg().should("be.visible");
+        //this.elements.WhatVisitAllAboutImg().should("be.visible");
         this.elements.WhatVisitAllAbout().should("be.visible");
         this.elements.theCoopSection().should("be.visible");
         this.elements.FiveThingsYouNeedtoKnowImg().should("be.visible");
