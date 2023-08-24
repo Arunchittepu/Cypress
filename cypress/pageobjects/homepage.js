@@ -17,6 +17,7 @@ class homePage{
        ExplorethemenuBtn: () => cy.xpath("//a[contains(text(),'Explore the menu')]"),
        FightingHungerinOurCommunitiesTxt: () => cy.xpath("//h4[contains(text(),'Fighting Hunger in Our Communities')]"),
        LearnabouttheprogramBtn: () => cy.xpath("//a[contains(text(),'Learn about the program')]"),
+       
        NutritionandallergensTxt: () => cy.xpath("//h4[contains(text(),'Nutrition and allergens')]"),
        SeeTheFactsBtn: () => cy.xpath("//a[contains(text(),'See the facts')]"),
        NewRestaurantInmississauga: () => cy.xpath("//a[contains(text(),'Chick-fil-A announces new restaurant in Mississaug')]"),
@@ -27,20 +28,48 @@ class homePage{
        storieslnk: () => cy.contains("Stories"),
        aboutlnk: () => cy.contains("About"),
        careerslink: () => cy.contains("Careers"),
-
+       YoureNotInRegion: () => cy.xpath("//h1[contains(text(),'You are not in a region that supports online order')]"),
+       GotoChickFilAcomBtn: () => cy.contains("Go to Chick-fil-A.com"),
        CustomerserviceLnk: () => cy.contains("Customer service"),
        NutritionNAllergensLnk: () => cy.contains("Nutrition & Allergens"),
-       FranchisingLnk: () => cy.contains("Franchising"),
+       FranchisingLnk: () => cy.xpath("//span[contains(text(),'Franchising')]"),
        CorporateCareersLnk: () => cy.contains("Corporate Careers"),
        PressRoomLnk: () => cy.contains("Press Room"),
 
-       Seeyousoon: () => cy.contains("See you soon!"),
+       Seeyousoon: () => cy.xpath("//p[contains(text(),'See you soon!')]"),
        ProceedBtn: () => cy.xpath("//a[contains(text(),'Proceed')]"),
        CancelBtn: () => cy.xpath("//a[contains(text(),'Cancel')]"),
 
        TermsNConditionsLnk: () => cy.xpath("//span[contains(text(),'Terms and Conditions')]"),
        PrivacyPolicyLnk: () => cy.xpath("//span[contains(text(),'Privacy Policy')]"),
+       LegalTxt: () => cy.xpath("//h1[contains(text(),'Legal')]"),
+
        CookiePreferenceCenterLnk: () => cy.xpath("//a[contains(text(),'Cookie Preference Center')]"),
+       SavePreferencesBtn: () => cy.xpath("//button[contains(text(),'Save Preferences')]"),
+       AllowAllBtn: () => cy.xpath("//button[@id='accept-recommended-btn-handler']"),
+       GiftCardslLink: () => cy.xpath("//span[contains(text(),'Gift Cards')]"),
+       NutritionAllergensHeadTxt: () => cy.xpath("//h1[contains(text(),'Nutrition & Allergens')]"),
+       disclaimernutritionTxt: () => cy.xpath("//div[@id='disclaimer-nutrition']"),
+       NewRestaurantInmississaugaPageTitle: () => cy.xpath("//h1[contains(text(),'Chick-fil-A announces new restaurant in Mississaug')]"),
+       NewRestaurantInmississaugaDonate: () => cy.xpath("//p[contains(text(),'In celebration of this restaurant, Chick-fil-A wil')]"),
+       IntroducingMufutiSanusiHeadTxt: () => cy.xpath("//h1[contains(text(),'Introducing Mufuti Sanusi: A passionate leader in ')]"),
+       MufutiSanusiembodiesTxt: () => cy.xpath("//p[contains(text(),'Mufuti Sanusi embodies the Mississauga motto of “p')]"),
+
+       PeachbeveragesthroughouttheyearsHeadTxt: () => cy.xpath("//h1[contains(text(),'Peach beverages throughout the years')]"),
+       SummerishereandsoarepeachbeveragesTxt: () => cy.xpath("//p[contains(text(),'Summer is here and so are peach beverages')]"),
+       CustomerSupportTxt: () => cy.xpath("//h1[contains(text(),'Customer support')]"),
+       WereheretohelpTxt: () => cy.xpath("//h1[contains(text(),'Customer support')]"),
+
+       EmploymentopportunitieswithChickfilACanadaHeadTxt: () => cy.xpath("//h1[contains(text(),'Employment opportunities with Chick-fil-A Canada, ')]"),
+       ViewavailableopportunitiesBtn: () => cy.xpath("//a[contains(text(),'View available opportunities')]"),
+    
+       ChickFillAPrivacyPolicy: () => cy.xpath("//h3[contains(text(),'Chick-fil-A Privacy Policy')]"),
+       WeMakeUpdatestoThisPrivacyPolicyTxt: () => cy.xpath("//strong[contains(text(),'We Make Updates to This Privacy Policy')]"),
+
+    }
+
+    callBack(){
+        cy.go('back');
     }
 
     clickLogo(){
@@ -94,11 +123,18 @@ class homePage{
         this.elements.OrderCarryOutBtn().click({force: true});        
     }
 
-    assertOrderUrl(){
-        this.elements.urlAssert().should('include', 'https://order.chick-fil-a.ca/location');
-        cy.go('back');
+    assertOrderUrl(){        
+        this.elements.urlAssert().should('include', Cypress.config().orderPageUrl+ 'location');                
     }
 
+    assertYoureNotInRegion(){
+        this.elements.YoureNotInRegion().should('be.visible');
+    }
+    
+    assertGotoChickFilAcomBtn(){
+        this.elements.GotoChickFilAcomBtn().should('be.visible');
+    }
+        
     assertGettoknowourmenuTxt(){
         this.elements.GettoknowourmenuTxt().should('be.visible');
     }
@@ -112,8 +148,7 @@ class homePage{
     }
 
     assertMenuUrl(){
-        this.elements.urlAssert().should('include', '/menu');
-        cy.go('back');
+        this.elements.urlAssert().should('include', '/menu');       
     }
 
     assertFightingHungerinOurCommunitiesTxt(){
@@ -130,7 +165,6 @@ class homePage{
 
     assertLearnAboutProgramUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl +'stories/in-the-community/the-chick-fil-a-shared-table-program');
-        cy.go('back');
     }
 
     assertNutritionandallergensTxt(){
@@ -145,9 +179,8 @@ class homePage{
         this.elements.SeeTheFactsBtn().click({force: true});        
     }
 
-    assertSeeTheFactsUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'nutrition-allergens');
-        cy.go('back');
+    assertNutritionAllergensUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'nutrition-allergens');        
     }
 
     assertNewRestaurantInmississauga(){
@@ -155,12 +188,23 @@ class homePage{
     }
 
     clickNewRestaurantInmississauga(){
-        this.elements.NewRestaurantInmississauga().click({force: true});        
+        this.elements.NewRestaurantInmississauga().click();
     }
+
+    NewRestaurantInmississaugaPageUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-announces-new-restaurant-in-mississauga-to-open-on-august-10');         
+    }
+
+    assertNewRestaurantInmississaugaPageTitle(){
+        this.elements.NewRestaurantInmississaugaPageTitle().should('be.visible');
+    }
+
+    assertNewRestaurantInmississaugaDonate(){
+        this.elements.NewRestaurantInmississaugaDonate().should('be.visible');
+    }    
 
     assertNewRestaurantInmississaugaUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-announces-new-restaurant-in-mississauga-to-open-on-august-10');
-        cy.go('back');
     }
 
     assertAPassonateLeader(){
@@ -173,11 +217,18 @@ class homePage{
 
     assertAPassonateLeaderUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/introducing-mufuti-sanusi-a-passionate-leader-in-business-and-throughout-the-mississauga-community');
-        cy.go('back');
     }
 
     assertPeachbeveragesthroughouttheyears(){
         this.elements.Peachbeveragesthroughouttheyears().should('be.visible');
+    }
+
+    assertIntroducingMufutiSanusiHeadTxt(){
+        this.elements.IntroducingMufutiSanusiHeadTxt().should('be.visible');
+    }
+
+    assertMufutiSanusiembodiesTxt(){
+        this.elements.MufutiSanusiembodiesTxt().should('be.visible');
     }
 
     clickPeachbeveragesthroughouttheyears(){
@@ -185,8 +236,15 @@ class homePage{
     }
 
     assertPeachbeveragesthroughouttheyearsUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/inside-chick-fil-a/summer-peach-beverages');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/inside-chick-fil-a/summer-peach-beverages');        
+    }
+
+    assertPeachbeveragesthroughouttheyearsHeadTxt(){
+        this.elements.PeachbeveragesthroughouttheyearsHeadTxt().should('be.visible');
+    }
+
+    assertSummerishereandsoarepeachbeveragesTxt(){
+        this.elements.SummerishereandsoarepeachbeveragesTxt().should('be.visible');
     }
 
     clickmenulnk(){
@@ -213,8 +271,15 @@ class homePage{
     }
 
     assertCustomerserviceLnkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'customer-support');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'customer-support');        
+    }
+    
+    assertCustomerSupportTxt(){
+        this.elements.CustomerSupportTxt().should('be.visible');
+    }
+
+    assertWereheretohelpTxt(){
+        this.elements.WereheretohelpTxt().should('be.visible');
     }
 
     assertNutritionNAllergensLnk(){
@@ -226,8 +291,7 @@ class homePage{
     }
 
     assertNutritionNAllergensLnkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'nutrition-allergens');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'nutrition-allergens');       
     }
 
     assertFranchisingLnk(){
@@ -239,9 +303,11 @@ class homePage{
     }
 
     assertFranchisingLnkDialog(){
-        this.elements.Seeyousoon().should('be.visible');
-        this.elements.ProceedBtn().should('be.visible');
-        this.elements.CancelBtn().should('be.visible');
+        this.elements.Seeyousoon().should('be.visible');              
+    }
+
+    assertProceedBtn(){        
+        this.elements.ProceedBtn().should('be.visible');        
     }
 
     closeFranchisingDialog(){
@@ -257,8 +323,15 @@ class homePage{
     }
 
     assertCorporateCareersLnkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'employment-opportunities-with-chick-fil-a-canada-ulc');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'employment-opportunities-with-chick-fil-a-canada-ulc');        
+    }
+
+    assertEmploymentopportunitieswithChickfilACanadaHeadTxt(){
+        this.elements.EmploymentopportunitieswithChickfilACanadaHeadTxt().should('be.visible');
+    }
+
+    assertViewavailableopportunitiesBtn(){
+        this.elements.ViewavailableopportunitiesBtn().should('be.visible');
     }
 
     assertPressRoomLnk(){
@@ -270,8 +343,7 @@ class homePage{
     }
 
     assertPressRoomLnkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news');       
     }
 
     assertTermsNConditionsLnk(){
@@ -283,10 +355,16 @@ class homePage{
     }
 
     assertTermsNConditionsUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'legal#terms_and_conditions');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'legal#terms_and_conditions');        
     }
 
+    assertLegalTxt(){
+        this.elements.LegalTxt().should('be.visible');
+    }
+
+    assertGiftCardslLink(){
+        this.elements.GiftCardslLink().should('be.visible');
+    }
     assertPrivacyPolicyLnk(){
         this.elements.PrivacyPolicyLnk().should('be.visible');
     }
@@ -296,8 +374,15 @@ class homePage{
     }
 
     assertPrivacyPolicyLnkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'legal#privacy_policy');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'legal#privacy_policy');        
+    }
+
+    assertChickFillAPrivacyPolicy(){
+        this.elements.ChickFillAPrivacyPolicy().should('be.visible');
+    }
+
+    assertWeMakeUpdatestoThisPrivacyPolicyTxt(){
+        this.elements.WeMakeUpdatestoThisPrivacyPolicyTxt().should('be.visible');
     }
 
     assertCookiePreferenceCenterLnk(){
@@ -309,10 +394,26 @@ class homePage{
     }
 
     assertCookiePreferenceCenterLnkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '#ot-sdk-show-settings');
-        cy.go('back');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '#ot-sdk-show-settings');        
     }
 
+    assertSavePreferencesBtn(){
+        this.elements.SavePreferencesBtn().should('be.visible');
+    }
+
+    assertAllowAllBtn(){
+        this.elements.AllowAllBtn().should('be.visible');
+    }
+
+    assertNutritionAllergensHeadTxt(){
+        this.elements.NutritionAllergensHeadTxt().should('be.visible');
+    }
+
+    assertdisclaimernutritionTxt(){
+        this.elements.disclaimernutritionTxt().should('be.visible');
+    }
+    
+    
 }
 
 module.exports = new homePage();

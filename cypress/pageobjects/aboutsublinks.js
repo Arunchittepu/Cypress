@@ -54,63 +54,151 @@ class aboutlinks{
     
     }
 
-    clickLogo(){
-        this.elements.logolink().click({force: true});
-        this.elements.urlAssert().should('include', 'https://www.chick-fil-a.ca/');
-    }
-
     clickaboutlnk(){
         this.elements.aboutlnk().click();
-        this.elements.urlAssert().should('include', '/');
-        this.elements.whoweare().should('be.visible');
-        this.elements.greatFood().should("be.visible");
-        this.elements.givingBack().should("be.visible");        
     }
 
     hoverAboutlink(){
-        this.elements.hoverAbout().trigger('mouseover');
-        this.elements.urlAssert().should('include', '/');  
-        this.elements.whoweare().should('be.visible');
-        this.elements.greatFood().should("be.visible");
-        this.elements.givingBack().should("be.visible");
+        this.elements.hoverAbout().trigger('mouseover');       
     }
+
+    assertAboutPageTitle() {
+        cy.fixture('storiessublinks').then((data) =>{
+        aboutlinks.elements.pageTitle().should('eq', data.homepagetitle);
+        })
+    }
+
+    assertAboutPageUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl);
+    }
+
+    assertWhoweAreLink(){
+        this.elements.whoweare().should('be.visible');
+    }
+
+    assertGreatFoodLink(){
+        this.elements.greatFood().should("be.visible");
+    }
+
+    assertGivingBackLink(){
+        this.elements.givingBack().should("be.visible");  
+    }    
 
     clickWhoWeAre(){
         this.elements.whoweare().click();
-        this.elements.urlAssert().should('include', '/about/who-we-are-page');
+    }
+
+    assertWhoWeArePageUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/about/who-we-are-page');
+    }
+
+    assertwhoWeAreImg(){
         //this.elements.whoWeAreImg().should("be.visible", {force: true});
+    }
+
+    assertwhoweareheadingtxt(){
         this.elements.whoweareheadingtxt().should("be.visible");
+    }
+
+    assertourHistory(){
         this.elements.ourHistory().should("be.visible");
-        this.elements.whyWeareclosedOnSunday().should("be.visible");        
+    }
+
+    assertwhyWeareclosedOnSunday(){
+        this.elements.whyWeareclosedOnSunday().should("be.visible"); 
+    }
+
+    assertwhoWeAreImg1(){
         //this.elements.whoWeAreImg1().should("be.visible");
-        this.elements.readMoreaboutOurCultureNValue().should("be.visible");        
-        this.elements.whoWeAreImg2().should("be.visible");
-        this.elements.moreThanChicken().should("be.visible"); 
-        this.elements.whoWeAreImg3().should("be.visible");
+    }
+
+    assertreadMoreaboutOurCultureNValue(){
+        this.elements.readMoreaboutOurCultureNValue().should("be.visible");
+    }
+
+    assertwhoWeAreImg2(){
+        this.elements.whoWeAreImg2().should("be.visible");        
+    }
+
+    assertmoreThanChicken(){
+        this.elements.moreThanChicken().should("be.visible");
+    }
+
+    assertwhoWeAreImg3(){
+        this.elements.whoWeAreImg3().should("be.visible");       
+    }
+
+    assertwhoWeAreImg4(){
         this.elements.whoWeAreImg4().should("be.visible");
     }
+
     clickGreatFoodlink(){        
-        this.elements.greatFood().click({force: true});
-        this.elements.urlAssert().should('include', '/about/great-food-page'); 
+        this.elements.greatFood().click({force: true});                             
+    }
+
+    assertgreatFoodHeadingUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/about/great-food-page'); 
+    }
+
+    assertgreatFoodImg(){
         //this.elements.greatFoodImg().should("be.visible", {force: true});
-        this.elements.greatFoodHeading().should("be.visible");
-        this.elements.Realchickenrigorousstandards().should("be.visible");
+    }
+
+    assertgreatFoodHeading(){
+        this.elements.greatFoodHeading().should("be.visible"); 
+    }
+
+    assertRealchickenrigorousstandards(){
+        this.elements.Realchickenrigorousstandards().should("be.visible"); 
+    }
+    
+    assertgreatFoodImg1(){
         //this.elements.greatFoodImg1().should("be.visible");
-        this.elements.Foodyoucansmileabout().should("be.visible");
-        this.elements.Carefullycraftedrecipes().should("be.visible");
-        //this.elements.greatFoodImg2().should("be.visible");
-        this.elements.Whatavisitisallabout().should("be.visible"); 
-        //this.elements.greatFoodImg3().should("be.visible");
+    }
+
+    assertFoodyoucansmileabout(){
+        this.elements.Foodyoucansmileabout().should("be.visible"); 
+    }
+
+    assertCarefullycraftedrecipes(){
+        this.elements.Carefullycraftedrecipes().should("be.visible"); 
+    }
+
+    assertgreatFoodImg2(){
+        //this.elements.greatFoodImg2().should("be.visible"); 
+    }
+    
+    assertWhatavisitisallabout(){
+        this.elements.Whatavisitisallabout().should("be.visible");
+    }
+
+    assertgreatFoodImg3(){
+        //this.elements.greatFoodImg3().should("be.visible"); 
+    }
+
+    assertGettoknowourfoodBtn(){
         this.elements.GettoknowourfoodBtn().should("be.visible"); 
+    }
+    
+    assertItsOurPleasureToServeYou(){
         this.elements.ItsOurPleasureToServeYou().should("be.visible");
+    }
+
+    assertOrderCarryOut(){
         this.elements.OrderCarryOut().should("be.visible"); 
+    }
+
+    assertgreatFoodImg4(){
         this.elements.greatFoodImg4().should("be.visible");
+    }
+    
+    assertgreatFoodImg5(){
         this.elements.greatFoodImg5().should("be.visible");
     }
 
     clickGivingBackLink(){
         this.elements.givingBack().click({force: true});
-        this.elements.urlAssert().should('include', '/about/giving-back-page'); 
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/about/giving-back-page'); 
         this.elements.GivingBackImg().should("be.visible");
         this.elements.givingBackHeading().should("be.visible");
         this.elements.Caringforothersthroughourfood().should("be.visible");

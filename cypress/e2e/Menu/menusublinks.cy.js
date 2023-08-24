@@ -1,6 +1,7 @@
 /// <reference types="cypress"/>
 
-import menusublinks from "../../pageobjects/menusublinks"
+import menusublinks from "../../pageobjects/menusublinks";
+
 describe('Menu sub links test', () => {
    
   beforeEach(() => {
