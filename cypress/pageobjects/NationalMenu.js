@@ -1,4 +1,4 @@
-class menusublinks{
+class NationalMenu{
 
     elements = {
         pageTitle: () => cy.title(),
@@ -165,7 +165,7 @@ class menusublinks{
     }
 
     assertEntréesUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#entrees');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#entrees');
     }
 
     clickSaladslink(){
@@ -173,7 +173,7 @@ class menusublinks{
     }
 
     assertSaladsUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#salads');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#salads');
     }
     
     assertCobbSalad(){
@@ -189,7 +189,7 @@ class menusublinks{
     }
 
     assertSidesUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#sides');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#sides');
     }
     
     assertWafflePotatoFries(){
@@ -217,7 +217,7 @@ class menusublinks{
     }
 
     assertKidsMealUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#kidsmeals');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#kidsmeals');
     }
     
     assertCtNuggetsKidsMeal(){
@@ -233,7 +233,7 @@ class menusublinks{
     }
 
     assertTreatsUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#treats');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#treats');
     }
     
     assertPeachMilkshake(){
@@ -285,7 +285,7 @@ class menusublinks{
     }
 
     assertBeveragesUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#beverages');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#beverages');
     }
     
     assertSeasonalWhitePeachBeverages(){
@@ -393,7 +393,7 @@ class menusublinks{
     }
 
     assertDippingSaucesDressingslinkUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/menu#sauces');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu#sauces');
     }
     
     assertBarbequeSauce(){
@@ -461,7 +461,7 @@ class menusublinks{
     }
 
     assertCateringUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/catering');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'catering');
     }
     
     assertChickfilAChickenSandwich(){
@@ -478,4 +478,4 @@ class menusublinks{
 
 }
 
-module.exports = new menusublinks();
+module.exports = new NationalMenu();

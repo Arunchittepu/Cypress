@@ -89,7 +89,7 @@ class aboutlinks{
     }
 
     assertWhoWeArePageUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/about/who-we-are-page');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'about/who-we-are-page');
     }
 
     assertwhoWeAreImg(){
@@ -137,7 +137,7 @@ class aboutlinks{
     }
 
     assertgreatFoodHeadingUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/about/great-food-page'); 
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'about/great-food-page'); 
     }
 
     assertgreatFoodImg(){
@@ -198,7 +198,7 @@ class aboutlinks{
 
     clickGivingBackLink(){
         this.elements.givingBack().click({force: true});
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/about/giving-back-page'); 
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'about/giving-back-page'); 
         this.elements.GivingBackImg().should("be.visible");
         this.elements.givingBackHeading().should("be.visible");
         this.elements.Caringforothersthroughourfood().should("be.visible");

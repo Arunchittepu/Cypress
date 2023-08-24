@@ -69,7 +69,7 @@ class storieslinks{
     }
 
     assertStoriesPageUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/stories');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories');
     }
 
     assertwhichChickFilASauceTxtLnk(){
@@ -114,7 +114,7 @@ class storieslinks{
     }
 
     assertChickFilAUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/stories/inside-chick-fil-a');
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/inside-chick-fil-a');
     }
 
     assertInsideChickfilCategoryTitle(){
@@ -166,7 +166,7 @@ class storieslinks{
     }
 
     assertCommunityPageUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/stories/in-the-community');         
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community');         
     }
 
     assertInTheCategoryTitle(){
@@ -218,7 +218,7 @@ class storieslinks{
     }
 
     assertNewsPageUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + '/stories/news');        
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news');        
     }
 
     assertNewsTitle(){

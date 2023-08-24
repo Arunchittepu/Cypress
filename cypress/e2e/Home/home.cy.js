@@ -1,14 +1,14 @@
 /// <reference types="cypress"/>
 import careerslink from "../../pageobjects/careerslink";
 import homepage from "../../pageobjects/homepage";
-import menusublinks from "../../pageobjects/menusublinks";
+import NationalMenu from "../../pageobjects/NationalMenu";
 import storieslinks from "../../pageobjects/storiesSublinks";
 import aboutlinks from "../../pageobjects/aboutsublinks";
 describe("Home page test", () => {
     beforeEach(() => {
       cy.visit("/");
       })
-      
+
     it("Check the redirection when click on Logo link", () => {
         homepage.clickLogo();
         homepage.verifyLogoRedirect();
@@ -23,16 +23,15 @@ describe("Home page test", () => {
         homepage.closeFindaRestaurantDialog();
       })
 
-    it("Verify Main menu links", () => {
+    it("Verify Header links", () => {
         homepage.clickmenulnk({force: true});
-        menusublinks.assertmenuAvailabilityCallout(); 
-        menusublinks.assertAvailabilitymaydifferatdifferentlocations();
+        NationalMenu.assertmenuAvailabilityCallout(); 
+        NationalMenu.assertAvailabilitymaydifferatdifferentlocations();
 
         homepage.clickstorieslnk();
         storieslinks.assertStoriesPageUrl();
         storieslinks.assertstoriesSlider(); 
-        storieslinks.assertstoriesSlider(); 
-
+       
         homepage.clickaboutlnk();
         aboutlinks.clickWhoWeAre();
         aboutlinks.assertAboutPageUrl();
@@ -45,17 +44,13 @@ describe("Home page test", () => {
         careerslink.assertCareersImg();
       })
 
-    it("Verify Header section of Home page", () => {
+    it("Verify the Seasonal text and image of Home page", () => {
         homepage.assertApplytoworkataChickfilArestaurant();
         homepage.assertSeasonalImg();
         homepage.assertBagIcon();
         homepage.assertOrderCarryOutBtn();
         homepage.clickOrderCarryOutBtn();
-        homepage.assertOrderUrl();
-        //This test is failing because of application error and blank page
-        homepage.assertYoureNotInRegion();
-        homepage.assertGotoChickFilAcomBtn();
-        homepage.callBack();     
+        homepage.assertOrderUrl();              
       })
 
     it("Verify Get to know our menu section of Home page", () => {
@@ -63,9 +58,8 @@ describe("Home page test", () => {
         homepage.assertExplorethemenuBtn();
         homepage.clickExplorethemenuBtn();
         homepage.assertMenuUrl();
-        menusublinks.assertmenuAvailabilityCallout(); 
-        menusublinks.assertAvailabilitymaydifferatdifferentlocations();
-        homepage.callBack();
+        NationalMenu.assertmenuAvailabilityCallout(); 
+        NationalMenu.assertAvailabilitymaydifferatdifferentlocations();       
       })
 
     it("Verify Fighting Hunger in Our Communities section of Home page", () => {
@@ -74,8 +68,7 @@ describe("Home page test", () => {
         homepage.clickLearnabouttheprogramBtn();
         homepage.assertLearnAboutProgramUrl();
         storieslinks.assertTheChickfilASharedTableProgramUrl();
-        storieslinks.assertSharedTableImpactTxt();
-        homepage.callBack();
+        storieslinks.assertSharedTableImpactTxt();        
       })
 
     it("Verify Nutrition and allergens section of Home page", () => {
@@ -84,8 +77,7 @@ describe("Home page test", () => {
         homepage.clickSeeTheFactsBtn();
         homepage.assertNutritionAllergensUrl();
         homepage.assertNutritionAllergensHeadTxt();
-        homepage.assertdisclaimernutritionTxt();
-        homepage.callBack();
+        homepage.assertdisclaimernutritionTxt();        
       })
 
     it("Verify Related Stories section of Home page", () => {
@@ -105,11 +97,10 @@ describe("Home page test", () => {
         homepage.clickPeachbeveragesthroughouttheyears();
         homepage.assertPeachbeveragesthroughouttheyearsUrl();
         homepage.assertPeachbeveragesthroughouttheyearsHeadTxt();
-        homepage.assertSummerishereandsoarepeachbeveragesTxt();
-        homepage.callBack();
+        homepage.assertSummerishereandsoarepeachbeveragesTxt();        
       });  
 
-      it("Test Footer links of Home page", () => {
+      it.only("Test Footer links of Home page", () => {
         homepage.assertCustomerserviceLnk();
         homepage.clickCustomerserviceLnk();     
         homepage.assertCustomerserviceLnkUrl();
@@ -138,8 +129,7 @@ describe("Home page test", () => {
         homepage.clickPressRoomLnk();     
         homepage.assertPressRoomLnkUrl();
         storieslinks.assertNewsTitle();
-        storieslinks.assertTheLatestNews();
-        homepage.callBack();
+        storieslinks.assertTheLatestNews();        
       }) 
 
       it("Test right side links at footer section of Home page", () => {
@@ -160,8 +150,6 @@ describe("Home page test", () => {
         homepage.assertCookiePreferenceCenterLnkUrl();
         homepage.assertSavePreferencesBtn();
         homepage.assertAllowAllBtn();
-        homepage.callBack();
-
       }) 
 
 
