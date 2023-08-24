@@ -20,7 +20,7 @@ class careerslink{
     }
 
     assertCareersUrl(){        
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl+ 'stories/inside-chick-fil-a/grow-your-career-at-your-local-chick-fil-alocation');                
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl+ 'stories/inside-chick-fil-a/grow-your-career-at-your-local-chick-fil-a');                
     }
 
     assertCareersHeadTxt(){        
