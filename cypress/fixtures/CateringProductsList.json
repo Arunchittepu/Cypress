@@ -1,0 +1,25 @@
+[
+{
+    "productname": "img[alt='Chick-fil-A® Chicken Sandwich']",
+    "producturl": "catering/chick-fil-a-chicken-sandwich",
+    "productimage": "img[alt='Chick-fil-A® Chicken Sandwich']",
+    "productnameheading": "Chick-fil-A® Chicken Sandwich",
+    "orderfoodurl": "load-catering"
+},
+
+{
+    "productname": "img[alt='Spicy Chicken Sandwich']",
+    "producturl": "catering/spicy-chicken-sandwich",
+    "productimage": "img[alt='Spicy Chicken Sandwich']",
+    "productnameheading": "Spicy Chicken Sandwich",
+    "orderfoodurl": "load-catering"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Nuggets']",
+    "producturl": "catering/chick-fil-a-nuggets",
+    "productimage": "img[alt='5 ct Chick-fil-A® Nuggets']",
+    "productnameheading": "Chick-fil-A® Nuggets",
+    "orderfoodurl": "load-catering"
+}
+]

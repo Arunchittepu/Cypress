@@ -1,0 +1,17 @@
+[
+{
+    "productname": "img[alt='Cobb Salad']",
+    "producturl": "menu/cobb-salad",
+    "productimage": "img[alt='Cobb Salad w/ Nuggets']",
+    "productnameheading": "Cobb Salad",
+    "orderfoodurl": "load-dot-com?itemTag=COBB_NUGGETS"
+},
+
+{
+    "productname": "img[alt='Spicy Southwest Salad']",
+    "producturl": "menu/spicy-southwest-salad",
+    "productimage": "img[alt='Spicy Southwest Salad w/ Spicy Grilled Filet (Cold)']",
+    "productnameheading": "Spicy Southwest Salad",
+    "orderfoodurl": "load-dot-com?itemTag=SPICY_SOUTHWEST_SALAD_SGF"
+}
+]
