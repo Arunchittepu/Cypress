@@ -8,7 +8,7 @@ module.exports = defineConfig({
     orderPageUrl: 'https://order.chick-fil-a.ca/',
     //baseUrl: 'staging'  
     watchForFileChanges: false,
-    defaultCommandTimeout: 60000,
+    defaultCommandTimeout: 30000,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
