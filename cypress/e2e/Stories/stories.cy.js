@@ -19,8 +19,7 @@ describe('Stories sub links test', () => {
     });
 
 
-  it('Verify sub menus links under Stories', () => {    
-      // storieslinks.hoverStorieslnk(); 
+  it('Verify sub menus links under Stories', () => {         
        storieslinks.clickstorieslnk();
        storieslinks.assertInsideChick_Fil_A_link(); 
        storieslinks.assertIntheCommunityLink(); 
@@ -49,40 +48,52 @@ describe('Stories sub links test', () => {
         storieslinks.assertwhichchickfilasauceisyourperfectmatchforsurePageUrl();
         storieslinks.assertwhichchickfilasauceisyourperfectmatchforsurePageTitle();
         storieslinks.assertwhichchickfilasauceisyourperfectmatchforsurePageSubTitle();
-        storieslinks.callBack();
+       
+  });
 
+
+  it('Verify What Visit is it all about section on InsideChick-fil-A page', () => { 
+        storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertWhatVisitAllAboutImg();
         storieslinks.assertWhatVisitAllAbout();
         storieslinks.clickWhatVisitAllAbout();
         storieslinks.assertallowustointroduceourselvesUrl();
         storieslinks.assertallowustointroduceourselvesTitle();
         storieslinks.assertallowustointroduceourselvesSubTitle();
-        storieslinks.callBack();
+  });
 
+  it('Verify how a high school job became a mission Link section on InsideChick-fil-A page', () => { 
+        storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.asserttheCoopSection();
         storieslinks.clickhowahighschooljobbecameamissionLink();
         storieslinks.asserthowahighschooljobbecameamissionUrl();
         storieslinks.asserthowahighschooljobbecameamissionLinkTitle();
         storieslinks.asserthowahighschooljobbecameamissionLinkSubTitle();
-        storieslinks.callBack();
+  });
 
+  it('Verify Five Things You Need to Know section on InsideChick-fil-A page', () => { 
+        storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertFiveThingsYouNeedtoKnowImg();
         storieslinks.assertFiveThingsYouNeedtoKnow();
         storieslinks.clickFiveThingsYouNeedtoKnow();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesUrl();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesTitle();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesSubTitle();
-        storieslinks.callBack();
+   });
 
+  it('Verify Announces New Vaughan section on InsideChick-fil-A page', () => { 
+        storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertAnnouncesNewVaughanImg();
         storieslinks.assertAnnouncesNewVaughan();
         storieslinks.clickAnnouncesNewVaughan();
         storieslinks.assertchickfilaannouncesnewvaughanontariorestaurantUrl();
         storieslinks.assertchickfilaannouncesnewvaughanontariorestaurantPara();
         storieslinks.assertchickfilaannouncesnewvaughanontariorestaurantSubTitle();
+      });
 
-        storieslinks.callBack();
 
+   it('Verify From Basket Court section on InsideChick-fil-A page', () => { 
+          storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertFromBasketCourtImg();
         storieslinks.assertFromBasketCourt();
         storieslinks.clickFromBasketCourt();
@@ -92,7 +103,7 @@ describe('Stories sub links test', () => {
         
     });
 
-    it('Verify In The Community page', () => {  
+    it('Verify In The Catgory Slider section In The Community page', () => {  
       storieslinks.clickIntheCommunitylink();
       storieslinks.assertCommunityPageUrl();
       storieslinks.assertInTheCategoryTitle();
@@ -101,32 +112,41 @@ describe('Stories sub links test', () => {
       storieslinks.assertTrueInspirationAwardsApplicationsopenUrl();
       storieslinks.assertTrueInspirationAwardsApplicationsopenTitle();
       storieslinks.assertTrueInspirationAwardsApplicationsopenSubTitle();
-      storieslinks.callBack();
+      
+    });
 
+    it('Verify Hub Of Opportunity section In The Community page', () => {  
+      storieslinks.clickIntheCommunitylink();
       storieslinks.assertHubOfOpportunityImg();
       storieslinks.assertHubOfOpportunity();
       storieslinks.clickHubOfOpportunity();
       storieslinks.assertHubofOpportunitiesaimUrl();
       storieslinks.assertHubofOpportunitiesaimUrlTitle();
       storieslinks.assertHubofOpportunitiesaimUrlSubTitle();
-      storieslinks.callBack();
+    });
 
+  it('Verify Fighting Hunger With Second Harvest section In The Community page', () => {  
+       storieslinks.clickIntheCommunitylink();
       storieslinks.assertFightingHungerWithSecondHarvestImg();
       storieslinks.assertFightingHungerWithSecondHarvest();
       storieslinks.clickFightingHungerWithSecondHarvest();
       storieslinks.assertFightinghungerwithSecondHarvestPageUrl();
       storieslinks.assertFightinghungerwithSecondHarvestPageTitle();
       storieslinks.assertFightinghungerwithSecondHarvestPageSubTitle();
-      storieslinks.callBack();
+   });
 
+   it('Verify True Inspiration Award section In The Community page', () => {  
+      storieslinks.clickIntheCommunitylink();
       storieslinks.assertTrueInspirationAwrdImg();
       storieslinks.assertTrueInspirationAwrd();
       storieslinks.clickTrueInspirationAwrd();
       storieslinks.asserthowatrueinspirationawardsgrantPageUrl();
       storieslinks.asserthowatrueinspirationawardsgrantPageTitle();
       storieslinks.asserthowatrueinspirationawardsgrantPageParaTitle();
-      storieslinks.callBack();
+   });
 
+   it('Verify Shared Table Program section In The Community page', () => {  
+      storieslinks.clickIntheCommunitylink();
       storieslinks.assertSharedTableProgramImg();
       storieslinks.assertSharedTableProgram();  
       storieslinks.clickSharedTableProgram();
@@ -144,8 +164,10 @@ describe('Stories sub links test', () => {
       storieslinks.assertSpringsintotheseasonwithWatermelonMintbeverageflavoursUrl();
       storieslinks.assertSeasonWithWaterMelonHead();
       storieslinks.assertSeasonWithWaterMelonImg();
-      storieslinks.callBack();
+    });
 
+    it('Verify Million In Scholarships section at News page', () => {  
+      storieslinks.clickNewsLink(); 
       storieslinks.assertTheLatestNews();
       storieslinks.assertMillionInScholarshipsImg();
       storieslinks.assertMillionInScholarships();
@@ -153,10 +175,10 @@ describe('Stories sub links test', () => {
       storieslinks.assertMillionInScholarshipsUrl();
       storieslinks.assertMilionScholarshipHead();
       storieslinks.assertBenefitsBodyTxt();
-      storieslinks.callBack();
+     
     });
 
-    it('Verify Three footer stories links at News page', () => {  
+    it('Verify New Toronto Restautant footer stories links at News page', () => {  
       storieslinks.clickNewsLink();      
       storieslinks.assertNewTorontoRestautantImg();
       storieslinks.assertNewTorontoRestautant();
@@ -164,24 +186,25 @@ describe('Stories sub links test', () => {
       storieslinks.assertNewTorontoRestautantUrl();
       storieslinks.assertNewTorontoRestautantHead();
       storieslinks.assertNewTorontoRestautantHeadImg();
-      storieslinks.callBack();
-
+    });
+    
+    it('Verify Announces Eight Restaurant footer stories links at News page', () => {  
+      storieslinks.clickNewsLink(); 
       storieslinks.assertAnnouncesEightRestaurantImg();
       storieslinks.assertAnnouncesEightRestaurant();
       storieslinks.clickAnnouncesEightRestaurant();
       storieslinks.assertAnnouncesEightRestaurantUrl();
       storieslinks.assertAnnouncesEightRestaurantPara();
       storieslinks.assertAnnouncesEightRestaurantPgImg();
-      storieslinks.callBack();
-
+    });
+   
+    it('Verify Open New Restaurant footer stories links at News page', () => {  
+      storieslinks.clickNewsLink(); 
       storieslinks.assertOpenNewRestaurantImg();  
       storieslinks.assertOpenNewRestaurant();      
       storieslinks.clickOpenNewRestaurant();
       storieslinks.assertOpenNewRestaurantUrl();
       storieslinks.assertOpenNewRestaurantPara();
       storieslinks.assertOpenNewRestaurantPageImg();     
-
-    }); 
-
-    
+    });     
   });

@@ -182,19 +182,7 @@ class storieslinks{
         this.elements.TheChickfilASharedTableProgramPageParaHead().should('be.visible');
     }
 
-    assertTheChickfilASharedTableProgramPageUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/the-chick-fil-a-shared-table-program');
-    }
-
-    assertTheChickfilASharedTableProgramPageTitle(){
-        this.elements.TheChickfilASharedTableProgramPageTitle().should('be.visible');
-    }
-
-    assertTheChickfilASharedTableProgramPageParaHead(){
-        this.elements.TheChickfilASharedTableProgramPageParaHead().should('be.visible');
-    }
-
-
+      
     asserthowatrueinspirationawardsgrantPageUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/how-a-true-inspiration-awards-grant-is-helping-rebuild-lives-in-toronto');
     }
