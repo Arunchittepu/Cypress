@@ -1,0 +1,114 @@
+[
+{
+    "productname": "img[alt='Gallon Freshly-Brewed Iced Tea Sweetened']",
+    "producturl": "locations/on/devonshire/catering/gallon-freshly-brewed-iced-tea-sweetened",
+    "productimage": "img[alt='Gallon Freshly-Brewed Iced Tea Sweetened']",
+    "productnameheading": "Gallon Freshly-Brewed Iced Tea Sweetened",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Freshly-Brewed Iced Tea Unsweetened']",
+    "producturl": "locations/on/devonshire/catering/gallon-freshly-brewed-iced-tea-unsweetened",
+    "productimage": "img[alt='Gallon Freshly-Brewed Iced Tea Unsweetened']",
+    "productnameheading": "Gallon Freshly-Brewed Iced Tea Unsweetened",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Chick-fil-A® Iced Tea (1/2 Sweet Tea, 1/2 Unsweet Tea)']",
+    "producturl": "locations/on/devonshire/catering/gallon-chickfila-iced-tea-12-sweet-tea-12-unsweet-tea",
+    "productimage": "img[alt='Gallon Chick-fil-A® Iced Tea (1/2 Sweet Tea, 1/2 Unsweet Tea)']",
+    "productnameheading": "Gallon Chick-fil-A® Iced Tea (1/2 Sweet Tea, 1/2 Unsweet Tea)",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Chick-fil-A® Lemonade']",
+    "producturl": "locations/on/devonshire/catering/gallon-chick-fil-a-lemonade",
+    "productimage": "img[alt='Gallon Chick-fil-A® Lemonade']",
+    "productnameheading": "Gallon Chick-fil-A® Lemonade",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Chick-fil-A® Diet Lemonade']",
+    "producturl": "locations/on/devonshire/catering/gallon-chick-fil-a-diet-lemonade",
+    "productimage": "img[alt='Gallon Chick-fil-A® Diet Lemonade']",
+    "productnameheading": "Gallon Chick-fil-A® Diet Lemonade",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)']",
+    "producturl": "locations/on/devonshire/catering/gallon-sunjoy-12-sweet-tea-12-lemonade",
+    "productimage": "img[alt='Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)']",
+    "productnameheading": "Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)']",
+    "producturl": "locations/on/devonshire/catering/gallon-sunjoy-12-sweet-tea-12-diet-lemonade",
+    "productimage": "img[alt='Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)']",
+    "productnameheading": "Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)']",
+    "producturl": "locations/on/devonshire/catering/gallon-sunjoy-12-unsweet-tea-12-lemonade",
+    "productimage": "img[alt='Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)']",
+    "productnameheading": "Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)']",
+    "producturl": "locations/on/devonshire/catering/gallon-sunjoy-12-unsweet-tea-12-diet-lemonade",
+    "productimage": "img[alt='Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)']",
+    "productnameheading": "Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Simply Orange®']",
+    "producturl": "locations/on/devonshire/catering/simply-orange",
+    "productimage": "img[alt='Simply Orange®']",
+    "productnameheading": "Simply Orange®",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Honest Kids® Apple Juice']",
+    "producturl": "locations/on/devonshire/catering/honest-kids-apple-juice",
+    "productimage": "img[alt='Honest Kids® Apple Juice']",
+    "productnameheading": "Honest Kids® Apple Juice",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='2.25 kg (5 lb) Bag of Ice']",
+    "producturl": "locations/on/devonshire/catering/225-kg-5-lb-bag-of-ice",
+    "productimage": "img[alt='2.25 kg (5 lb) Bag of Ice']",
+    "productnameheading": "2.25 kg (5 lb) Bag of Ice",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='2% Milk']",
+    "producturl": "locations/on/devonshire/catering/2-milk",
+    "productimage": "img[alt='2% Milk']",
+    "productnameheading": "2% Milk",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='smartwater®']",
+    "producturl": "locations/on/devonshire/catering/smartwater-1",
+    "productimage": "img[alt='smartwater®']",
+    "productnameheading": "smartwater®",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+}
+
+]

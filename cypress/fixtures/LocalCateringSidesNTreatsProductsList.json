@@ -1,0 +1,24 @@
+[
+    {
+        "productname": "img[alt='Side Salad']",
+        "producturl": "locations/on/devonshire/catering/side-salad",
+        "productimage": "img[alt='Side Salad']",
+        "productnameheading": "Side Salad",
+        "orderfoodurl": "load-catering?locationNumber=30005"
+    },
+    {
+        "productname": "img[alt='Waffle Potato Chips']",
+        "producturl": "locations/on/devonshire/catering/waffle-potato-chips",
+        "productimage": "img[alt='Waffle Potato Chips']",
+        "productnameheading": "Waffle Potato Chips",
+        "orderfoodurl": "load-catering?locationNumber=30005"
+    },
+
+    {
+        "productname": "img[alt='Chocolate Chunk Cookie']",
+        "producturl": "locations/on/devonshire/catering/chocolate-chunk-cookie",
+        "productimage": "img[alt='Chocolate Chunk Cookie']",
+        "productnameheading": "Chocolate Chunk Cookie",
+        "orderfoodurl": "load-catering?locationNumber=30005"
+    }
+]

@@ -1,0 +1,25 @@
+[
+{
+    "productname": "img[alt='Chick-fil-A® Chicken Sandwich']",
+    "producturl": "locations/on/devonshire/catering/chick-fil-a-chicken-sandwich",
+    "productimage": "img[alt='Chick-fil-A® Chicken Sandwich']",
+    "productnameheading": "Chick-fil-A® Chicken Sandwich",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Spicy Chicken Sandwich']",
+    "producturl": "locations/on/devonshire/catering/spicy-chicken-sandwich",
+    "productimage": "img[alt='Spicy Chicken Sandwich']",
+    "productnameheading": "Spicy Chicken Sandwich",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Nuggets']",
+    "producturl": "locations/on/devonshire/catering/chick-fil-a-nuggets",
+    "productimage": "img[alt='5 ct Chick-fil-A® Nuggets']",
+    "productnameheading": "Chick-fil-A® Nuggets",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+}
+]
