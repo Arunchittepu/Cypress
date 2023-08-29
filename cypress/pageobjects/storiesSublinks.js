@@ -78,7 +78,7 @@ class storieslinks{
        howatrueinspirationawardsgrantPageParaTitle: () => cy.xpath("//strong[contains(text(),'How Yonge Street Mission changed one life')]"),
        TheChickfilASharedTableProgramPageTitle: () => cy.xpath("//h1[contains(text(),'The Chick-fil-A Shared Table Program')]"),
        TheChickfilASharedTableProgramPageParaHead: () => cy.xpath("//strong[contains(text(),'Shared Table Impact')]"),
-       whichchickfilasauceisyourperfectmatchforsurePageTitle: () => cy.xpath("//h1[contains(text(),'Which Chick-fil-A sauce is your perfect match?')]"),
+       whichchickfilasauceisyourperfectmatchforsurePageTitle: () => cy.xpath("//h1[contains(text(),'Where does the “A” in Chick-fil-A come from?')]"),
        whichchickfilasauceisyourperfectmatchforsurePageSubTitle: () => cy.xpath("//p[contains(text(),'Learn the story behind our name.')]"),
        allowustointroduceourselvesTitle: () => cy.xpath(`//h1[contains(text(),"Here's what a visit to a Chick-fil-A restaurant is")]`),
        allowustointroduceourselvesSubTitle: () => cy.xpath("//p[contains(text(),'Wondering what to eat when you visit us?')]"),
@@ -162,7 +162,7 @@ class storieslinks{
     }
 
     assertwhichchickfilasauceisyourperfectmatchforsurePageTitle(){
-        this.elements.TheChickfilASharedTableProgramPageTitle().should('be.visible');
+        this.elements.whichchickfilasauceisyourperfectmatchforsurePageTitle().should('be.visible');
     }
 
     assertwhichchickfilasauceisyourperfectmatchforsurePageSubTitle(){
