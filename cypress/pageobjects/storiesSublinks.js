@@ -11,9 +11,9 @@ class storieslinks{
        SeasonWithWaterMelonImg: () => cy.get("img[alt='A Watermelon Mint Sunjoy, a Watermelon Mint Lemonade, A Watermelon Mint Iced Tea and a Watermelon Mint Frosted Lemonade are positioned side by side in glasses. ']"),
        whichChickFilASauceTxtLnk: () => cy.xpath("//a[contains(text(),'Which Chick-fil-A sauce is your perfect match?')]"),
        
-       theLittleThingsSection: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/large-Al-Jones-and-Family-on-Red-Couch.jpg?h=854&w=1280&la=en']"),
+       theLittleThingsSection: () => cy.get("a[href='/stories/inside-chick-fil-a/meet-al-jones-the-newest-chick-fil-a-owner-operator-in-canada']"),
        theCoopSection: () => cy.xpath("//h3[contains(text(),'The Coop')]"),
-       MentorshipSection: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Story%20Images/Mentorship%20care%20and%20paying%20it%20forward/Header%20image.jpg?h=960&w=1440&la=en']"),
+       MentorshipSection: () => cy.get("a[href='/stories/inside-chick-fil-a/mentorship-care-and-paying-it-forward']"),
        letsBeFriend: () => cy.xpath("//p[contains(text(),'Let’s be friends')]"),
        Story: () => cy.xpath("//span[contains(text(),'Stories')]"),
        hoverStories: () => cy.get("div.subnav a[href='/stories/inside-chick-fil-a']"),      
@@ -34,8 +34,7 @@ class storieslinks{
        InTheCategoryTitle: () => cy.xpath("//h1[contains(text(),'In the Community')]"),
        InTheCatgorySlider: () => cy.xpath("//a[contains(text(),'The 2024 Chick-fil-A True Inspiration Awards™ Applications are open')]"),
        HubOfOpportunityImg: () => cy.get("a[href='/stories/in-the-community/chick-fil-a-and-uhc-hub-of-operations-partnership-in-windsor-essex-community']"),
-       
-       //cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2021/10/Devonshire%20Canada/UHC_Devonshire.JPG?h=666&w=1000&la=en'"),
+              
        HubOfOpportunity: () => cy.xpath("//a[contains(text(),'Chick-fil-A and UHC - Hub of Opportunities aim to create meaningful partnerships to positively impact the Windsor-Essex Community')]"),
        FightingHungerWithSecondHarvestImg: () => cy.get("a[href='/stories/in-the-community/fighting-hunger-with-second-harvest']"),
        FightingHungerWithSecondHarvest: () => cy.xpath("//a[contains(text(),'Fighting hunger with Second Harvest')]"),
