@@ -2,15 +2,19 @@ const { defineConfig } = require("cypress");
 
 
 module.exports = defineConfig({
-
+  chromeWebSecurity: false,
+  experimentalModifyObstructiveThirdPartyCode: true,
+  failOnStatusCode: false,
   e2e: {
     baseUrl: 'https://www.chick-fil-a.ca/',  
+    //baseUrl: 'https://www.chick-fil-astage.ca/', 
     orderPageUrl: 'https://order.chick-fil-a.ca/',
-    //baseUrl: 'staging'  
+    stageUrl: 'https://www.chick-fil-astage.ca/',  
+    
     watchForFileChanges: false,
     defaultCommandTimeout: 30000,
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
+    
+    setupNodeEvents(on, config) {      
     },
   },
 });

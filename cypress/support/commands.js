@@ -30,4 +30,34 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test
     return false
-  })
+  });
+
+  Cypress.Commands.add('switchToIframe', (iframe) => {
+    return cy
+        .get(iframe)
+        .its('0.contentDocument.body')
+        .should('not.be.empty')
+        .then(cy.wrap);
+    });
+
+    Cypress.Commands.add('getIframe', () => {
+      return cy
+          .get('.aut-iframe')
+          .its('0.contentDocument.body').should('not.be.empty')      
+          .then(cy.wrap)
+      });
+
+      Cypress.Commands.add('getIframeBodyWithSelector', (waitForSelector) => {
+        return cy.get('iframe.locatoriframe')
+          .its('0.contentDocument.body')
+          .should(body => {
+            expect(Cypress.$(body).has(waitForSelector).length).gt(0)
+          })
+          .then(cy.wrap)
+      });
+
+      beforeEach(() => {
+        cy.intercept(`${Cypress.config('baseUrl')}**`, req => {
+            req.headers['DEVELOPMENT_AGENT'] = "APP_TESTING"
+        });
+    });

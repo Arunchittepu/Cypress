@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-
+import homepage from "../../pageobjects/homepage"
 import aboutlinks from "../../pageobjects/aboutsublinks"
 describe('About sub links test', () => {
    
@@ -12,8 +12,8 @@ describe('About sub links test', () => {
         homepage.verifyLogoRedirect();
     })  
 
-    it("Hover About menu link and check its sub menu links", () => {
-        aboutlinks.hoverAboutlink();
+    it("Verify click About menu link and check its sub menu links", () => {
+        aboutlinks.clickaboutlnk();
         aboutlinks.assertAboutPageTitle();
         aboutlinks.assertAboutPageUrl();
         aboutlinks.assertWhoweAreLink();
