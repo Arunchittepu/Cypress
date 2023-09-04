@@ -52,26 +52,82 @@ describe("Home page test", () => {
         careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink();
         careerslink.clickViewAvailableOpportunitiesLink();
-      
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();
+        
+      })
+
+      it("Check the View Available Opportunities links 1 on Careers page", () => {
+        careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink1();          
         careerslink.clickViewAvailableOpportunitiesLink1(); 
-        homepage.callBack();         
+        careerslink.assertcfaqueenspadinaUrl();
+        careerslink.assertJobsColumn();
+        careerslink.assertEmployeementTypeColumn();
+      })
 
+      it("Check the View Available Opportunities links 2 on Careers page", () => {
+        careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink2();          
         careerslink.clickViewAvailableOpportunitiesLink2(); 
-        homepage.callBack();         
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();
+      })
 
+      it("Check the View Available Opportunities links 3 on Careers page", () => {
+        careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink3();          
         careerslink.clickViewAvailableOpportunitiesLink3(); 
-        homepage.callBack();         
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();
+      })
 
+      it("Check the View Available Opportunities links 4 on Careers page", () => {
+        careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink4();          
         careerslink.clickViewAvailableOpportunitiesLink4(); 
-        homepage.callBack();         
+        careerslink.assertFountainUrl();
+        careerslink.assertFountainHomeLink();
+        careerslink.assertFountainHelpLink();
+      })
 
+      it("Check the View Available Opportunities links 5 on Careers page", () => {
+        careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink5();          
         careerslink.clickViewAvailableOpportunitiesLink5(); 
-        homepage.callBack();         
+        careerslink.assertFountainUrl();
+        careerslink.assertFountainHomeLink();
+        careerslink.assertFountainHelpLink();
+      })
+
+      it("Check the View Available Opportunities links 6 on Careers page", () => {
+        careerslink.clickcareerslnk();
+        careerslink.assertViewAvailableOpportunitiesLink6();          
+        careerslink.clickViewAvailableOpportunitiesLink6(); 
+        careerslink.assertFountainUrl();
+        careerslink.assertFountainHomeLink();
+        careerslink.assertFountainHelpLink();
+      })
+
+      it("Check the View Available Opportunities links 7 on Careers page", () => {
+        careerslink.clickcareerslnk();
+        careerslink.assertViewAvailableOpportunitiesLink7();          
+        careerslink.clickViewAvailableOpportunitiesLink7(); 
+        careerslink.assertFountainUrl();
+        careerslink.assertFountainHomeLink();
+        careerslink.assertFountainHelpLink();
+      })
+
+      it("Check the View Available Opportunities links 8 on Careers page", () => {
+        careerslink.clickcareerslnk();
+        careerslink.assertViewAvailableOpportunitiesLink8();          
+        careerslink.clickViewAvailableOpportunitiesLink8(); 
+        careerslink.assertFountainUrl();
+        careerslink.assertFountainHomeLink();
+        careerslink.assertFountainHelpLink();        
       })
 
 

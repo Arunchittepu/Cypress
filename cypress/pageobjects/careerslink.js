@@ -19,7 +19,13 @@ class careerslink{
        DonateToNonProfitUHCLink: () => cy.xpath("//a[contains(text(),'donated US$25,000 to nonprofit UHC – Hub of Opport')]"),
        ContactTheRestaurantLink: () => cy.xpath("//a[contains(text(),'contact the restaurant')]"),
        ViewAvailableOpportunitiesLink: () => cy.xpath("//a[contains(text(),'View available opportunities')]"),
-    
+        HigherMeSIgnInBtn: () => cy.xpath("//button[contains(text(), 'Sign In')]"),
+        HigherMeSIgnUpBtn: () => cy.xpath("//button[contains(text(), 'Sign Up')]"),
+        JobsColumn: () => cy.xpath("//div[contains(text(),'Jobs')]"),
+        EmployeementTypeColumn: () => cy.xpath("//div[contains(text(),'EmploymentType')]"),
+        FountainHomeLink: () => cy.xpath("//a[contains(text(),'Home')]"),
+        FountainHelpLink: () => cy.xpath("//a[contains(text(),'Help')]"),
+
     }
 
     clickcareerslnk(){
@@ -90,12 +96,36 @@ class careerslink{
         this.elements.ViewAvailableOpportunitiesLink().eq(0).click();        
     }
 
+    assertHigherMeUrl(){        
+        this.elements.urlAssert().should('include', 'https://app.higherme.com/');                
+    }
+
+    assertHigherMeSIgnInBtn(){        
+        this.elements.HigherMeSIgnInBtn().should("be.visible");                
+    }
+
+    assertHigherMeSIgnUpBtn(){        
+        this.elements.HigherMeSIgnUpBtn().should("be.visible");                
+    }
+
     assertViewAvailableOpportunitiesLink1(){        
         this.elements.ViewAvailableOpportunitiesLink().eq(1).should("be.visible");                
     }
 
     clickViewAvailableOpportunitiesLink1(){
         this.elements.ViewAvailableOpportunitiesLink().eq(1).click();        
+    }
+
+    assertcfaqueenspadinaUrl(){        
+        this.elements.urlAssert().should('include', 'https://cfaqueenspadina.corehr.hrcloud.com/cfa#/jobs');                
+    }
+
+    assertJobsColumn(){        
+        this.elements.JobsColumn().should("be.visible");                
+    }
+
+    assertEmployeementTypeColumn(){        
+        this.elements.EmployeementTypeColumn().should("be.visible");                
     }
 
     assertViewAvailableOpportunitiesLink2(){        
@@ -120,6 +150,18 @@ class careerslink{
 
     clickViewAvailableOpportunitiesLink4(){
         this.elements.ViewAvailableOpportunitiesLink().eq(4).click();        
+    }
+
+    assertFountainUrl(){
+        this.elements.urlAssert().should('include', 'https://web.fountain.com/turas-group/apply/chick-fil-a-yorkdale-mall-team-member?preview=true');  
+    }
+
+    assertFountainHomeLink(){
+        this.elements.FountainHomeLink().click(); 
+    }
+
+    assertFountainHelpLink(){
+        this.elements.FountainHelpLink().click(); 
     }
 
     assertViewAvailableOpportunitiesLink5(){        

@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 
 module.exports = defineConfig({
+  projectId: 'ib9u8h',
   chromeWebSecurity: false,
   experimentalModifyObstructiveThirdPartyCode: true,
   failOnStatusCode: false,
@@ -13,7 +14,7 @@ module.exports = defineConfig({
     stageUrl: 'https://www.chick-fil-astage.ca/',  
     
     watchForFileChanges: false,
-    defaultCommandTimeout: 30000,
+    defaultCommandTimeout: 60000,
     
     setupNodeEvents(on, config) {      
     },

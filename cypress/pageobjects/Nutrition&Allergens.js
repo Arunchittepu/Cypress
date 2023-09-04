@@ -1,0 +1,8 @@
+class NutritionNAllergens{
+
+    elements = {
+
+    }
+
+
+}
