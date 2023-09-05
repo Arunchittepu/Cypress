@@ -8,23 +8,23 @@ class aboutlinks{
        whoweare: () => cy.contains("Who We Are"),
        greatFood: () => cy.contains("Great Food"),
        givingBack: () => cy.contains("Giving Back"),
-       hoverAbout: () => cy.get("div.subnav a[href='/about/who-we-are-page']"), 
+       hoverAbout: () => cy.xpath("//span[contains(text(),'About')]"), 
 
-       whoWeAreImg: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Who%20We%20Are%20CA%20hero%20desktop.jpg"),
+       whoWeAreImg: () => cy.get('.promo-frame'),
        whoweareheadingtxt: () => cy.xpath("//h1[contains(text(),'Who we are')]"),
-       whoWeAreImg1: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Who%20We%20Are%20CA%20hero%20desktop.jpg']"),
+       whoWeAreImg1: () => cy.get(':nth-child(5) > .flex-wrapper > .img-wrapper > .desktop-img'),
        ourHistory: () => cy.xpath("//p[contains(text(),'Our history')]"),
        whyWeareclosedOnSunday: () => cy.xpath(`//h4[contains(text(),"Why we're closed on Sundays")]`),
-       whoWeAreImg2: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Images/CFACOM/Stories%20Images/2019/08/EddieWhite/dwarf-house-web.jpg?h=960&w=1440&la=en']"),
+       whoWeAreImg2: () => cy.get('.img-mobile > img'),
        readMoreaboutOurCultureNValue: () => cy.xpath("//a[contains(text(),'Read more about our culture and values')]"),
        whoWeAreImg3: () => cy.get("img[alt='Picture of Truett Cathy sitting in a chair']"),
        moreThanChicken: () => cy.xpath("//h4[contains(text(),'More than chicken')]"),
        whoWeAreImg4: () => cy.get("img[alt='Who We Are CA more than chicken desktop']"),
 
-       greatFoodImg: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Great%20Food%20CA_header%20desktop.jpeg", {force: true}),
-       greatFoodImg1: () => cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Great%20Food%20CA_header%20desktop.jpeg']"),
-       greatFoodImg2: () => cy.get("img[2][src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Homepage%20Images/CFA%20sandwich_desktop.jpg?h=270&w=600&la=en']"),
-       greatFoodImg3: () => cy.get("img[2][src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Great%20Food%20header/Salad%20Great%20Food%20Page%20image%20compressed.png?h=300&w=600&la=en']"),
+       greatFoodImg: () => cy.get('.promo-frame'),
+       greatFoodImg1: () => cy.get(':nth-child(3) > .flex-wrapper > .img-wrapper > .desktop-img'),
+       greatFoodImg2: () => cy.get(':nth-child(6) > .flex-wrapper > .img-wrapper > .desktop-img'),
+       greatFoodImg3: () => cy.get(':nth-child(7) > .flex-wrapper > .img-wrapper > .desktop-img'),
        greatFoodImg4: () => cy.get("img[alt='Closeup of Chick-fil-A® Spicy Chicken Sandwich Meal with Waffle Potato Fries™ and an Iced Tea']"),
        greatFoodImg5: () => cy.get("img[alt='Chicken Sandwich']"),
        greatFoodHeading: () => cy.xpath("//h1[contains(text(),'Great Food')]"),       
@@ -35,8 +35,7 @@ class aboutlinks{
        GettoknowourfoodBtn: () => cy.xpath("//a[contains(text(),'Get to know our food')]"),
        ItsOurPleasureToServeYou: () => cy.xpath(`//h1[contains(text(),"It's our pleasure to serve you")]`),
        OrderCarryOut: () => cy.xpath("//p[contains(text(),'Order carry-out')]"),
-       
-       GivingBackImg: () => cy.get('.promo-frame').find('img',{force: true}),
+              
        givingBackHeading: () => cy.xpath("//h1[contains(text(),'Giving back')]"),
        Caringforothersthroughourfood: () => cy.xpath("//h4[contains(text(),'Caring for others through our food')]"),
        ChickfilASharedTable: () => cy.xpath("//p[contains(text(),'Chick-fil-A Shared Table')]"),
@@ -46,12 +45,15 @@ class aboutlinks{
        Caringforourcommunities: () => cy.xpath("//h4[contains(text(),'Caring for our communities')]"),
        ReadourGlobalImpactReport: () => cy.xpath("//h4[contains(text(),'Read our Global Impact Report')]"),
        ViewreportBtn: () => cy.xpath("//a[contains(text(),'View report')]"),  
-       GivingBackImg1: () =>   cy.get("img[srcset='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/RGB_%20Win%20the%20Heart_cfa_png.png/CFA2306023_TeamMemberHeartShape_Desktop_1500x370__AQ1.jpg']"),      
-       GivingBackImg2: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/Fresh%20food%20donation%20box%20with%20eggs_compressed.jpg?h=301&w=600&la=en']"),
-       GivingBackImg3: () => cy.get("img[alt='Giving back CA caring for planet desktop']"),
-       GivingBackImg4: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/2022%20Scholarships/Other%20Images/Module-Image-(600x300)-4.png?h=300&w=600&la=en']"),
-       GivingBackImg5: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/About%20Pages%20Images/yonge-street-mission-2.jpg?h=300&w=600&la=en']"),
-    
+       GivingBackImg: () => cy.get('.promo-frame'),
+       GivingBackImg1: () =>   cy.get(':nth-child(3) > .flex-wrapper > .img-wrapper > .desktop-img'),      
+       GivingBackImg2: () => cy.get("img[alt='Giving back CA caring for planet desktop']"),
+       GivingBackImg3: () => cy.get(':nth-child(6) > .flex-wrapper > .img-wrapper > .desktop-img'),
+       GivingBackImg4: () => cy.get(':nth-child(6) > .flex-wrapper > .img-wrapper > .desktop-img'),
+       GivingBackImg5: () => cy.get(':nth-child(8) > .flex-wrapper > .img-wrapper > .desktop-img'),
+       GlobalImpactReportTitle: () => cy.xpath("//span[contains(text(),'2022 Chick-fil-A Global Impact Report')]"),
+       GlobalImpactReportSubTitle: () => cy.xpath("//span[contains(text(),'Serving and strengthening communities through corp')]"),
+
     }
 
     clickaboutlnk(){
@@ -63,8 +65,8 @@ class aboutlinks{
     }
 
     assertAboutPageTitle() {
-        cy.fixture('storiessublinks').then((data) =>{
-        aboutlinks.elements.pageTitle().should('eq', data.homepagetitle);
+        cy.fixture('aboutsublinks').then((data) =>{
+        this.elements.pageTitle().should('eq', data.homepagetitle);
         })
     }
 
@@ -73,6 +75,7 @@ class aboutlinks{
     }
 
     assertWhoweAreLink(){
+        this.elements.whoweare().invoke('show');
         this.elements.whoweare().should('be.visible');
     }
 
@@ -85,7 +88,7 @@ class aboutlinks{
     }    
 
     clickWhoWeAre(){
-        this.elements.whoweare().click();
+        this.elements.whoweare().click({force: true});
     }
 
     assertWhoWeArePageUrl(){
@@ -93,7 +96,7 @@ class aboutlinks{
     }
 
     assertwhoWeAreImg(){
-        //this.elements.whoWeAreImg().should("be.visible", {force: true});
+        this.elements.whoWeAreImg().should("be.visible", {force: true});
     }
 
     assertwhoweareheadingtxt(){
@@ -109,7 +112,7 @@ class aboutlinks{
     }
 
     assertwhoWeAreImg1(){
-        //this.elements.whoWeAreImg1().should("be.visible");
+        this.elements.whoWeAreImg1().should("be.visible");
     }
 
     assertreadMoreaboutOurCultureNValue(){
@@ -141,7 +144,7 @@ class aboutlinks{
     }
 
     assertgreatFoodImg(){
-        //this.elements.greatFoodImg().should("be.visible", {force: true});
+        this.elements.greatFoodImg().should("be.visible", {force: true});
     }
 
     assertgreatFoodHeading(){
@@ -153,7 +156,7 @@ class aboutlinks{
     }
     
     assertgreatFoodImg1(){
-        //this.elements.greatFoodImg1().should("be.visible");
+        this.elements.greatFoodImg1().should("be.visible");
     }
 
     assertFoodyoucansmileabout(){
@@ -165,7 +168,7 @@ class aboutlinks{
     }
 
     assertgreatFoodImg2(){
-        //this.elements.greatFoodImg2().should("be.visible"); 
+        this.elements.greatFoodImg2().should("be.visible"); 
     }
     
     assertWhatavisitisallabout(){
@@ -173,7 +176,7 @@ class aboutlinks{
     }
 
     assertgreatFoodImg3(){
-        //this.elements.greatFoodImg3().should("be.visible"); 
+        this.elements.greatFoodImg3().should("be.visible"); 
     }
 
     assertGettoknowourfoodBtn(){
@@ -198,22 +201,92 @@ class aboutlinks{
 
     clickGivingBackLink(){
         this.elements.givingBack().click({force: true});
+    }
+
+    assertGivingBackURL(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'about/giving-back-page'); 
+    }
+
+    assertGivingBackImg(){
+        this.elements.GivingBackImg().invoke('show');
         this.elements.GivingBackImg().should("be.visible");
+    }
+
+    assertGivingBackHead(){
         this.elements.givingBackHeading().should("be.visible");
+    }
+
+    assertCaringforothersthroughourfood(){
         this.elements.Caringforothersthroughourfood().should("be.visible");
+    }
+
+    assertChickfilASharedTable(){
         this.elements.ChickfilASharedTable().should("be.visible");
+    }
+
+    assertCaringforourplanet(){
         this.elements.Caringforourplanet().should("be.visible");
+    }
+
+    assertViewour2022ImpactReport(){
         this.elements.Viewour2022ImpactReport().should("be.visible");
+    }
+
+    clickViewour2022ImpactReport(){
+        this.elements.Viewour2022ImpactReport().click();
+    }
+
+    assertCaringforpeople(){
         this.elements.Caringforpeople().should("be.visible");
+    }
+
+    assertCaringforourcommunities(){
         this.elements.Caringforourcommunities().should("be.visible");
+    }
+
+    assertReadourGlobalImpactReport(){
         this.elements.ReadourGlobalImpactReport().should("be.visible");
+    }
+
+    assertViewreportBtn(){
         this.elements.ViewreportBtn().should("be.visible");
+    }
+
+    clickViewreportBtn(){  
+        cy.get('a').invoke('removeAttr', 'target')  
+        this.elements.ViewreportBtn().invoke('removeAttr', 'target').click()
+    }
+
+    assertGivingBackImg1(){
         this.elements.GivingBackImg1().should("be.visible");
+    }
+
+    assertGivingBackImg2(){
         this.elements.GivingBackImg2().should("be.visible");
+    }
+
+    assertGivingBackImg3(){
         this.elements.GivingBackImg3().should("be.visible");
+    }
+
+    assertGivingBackImg4(){
         this.elements.GivingBackImg4().should("be.visible");
+    }
+
+    assertGivingBackImg5(){
         this.elements.GivingBackImg5().should("be.visible");
+    }
+
+    assertGlobalImpactReportURL(){
+        this.elements.urlAssert().should('include', 'https://chick-fil-a-2022-global-impact-report.com/'); 
+    }
+
+    assertGlobalImpactReportTitle(){
+        this.elements.GlobalImpactReportTitle().should("be.visible");
+    }
+
+    assertGlobalImpactReportSubTitle(){
+        this.elements.GlobalImpactReportSubTitle().should("be.visible");
     }
 }
 
