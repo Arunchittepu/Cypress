@@ -157,11 +157,11 @@ class careerslink{
     }
 
     assertFountainHomeLink(){
-        this.elements.FountainHomeLink().click(); 
+        this.elements.FountainHomeLink().should("be.visible");
     }
 
     assertFountainHelpLink(){
-        this.elements.FountainHelpLink().click(); 
+        this.elements.FountainHelpLink().should("be.visible");
     }
 
     assertViewAvailableOpportunitiesLink5(){        

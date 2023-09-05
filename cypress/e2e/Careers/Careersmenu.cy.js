@@ -98,36 +98,36 @@ describe("Home page test", () => {
         careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink5();          
         careerslink.clickViewAvailableOpportunitiesLink5(); 
-        careerslink.assertFountainUrl();
-        careerslink.assertFountainHomeLink();
-        careerslink.assertFountainHelpLink();
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();
       })
 
       it("Check the View Available Opportunities links 6 on Careers page", () => {
         careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink6();          
         careerslink.clickViewAvailableOpportunitiesLink6(); 
-        careerslink.assertFountainUrl();
-        careerslink.assertFountainHomeLink();
-        careerslink.assertFountainHelpLink();
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();
       })
 
       it("Check the View Available Opportunities links 7 on Careers page", () => {
         careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink7();          
         careerslink.clickViewAvailableOpportunitiesLink7(); 
-        careerslink.assertFountainUrl();
-        careerslink.assertFountainHomeLink();
-        careerslink.assertFountainHelpLink();
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();
       })
 
       it("Check the View Available Opportunities links 8 on Careers page", () => {
         careerslink.clickcareerslnk();
         careerslink.assertViewAvailableOpportunitiesLink8();          
         careerslink.clickViewAvailableOpportunitiesLink8(); 
-        careerslink.assertFountainUrl();
-        careerslink.assertFountainHomeLink();
-        careerslink.assertFountainHelpLink();        
+        careerslink.assertHigherMeUrl();
+        careerslink.assertHigherMeSIgnInBtn();
+        careerslink.assertHigherMeSIgnInBtn();       
       })
 
 

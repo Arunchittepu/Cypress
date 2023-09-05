@@ -37,8 +37,7 @@ describe('About sub links test', () => {
         aboutlinks.assertwhoWeAreImg4();           
     })
 
-    it('Check Great Food link page under About menu', () => {       
-        aboutlinks.hoverAboutlink();  
+    it('Check Great Food link page under About menu', () => {              
         aboutlinks.clickGreatFoodlink();   
         aboutlinks.assertgreatFoodHeadingUrl(); 
         aboutlinks.assertgreatFoodImg(); 
@@ -46,31 +45,27 @@ describe('About sub links test', () => {
       })
        
       
-    it('Check Real Chicken Rigorous standards section at Great Food link page', () => {       
-        aboutlinks.hoverAboutlink();  
+    it('Check Real Chicken Rigorous standards section at Great Food link page', () => {             
         aboutlinks.clickGreatFoodlink();  
         aboutlinks.assertRealchickenrigorousstandards();
         aboutlinks.assertgreatFoodImg1();
       })
       
-    it('Check Food you can smile about section at Great Food link page', () => {       
-        aboutlinks.hoverAboutlink();  
+    it('Check Food you can smile about section at Great Food link page', () => {            
         aboutlinks.clickGreatFoodlink();  
         aboutlinks.assertFoodyoucansmileabout();
         aboutlinks.assertCarefullycraftedrecipes();
         aboutlinks.assertgreatFoodImg2();
       })
       
-    it('Check What is visit All About section', () => {       
-        aboutlinks.hoverAboutlink();  
+    it('Check What is visit All About section', () => {              
         aboutlinks.clickGreatFoodlink();
         aboutlinks.assertWhatavisitisallabout();
         aboutlinks.assertgreatFoodImg3();
         aboutlinks.assertGettoknowourfoodBtn();
       })
 
-    it('Check Its Our Pleasure to Serve you section', () => {       
-        aboutlinks.hoverAboutlink();  
+    it('Check Its Our Pleasure to Serve you section', () => {               
         aboutlinks.clickGreatFoodlink();
         aboutlinks.assertItsOurPleasureToServeYou();
         aboutlinks.assertOrderCarryOut(); 
@@ -78,23 +73,20 @@ describe('About sub links test', () => {
         aboutlinks.assertgreatFoodImg5();      
     })
 
-    it('Check Giving Back link page under About menu', () => {          
-        aboutlinks.hoverAboutlink();   
+    it('Check Giving Back link page under About menu', () => {                 
         aboutlinks.clickGivingBackLink();      
         aboutlinks.assertGivingBackURL();
         aboutlinks.assertGivingBackImg();
         aboutlinks.assertGivingBackHead();
     })
 
-    it('Check Caring for others through our food section at Giving Back page', () => { 
-        aboutlinks.hoverAboutlink();   
+    it('Check Caring for others through our food section at Giving Back page', () => {       
         aboutlinks.clickGivingBackLink();  
         aboutlinks.assertCaringforothersthroughourfood();
         aboutlinks.assertGivingBackImg1();
     })
 
-    it('Check Caring for others through our Planet section at Giving Back page', () => { 
-        aboutlinks.hoverAboutlink();   
+    it('Check Caring for others through our Planet section at Giving Back page', () => {      
         aboutlinks.clickGivingBackLink();
         aboutlinks.assertChickfilASharedTable();
         aboutlinks.assertCaringforourplanet();
@@ -102,8 +94,7 @@ describe('About sub links test', () => {
         
     })
 
-    it('Check View our 2022 Impact Report page', () => {
-          aboutlinks.hoverAboutlink();   
+    it('Check View our 2022 Impact Report page', () => {            
           aboutlinks.clickGivingBackLink();    
           aboutlinks.assertViewour2022ImpactReport();
           aboutlinks.clickViewour2022ImpactReport();
@@ -111,19 +102,17 @@ describe('About sub links test', () => {
           aboutlinks.assertGlobalImpactReportSubTitle();
     })
 
-    it('Check Caring for people & Caring for our communities at Giving Back page', () => { 
-        aboutlinks.hoverAboutlink();   
+    it('Check Caring for people & Caring for our communities at Giving Back page', () => {         
         aboutlinks.clickGivingBackLink();
         aboutlinks.assertCaringforpeople();
         aboutlinks.assertCaringforourcommunities();
         aboutlinks.assertGivingBackImg5();
     })
 
-    it('Check Caring for people & Caring for our communities at Giving Back page', () => { 
-        aboutlinks.hoverAboutlink();   
+    it('Check Read our Global Impact Report section at Giving Back page', () => { 
+       
         aboutlinks.clickGivingBackLink();  
-        aboutlinks.assertReadourGlobalImpactReport();
-        
+        aboutlinks.assertReadourGlobalImpactReport();        
         aboutlinks.assertGivingBackImg2();
         aboutlinks.assertGivingBackImg3();
         aboutlinks.assertGivingBackImg4();       
