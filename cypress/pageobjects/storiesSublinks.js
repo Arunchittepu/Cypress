@@ -52,8 +52,11 @@ class storieslinks{
        AnnouncesEightRestaurant: () => cy.get('a').should('include.text','Announces Eighth Restaurant Location in Canada to Open on Thursday, March 9 in Barrie, Ontario'),              
        OpenNewRestaurantImg: () => cy.get("img[alt='Chick-fil-a']"),
        OpenNewRestaurant: () => cy.get('a').should('include.text','to Open New Restaurants in Kitchener and Toronto, Continuing Canadian Expansion'),       
-       TheChickfilASharedTableProgramTxt: () => cy.xpath("//h1[contains(text(),'The Chick-fil-A Shared Table Program'"),
+       TheChickfilASharedTableProgramTxt: () => cy.xpath("//h1[contains(text(),'The Chick-fil-A Shared Table Program')]"),
        SharedTableImpactTxt: () => cy.xpath("//strong[contains(text(),'Shared Table Impact')]"),
+       HubofOpportunitiesaimPageUrl: () => cy.xpath("//h1[contains(text(),'Chick-fil-A and UHC - Hub of Opportunities aim to ')]"),
+       HubofOpportunitiesaimPageSubTitle: () => cy.xpath("//p[contains(text(),'Chick-fil-A Donates US$25,000 to Nonprofit Organiz')]"),
+       HubofOpportunitiesaimParaLink: () => cy.xpath("//a[contains(text(),'UHC – Hub of Opportunities')]"),
     }
 
     clickstorieslnk(){

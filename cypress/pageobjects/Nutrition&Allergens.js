@@ -1,6 +1,7 @@
 class NutritionNAllergens{
 
     elements = {
+
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
         NutritionNAllergenslink: () => cy.xpath("//span[contains(text(),'Nutrition & Allergens')]"),
@@ -16,6 +17,6 @@ class NutritionNAllergens{
     }
 
 
-
 }
 module.exports = new NutritionNAllergens();
+
