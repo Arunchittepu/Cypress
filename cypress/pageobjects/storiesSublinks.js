@@ -443,8 +443,7 @@ class storieslinks{
     }
 
 
-
-    clickNewsLink(){
+clickNewsLink(){
         this.elements.News().click({force: true});
     }
 
@@ -566,6 +565,19 @@ class storieslinks{
     }
     assertAnnouncesEightRestaurantPgImg(){
         this.elements.AnnouncesEightRestaurantPgImg().should("be.visible");
+
+    assertNewTorontoRestautantHead(){
+        this.elements.NewTorontoRestautantHead().should("be.visible");
+    }
+    assertNewTorontoRestautantHeadImg(){
+        this.elements.NewTorontoRestautantHeadImg().should("be.visible");
+    }
+
+    assertAnnouncesEightRestaurantPara(){
+        this.elements.AnnouncesEightRestaurantPara().should("be.visible");
+    }
+    assertAnnouncesEightRestaurantPgImg(){
+        this.elements.AnnouncesEightRestaurantPgImg().should("be.visible");
     }
 
     assertOpenNewRestaurantPara(){
@@ -588,19 +600,27 @@ class storieslinks{
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-to-continue-canadian-expansion');
     }
 
-    assertHubofOpportunitiesaimPageUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/chick-fil-a-and-uhc-hub-of-operations-partnership-in-windsor-essex-community');
+    assertOpenNewRestaurantPara(){
+        this.elements.OpenNewRestaurantPara().should("be.visible");
+    }
+    assertOpenNewRestaurantPageImg(){
+        this.elements.OpenNewRestaurantPageImg().should("be.visible");
     }
 
-    assertHubofOpportunitiesaimPageSubTitle(){
-        this.elements.HubofOpportunitiesaimPageSubTitle().should("be.visible");
 
+    assertNewTorontoRestautantUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-announces-new-toronto-restaurant-to-open-on-thursday-may-25-at-cf-toronto-eaton-centre');
     }
 
-    assertHubofOpportunitiesaimParaLink(){
-        this.elements.HubofOpportunitiesaimParaLink().should("be.visible");
-
+    assertAnnouncesEightRestaurantUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/eighth-canada-restaurant');
     }
+
+    assertOpenNewRestaurantUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-to-continue-canadian-expansion');
+    }
+
+
 }
 
 module.exports = new storieslinks();
