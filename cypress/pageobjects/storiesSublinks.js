@@ -211,10 +211,8 @@ class storieslinks{
 
 
 
-
-
-    clickNewsLink(){
-        this.elements.News().click();
+clickNewsLink(){
+        this.elements.News().click({force: true});
     }
 
     assertNewsPageUrl(){
@@ -229,6 +227,24 @@ class storieslinks{
         this.elements.NewsSlider().should("be.visible");     
     }
 
+    clickNewsSliderLink(){
+        this.elements.NewsSlider().click({force: true});     
+    }
+
+    assertSpringsintotheseasonwithWatermelonMintbeverageflavoursUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-springs-into-the-season-with-watermelon-mint-beverage-flavours');
+    }
+
+    assertSeasonWithWaterMelonHead()
+    {        
+        this.elements.SeasonWithWaterMelonHead().should("be.visible"); 
+    }
+
+    assertSeasonWithWaterMelonImg()
+    {        
+        this.elements.SeasonWithWaterMelonImg().should("be.visible"); 
+    }
+
     assertTheLatestNews(){
         this.elements.TheLatestNews().should("be.visible");        
     }
@@ -241,12 +257,20 @@ class storieslinks{
         this.elements.MillionInScholarships().should("be.visible");         
     }
 
+    clickMillionInScholarships(){
+        this.elements.MillionInScholarships().click({force: true});         
+    }
+
     assertNewTorontoRestautantImg(){
         this.elements.NewTorontoRestautantImg().should("be.visible");      
     }
 
     assertNewTorontoRestautant(){
         this.elements.NewTorontoRestautant().should("be.visible");        
+    }
+
+    clickNewTorontoRestautant(){
+        this.elements.NewTorontoRestautant().click();        
     }
 
     assertAnnouncesEightRestaurantImg(){
@@ -257,12 +281,20 @@ class storieslinks{
         this.elements.AnnouncesEightRestaurant().should("be.visible");     
     }
 
+    clickAnnouncesEightRestaurant(){
+        this.elements.AnnouncesEightRestaurant().eq(0).click();     
+    }
+
     assertOpenNewRestaurantImg(){
         this.elements.OpenNewRestaurantImg().should("be.visible");       
     }
 
     assertOpenNewRestaurant(){
         this.elements.OpenNewRestaurant().should("be.visible");       
+    }
+
+    clickOpenNewRestaurant(){
+        this.elements.OpenNewRestaurant().eq(0).click();       
     }
 
     assertTheChickfilASharedTableProgramUrl(){
@@ -276,8 +308,53 @@ class storieslinks{
 
     assertSharedTableImpactTxt(){
         this.elements.SharedTableImpactTxt().should("be.visible");
-
     }
+
+    assertMillionInScholarshipsUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-awards-us24-million-in-scholarships-to-restaurant-team-members');
+    }
+
+    assertMilionScholarshipHead(){
+        this.elements.MilionScholarshipHead().should("be.visible");
+    }
+    assertBenefitsBodyTxt(){
+        this.elements.BenefitsBodyTxt().should("be.visible");
+    }
+
+    assertNewTorontoRestautantHead(){
+        this.elements.NewTorontoRestautantHead().should("be.visible");
+    }
+    assertNewTorontoRestautantHeadImg(){
+        this.elements.NewTorontoRestautantHeadImg().should("be.visible");
+    }
+
+    assertAnnouncesEightRestaurantPara(){
+        this.elements.AnnouncesEightRestaurantPara().should("be.visible");
+    }
+    assertAnnouncesEightRestaurantPgImg(){
+        this.elements.AnnouncesEightRestaurantPgImg().should("be.visible");
+    }
+
+    assertOpenNewRestaurantPara(){
+        this.elements.OpenNewRestaurantPara().should("be.visible");
+    }
+    assertOpenNewRestaurantPageImg(){
+        this.elements.OpenNewRestaurantPageImg().should("be.visible");
+    }
+
+
+    assertNewTorontoRestautantUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-announces-new-toronto-restaurant-to-open-on-thursday-may-25-at-cf-toronto-eaton-centre');
+    }
+
+    assertAnnouncesEightRestaurantUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/eighth-canada-restaurant');
+    }
+
+    assertOpenNewRestaurantUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-to-continue-canadian-expansion');
+    }
+
 
 }
 
