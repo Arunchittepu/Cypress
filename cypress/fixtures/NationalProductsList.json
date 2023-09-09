@@ -1,0 +1,74 @@
+[
+{
+    "productname": "img[alt='Chick-fil-A® Chicken Sandwich']",
+    "producturl": "menu/chick-fil-a-chicken-sandwich",
+    "productimage": "img[alt='Chick-fil-A® Chicken Sandwich']",
+    "productnameheading": "Chick-fil-A® Chicken Sandwich",
+    "orderfoodurl": "load-dot-com?itemTag=SANDWICH_CFA_CHICKEN"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Deluxe Sandwich']",
+    "producturl": "menu/chick-fil-a-deluxe-sandwich",
+    "productimage": "img[alt='Chick-fil-A® Deluxe w/ Natural Cheddar']",
+    "productnameheading": "Chick-fil-A® Deluxe Sandwich",
+    "orderfoodurl": "load-dot-com?itemTag=CFA_DLX_NATURAL_CHEDDAR"
+},
+
+{
+    "productname": "img[alt='Spicy Chicken Sandwich']",
+    "producturl": "menu/spicy-chicken-sandwich",
+    "productimage": "img[alt='Spicy Chicken Sandwich']",
+    "productnameheading": "Spicy Chicken Sandwich",
+    "orderfoodurl": "load-dot-com?itemTag=SPICY_CHICKEN_CFA_SANDWICH"
+},
+
+{
+    "productname": "img[alt='Spicy Deluxe Sandwich']",
+    "producturl": "menu/spicy-deluxe-sandwich",
+    "productimage": "img[alt='Spicy Deluxe Sandwich w/ Monterey Jack w/ Jalapeños Cheese']",
+    "productnameheading": "Spicy Deluxe Sandwich",
+    "orderfoodurl": "load-dot-com?itemTag=SPICY_DLX_MONTEREY_JALAPENOS"
+},
+
+{
+    "productname": "img[alt='Grilled Chicken Sandwich']",
+    "producturl": "menu/grilled-chicken-sandwich",
+    "productimage": "img[alt='Grilled Chicken Sandwich']",
+    "productnameheading": "Grilled Chicken Sandwich",
+    "orderfoodurl": "load-dot-com?itemTag=GRILLED_CHICKEN_SANDWICH"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Grilled Chicken Club Sandwich']",
+    "producturl": "menu/chick-fil-a-grilled-chicken-club-sandwich",
+    "productimage": "img[alt='Grilled Chicken Club w/ Natural Cheddar']",
+    "productnameheading": "Chick-fil-A® Grilled Chicken Club Sandwich",
+    "orderfoodurl": "load-dot-com?itemTag=CLUB_NATURAL_CHEDDAR"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Nuggets']",
+    "producturl": "menu/chick-fil-a-nuggets",
+    "productimage": "img[alt='8 ct Chick-fil-A® Nuggets']",
+    "productnameheading": "Chick-fil-A® Nuggets",
+    "orderfoodurl": "load-dot-com?itemTag=NUGGETS_CFA_8_COUNT"
+},
+
+{
+    "productname": "img[alt='Grilled Nuggets']",
+    "producturl": "menu/grilled-nuggets",
+    "productimage": "img[alt='8 ct Grilled Nuggets']",
+    "productnameheading": "Grilled Nuggets",
+    "orderfoodurl": "load-dot-com?itemTag=GRILLED_NUGGETS_8_COUNT"
+},
+
+{
+    "productname": "img[alt=' Spicy Chick-fil-A Chick-n-Strips®']",
+    "producturl": "menu/spicy-chick-fil-a-chick-n-strips",
+    "productimage": "img[alt='3 ct Spicy Chick-fil-A Chick-n-Strips®']",
+    "productnameheading": "Spicy Chick-fil-A Chick-n-Strips®",
+    "orderfoodurl": "load-dot-com?itemTag=SPICY_STRIPS_3_COUNT"
+}
+
+]

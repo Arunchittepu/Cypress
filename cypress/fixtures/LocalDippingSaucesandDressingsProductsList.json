@@ -1,0 +1,114 @@
+[
+{
+    "productname": "img[alt='Barbeque Sauce']",
+    "producturl": "locations/on/devonshire/menu/barbeque-sauce",
+    "productimage": "img[alt='Barbeque Sauce']",
+    "productnameheading": "Barbeque Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=BBQ_ALLACART"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Sauce']",
+    "producturl": "locations/on/devonshire/menu/chick-fil-a-sauce",
+    "productimage": "img[alt='Chick-fil-A® Sauce']",
+    "productnameheading": "Chick-fil-A® Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=CFA_SAUCE_ALLACART"
+},
+
+{
+    "productname": "img[alt='Garden Herb Ranch Sauce']",
+    "producturl": "locations/on/devonshire/menu/garden-herb-ranch-sauce-1",
+    "productimage": "img[alt='Garden Herb Ranch Sauce']",
+    "productnameheading": "Garden Herb Ranch Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=RANCH_ALLACART"
+},
+
+{
+    "productname": "img[alt='Honey Mustard Sauce']",
+    "producturl": "locations/on/devonshire/menu/honey-mustard-sauce",
+    "productimage": "img[alt='Honey Mustard Sauce']",
+    "productnameheading": "Honey Mustard Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=HONEY_MUS_ALLACART"
+},
+
+{
+    "productname": "img[alt='Polynesian Sauce']",
+    "producturl": "locations/on/devonshire/menu/polynesian-sauce",
+    "productimage": "img[alt='Polynesian Sauce']",
+    "productnameheading": "Polynesian Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=POLYNESIAN_ALLACART"
+},
+
+{
+    "productname": "img[alt='Sweet and Spicy Sriracha Sauce']",
+    "producturl": "locations/on/devonshire/menu/sweet-and-spicy-sriracha-sauce",
+    "productimage": "img[alt='Sweet and Spicy Sriracha Sauce']",
+    "productnameheading": "Sweet and Spicy Sriracha Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SRIRACHA_ALLACART"
+},
+
+{
+    "productname": "img[alt='Zesty Buffalo Sauce']",
+    "producturl": "locations/on/devonshire/menu/zesty-buffalo-sauce",
+    "productimage": "img[alt='Zesty Buffalo Sauce']",
+    "productnameheading": "Zesty Buffalo Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=BUFFALO_ALLACART"
+},
+
+{
+    "productname": "img[alt='Honey Roasted BBQ Sauce']",
+    "producturl": "locations/on/devonshire/menu/honey-roasted-bbq-sauce",
+    "productimage": "img[alt='Honey Roasted BBQ Sauce']",
+    "productnameheading": "Honey Roasted BBQ Sauce",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=HONEY_BBQ_ALLACART"
+},
+
+{
+    "productname": "img[alt='Avocado Lime Ranch Dressing']",
+    "producturl": "locations/on/devonshire/menu/avocado-lime-ranch-dressing",
+    "productimage": "img[alt='Avocado Lime Ranch Dressing']",
+    "productnameheading": "Avocado Lime Ranch Dressing",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=AVACADO_RAN_ALLACART"
+},
+
+{
+    "productname": "img[alt='Creamy Salsa Dressing']",
+    "producturl": "locations/on/devonshire/menu/creamy-salsa-dressing",
+    "productimage": "img[alt='Creamy Salsa Dressing']",
+    "productnameheading": "Creamy Salsa Dressing",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=CREAMY_SALSA_ALLACART"
+},
+
+{
+    "productname": "img[alt='Honey Mustard Dressing']",
+    "producturl": "locations/on/devonshire/menu/honey-mustard-dressing",
+    "productimage": "img[alt='Honey Mustard Dressing']",
+    "productnameheading": "Honey Mustard Dressing",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=HONEY_MUST_ALLACART"
+},
+
+{
+    "productname": "img[alt='Garden Herb Ranch Dressing']",
+    "producturl": "locations/on/devonshire/menu/garden-herb-ranch-dressing-1",
+    "productimage": "img[alt='Garden Herb Ranch Dressing']",
+    "productnameheading": "Garden Herb Ranch Dressing",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=GARLIC_HERB_ALLACART"
+},
+
+{
+    "productname": "img[alt='Balsamic Vinaigrette Dressing']",
+    "producturl": "locations/on/devonshire/menu/balsamic-vinaigrette-dressing",
+    "productimage": "img[alt='Balsamic Vinaigrette Dressing']",
+    "productnameheading": "Balsamic Vinaigrette Dressing",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=LITE_BALSAM_ALLACART"
+},
+
+{
+    "productname": "img[alt='Italian Dressing']",
+    "producturl": "locations/on/devonshire/menu/italian-dressing",
+    "productimage": "img[alt='Italian Dressing']",
+    "productnameheading": "Italian Dressing",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=ITALIAN_LITE_ALLACART"
+}
+
+]

@@ -1,0 +1,202 @@
+[
+{
+    "productname": "img[alt='Seasonal White Peach Beverages']",
+    "producturl": "menu/white-peach-sunjoy",
+    "productimage": "img[alt='White Peach Sunjoy® (Sweet Tea, Lemonade)']",
+    "productnameheading": "Seasonal White Peach Beverages",
+    "orderfoodurl": "load-dot-com?itemTag=WHITE_PEACH_SM"
+},
+
+{
+    "productname": "img[alt='Freshly-Brewed Iced Tea Sweetened']",
+    "producturl": "menu/freshly-brewed-iced-tea-sweetened",
+    "productimage": "img[alt='Medium Freshly-Brewed Iced Tea Sweetened']",
+    "productnameheading": "Freshly-Brewed Iced Tea Sweetened",
+    "orderfoodurl": "load-dot-com?itemTag=MD_SWEET_TEA"
+},
+
+{
+    "productname": "img[alt='Freshly-Brewed Iced Tea Unsweetened']",
+    "producturl": "menu/freshly-brewed-iced-tea-unsweetened",
+    "productimage": "img[alt='Medium Freshly-Brewed Iced Tea Unsweetened']",
+    "productnameheading": "Freshly-Brewed Iced Tea Unsweetened",
+    "orderfoodurl": "load-dot-com?itemTag=MD_TEA_UNSWEET"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Lemonade']",
+    "producturl": "menu/chick-fil-a-lemonade",
+    "productimage": "img[alt='Medium Chick-fil-A® Lemonade']",
+    "productnameheading": "Chick-fil-A® Lemonade",
+    "orderfoodurl": "load-dot-com?itemTag=MD_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Diet Lemonade']",
+    "producturl": "menu/chick-fil-a-diet-lemonade",
+    "productimage": "img[alt='Medium Chick-fil-A® Diet Lemonade']",
+    "productnameheading": "Chick-fil-A® Diet Lemonade",
+    "orderfoodurl": "load-dot-com?itemTag=MD_DIET_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)']",
+    "producturl": "menu/sunjoy-12-sweet-tea-12-lemonade",
+    "productimage": "img[alt='Medium Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)']",
+    "productnameheading": "Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+    "orderfoodurl": "load-dot-com?itemTag=MD_SWEET_TEA_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)']",
+    "producturl": "menu/sunjoy-12-sweet-tea-12-diet-lemonade",
+    "productimage": "img[alt='Medium Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)']",
+    "productnameheading": "Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+    "orderfoodurl": "load-dot-com?itemTag=MD_SWEET_TEA_DIET_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)']",
+    "producturl": "menu/sunjoy-12-unsweet-tea-12-lemonade",
+    "productimage": "img[alt='Medium Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)']",
+    "productnameheading": "Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+    "orderfoodurl": "load-dot-com?itemTag=MD_UNSWEET_TEA_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)']",
+    "producturl": "menu/sunjoy-12-unsweet-tea-12-diet-lemonade",
+    "productimage": "img[alt='Medium Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)']",
+    "productnameheading": "Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+    "orderfoodurl": "load-dot-com?itemTag=MD_UNSWEET_TEA_DIET_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Iced Coffee']",
+    "producturl": "menu/iced-coffee",
+    "productimage": "img[alt='Iced Coffee']",
+    "productnameheading": "Iced Coffee",
+    "orderfoodurl": "load-dot-com?itemTag=SM_ICED_COFFEE"
+},
+
+{
+    "productname": "img[alt='Coca-Cola®']",
+    "producturl": "menu/coca-cola",
+    "productimage": "img[alt='Medium Coca-Cola®']",
+    "productnameheading": "Coca-Cola®",
+    "orderfoodurl": "load-dot-com?itemTag=MD_COCA_COLA"
+},
+
+{
+    "productname": "img[alt='Diet Coke®']",
+    "producturl": "menu/diet-coke",
+    "productimage": "img[alt='Medium Diet Coke®']",
+    "productnameheading": "Diet Coke®",
+    "orderfoodurl": "load-dot-com?itemTag=MD_DIET_COKE"
+},
+
+{
+    "productname": "img[alt='Coke® Zero Sugar']",
+    "producturl": "menu/coke-zero-sugar",
+    "productimage": "img[alt='Medium Coke® Zero Sugar']",
+    "productnameheading": "Coke® Zero Sugar",
+    "orderfoodurl": "load-dot-com?itemTag=MD_COKE_ZERO"
+},
+
+{
+    "productname": "img[alt='Sprite®']",
+    "producturl": "menu/sprite",
+    "productimage": "img[alt='Medium Sprite®']",
+    "productnameheading": "Sprite®",
+    "orderfoodurl": "load-dot-com?itemTag=MD_SPRITE"
+},
+
+{
+    "productname": "img[alt='Honest Kids® Apple Juice']",
+    "producturl": "menu/honest-kids-apple-juice",
+    "productimage": "img[alt='Honest Kids® Apple Juice']",
+    "productnameheading": "Honest Kids® Apple Juice",
+    "orderfoodurl": "load-dot-com?itemTag=JUICE_MINUTE_MAID_APPLE"
+},
+
+{
+    "productname": "img[alt='Simply Orange®']",
+    "producturl": "menu/simply-orange",
+    "productimage": "img[alt='Simply Orange®']",
+    "productnameheading": "Simply Orange®",
+    "orderfoodurl": "load-dot-com?itemTag=JUICE_SIMPLY_ORANGE"
+},
+
+{
+    "productname": "img[alt='2% Milk']",
+    "producturl": "menu/2-milk",
+    "productimage": "img[alt='2% Milk']",
+    "productnameheading": "2% Milk",
+    "orderfoodurl": "load-dot-com?itemTag=2PER_WHITE_MILK"
+},
+
+{
+    "productname": "img[alt='Coffee']",
+    "producturl": "menu/coffee",
+    "productimage": "img[alt='Coffee']",
+    "productnameheading": "Coffee",
+    "orderfoodurl": "load-dot-com?itemTag=SM_COFFEE"
+},
+
+{
+    "productname": "img[alt='Hot Teas']",
+    "producturl": "menu/hot-teas",
+    "productimage": "img[alt='Hibiscus Berries Herbal Tea']",
+    "productnameheading": "Hot Teas",
+    "orderfoodurl": "load-dot-com?itemTag=HOT_HERBAL_TEA"
+},
+
+{
+    "productname": "img[alt='Gallon Beverages']",
+    "producturl": "menu/gallon-beverages",
+    "productimage": "img[alt='Gallon Chick-fil-A® Lemonade']",
+    "productnameheading": "Gallon Beverages",
+    "orderfoodurl": "load-dot-com?itemTag=GALLON_LEMONADE_REG"
+},
+
+{
+    "productname": "img[alt='Canada Dry® Ginger Ale']",
+    "producturl": "menu/canada-dry-ginger-ale",
+    "productimage": "img[alt='Medium Canada Dry® Ginger Ale']",
+    "productnameheading": "Canada Dry® Ginger Ale",
+    "orderfoodurl": "load-dot-com?itemTag=MD_CANADA_DRY"
+},
+
+{
+    "productname": "img[alt='Strawberry Passion Fruitopia®']",
+    "producturl": "menu/strawberry-passion-fruitopia",
+    "productimage": "img[alt='Medium Strawberry Passion Fruitopia®']",
+    "productnameheading": "Strawberry Passion Fruitopia®",
+    "orderfoodurl": "load-dot-com?itemTag=MD_FRUITOPIA_STRAWBERRY"
+},
+
+{
+    "productname": "img[alt='Fruitopia® Orange Groove']",
+    "producturl": "menu/fruitopia-orange-groove",
+    "productimage": "img[alt='Medium Fruitopia® Orange Groove']",
+    "productnameheading": "Fruitopia® Orange Groove",
+    "orderfoodurl": "load-dot-com?itemTag=MD_FRUITOPIA_ORANGE"
+},
+
+{
+    "productname": "img[alt='Ice Products']",
+    "producturl": "menu/ice-products",
+    "productimage": "img[alt='Medium Cup of Ice']",
+    "productnameheading": "Ice Products",
+    "orderfoodurl": "load-dot-com?itemTag=MED_CUP_OF_ICE"
+},
+
+{
+    "productname": "img[alt='smartwater®']",
+    "producturl": "menu/smartwater",
+    "productimage": "img[alt='smartwater®']",
+    "productnameheading": "smartwater®",
+    "orderfoodurl": "load-dot-com?itemTag=SMART_WATER"
+}
+
+]

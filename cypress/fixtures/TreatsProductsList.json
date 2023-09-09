@@ -1,0 +1,89 @@
+[
+{
+    "productname": "img[alt='Peach Milkshake']",
+    "producturl": "menu/peach-milkshake",
+    "productimage": "img[alt='Peach Milkshake']",
+    "productnameheading": "Peach Milkshake",
+    "orderfoodurl": "load-dot-com?itemTag=SM_PEACH_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Seasonal Frosted White Peach Lemonade']",
+    "producturl": "menu/frosted-white-peach-lemonade",
+    "productimage": "img[alt='Frosted White Peach Lemonade']",
+    "productnameheading": "Seasonal Frosted White Peach Lemonade",
+    "orderfoodurl": "load-dot-com?itemTag=FROSTED_WHITE_PEACH_LEM"
+},
+
+{
+    "productname": "img[alt='Frosted Lemonade']",
+    "producturl": "menu/frosted-lemonade",
+    "productimage": "img[alt='Frosted Lemonade']",
+    "productnameheading": "Frosted Lemonade",
+    "orderfoodurl": "load-dot-com?itemTag=SM_FROSTED_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Frosted Coffee']",
+    "producturl": "menu/frosted-coffee",
+    "productimage": "img[alt='Frosted Coffee']",
+    "productnameheading": "Frosted Coffee",
+    "orderfoodurl": "load-dot-com?itemTag=SM_FROSTED_COFFEE"
+},
+
+{
+    "productname": "img[alt='Chocolate Chunk Cookie']",
+    "producturl": "menu/chocolate-chunk-cookie",
+    "productimage": "img[alt='Chocolate Chunk Cookie']",
+    "productnameheading": "Chocolate Chunk Cookie",
+    "orderfoodurl": "load-dot-com?itemTag=COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL"
+},
+
+{
+    "productname": "img[alt='Cookies & Cream Milkshake']",
+    "producturl": "menu/cookies-cream-milkshake",
+    "productimage": "img[alt='Cookies & Cream Milkshake']",
+    "productnameheading": "Cookies & Cream Milkshake",
+    "orderfoodurl": "load-dot-com?itemTag=SM_COOKIES_CREAM_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Chocolate Milkshake']",
+    "producturl": "menu/chocolate-milkshake",
+    "productimage": "img[alt='Chocolate Milkshake']",
+    "productnameheading": "Chocolate Milkshake",
+    "orderfoodurl": "load-dot-com?itemTag=SM_CHOCOLATE_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Strawberry Milkshake']",
+    "producturl": "menu/strawberry-milkshake",
+    "productimage": "img[alt='Strawberry Milkshake']",
+    "productnameheading": "Strawberry Milkshake",
+    "orderfoodurl": "load-dot-com?itemTag=SM_STRAWBERRY_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Vanilla Milkshake']",
+    "producturl": "menu/vanilla-milkshake",
+    "productimage": "img[alt='Vanilla Milkshake']",
+    "productnameheading": "Vanilla Milkshake",
+    "orderfoodurl": "load-dot-com?itemTag=SM_VANILLA_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Icedream® Cone']",
+    "producturl": "menu/icedream-cone",
+    "productimage": "img[alt='Chick-fil-A® Icedream® Cone']",
+    "productnameheading": "Chick-fil-A® Icedream® Cone",
+    "orderfoodurl": "load-dot-com?itemTag=SM_ICEDREAM_CONE"
+},
+
+{
+    "productname": "img[alt='Small Icedream® Cup']",
+    "producturl": "menu/icedream-cup",
+    "productimage": "img[alt='Small Icedream® Cup']",
+    "productnameheading": "Small Icedream® Cup",
+    "orderfoodurl": "load-dot-com?itemTag=KD_ICEDREAM_CUP"
+}
+]

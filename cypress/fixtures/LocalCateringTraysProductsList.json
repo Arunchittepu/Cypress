@@ -1,0 +1,49 @@
+[
+{
+    "productname": "img[alt='Hot Chick-fil-A® Nugget Trays']",
+    "producturl": "locations/on/devonshire/catering/hot-chick-fil-a-nugget-trays",
+    "productimage": "img[alt='Small Hot Chick-fil-A® Nuggets Tray']",
+    "productnameheading": "Hot Chick-fil-A® Nugget Trays",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Chilled Chick-fil-A® Nugget Trays']",
+    "producturl": "locations/on/devonshire/catering/chilled-chick-fil-a-nugget-trays",
+    "productimage": "img[alt='Small Chilled Chick-fil-A® Nuggets Tray']",
+    "productnameheading": "Chilled Chick-fil-A® Nugget Trays",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Hot Spicy Chick-fil-A Chick-n-Strips® Trays']",
+    "producturl": "locations/on/devonshire/catering/hot-spicy-chick-fil-a-chick-n-strips-trays",
+    "productimage": "img[alt='Small Spicy Hot Chick-n-Strips™️ Tray']",
+    "productnameheading": "Hot Spicy Chick-fil-A Chick-n-Strips® Trays",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Chilled Spicy Chick-n-Strips™️ Trays']",
+    "producturl": "locations/on/devonshire/catering/chilled-spicy-chick-n-strips-trays",
+    "productimage": "img[alt='Small Spicy Chick-n-Strips™️ (Cooked & Chilled for Later) Tray']",
+    "productnameheading": "Chilled Spicy Chick-n-Strips™️ Trays",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Garden Salad Tray']",
+    "producturl": "locations/on/devonshire/catering/garden-salad-tray",
+    "productimage": "img[alt='Small Garden Salad Tray']",
+    "productnameheading": "Garden Salad Tray",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Chocolate Chunk Cookie Tray']",
+    "producturl": "locations/on/devonshire/catering/chocolate-chunk-cookie-tray",
+    "productimage": "img[alt='Small Chocolate Chunk Cookie Tray']",
+    "productnameheading": "Chocolate Chunk Cookie Tray",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+}
+]

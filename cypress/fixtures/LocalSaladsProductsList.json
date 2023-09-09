@@ -1,0 +1,17 @@
+[
+{
+    "productname": "img[alt='Cobb Salad']",
+    "producturl": "locations/on/devonshire/menu/cobb-salad",
+    "productimage": "img[alt='Cobb Salad w/ Nuggets']",
+    "productnameheading": "Cobb Salad",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=COBB_NUGGETS"
+},
+
+{
+    "productname": "img[alt='Spicy Southwest Salad']",
+    "producturl": "locations/on/devonshire/menu/spicy-southwest-salad",
+    "productimage": "img[alt='Spicy Southwest Salad w/ Spicy Grilled Filet (Cold)']",
+    "productnameheading": "Spicy Southwest Salad",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SPICY_SOUTHWEST_SALAD_SGF"
+}
+]
