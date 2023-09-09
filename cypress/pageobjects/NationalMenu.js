@@ -4,17 +4,25 @@ class NationalMenu{
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
        logolink: () => cy.get("a[class='icon-logo-desktop logo']"),
-       menulnk: () => cy.contains("Menu"),
-       Menucl: () => cy.xpath("//span[contains(text(),'Menu')]"),
+       Nationalmenulnk: () => cy.contains("Menu"),
+       NationalMenucl: () => cy.xpath("//span[contains(text(),'Menu')]"),
        hovermenu: () => cy.get("div.subnav a[href='/menu#entrees']"), 
        Availabilitymaydifferatdifferentlocations: () => cy.xpath("//p[contains(text(),'Availability may differ at different locations.')]"),     
        menuAvailabilityCallout: () => cy.get("div[class='menu-availability-callout']"),
-       ChickenSandwitch: () => cy.get("img[alt='Chick-fil-A® Chicken Sandwich']"),
-       DeluxSandwitch: () => cy.get("img[alt='Chick-fil-A® Deluxe Sandwich']"),
-       SpicyChickenSandwitch: () => cy.get("img[alt='Spicy Chicken Sandwich']"),
-       SpicyDeluxSandwitch: () => cy.get("img[alt='Spicy Deluxe Sandwich']"),
-       GrilledChickenSandwitch: () => cy.get("img[alt='Grilled Chicken Sandwich']"),
-       GrilledChickenClubSandwitch: () => cy.get("img[alt='Chick-fil-A® Grilled Chicken Club Sandwich']"),
+       ChickenSandwich: () => cy.get("img[alt='Chick-fil-A® Chicken Sandwich']"),
+       ChickenSandwichImg: () => cy.get("img[alt='Chick-fil-A® Chicken Sandwich']"),
+       OrderNowBtn: () => cy.xpath("//a[contains(text(),'Order now')]"),
+       ChickenSandwichPrdName: () => cy.get('.p-details__h1').should('include.text', 'Chick-fil-A® Chicken Sandwich'),
+       
+       OrderFoodLink: () =>  cy.get("img[alt='Pickup Bag Grey Icon']"),
+       ExtrasSection: () => cy.xpath("//h2[@id='pdp-accord-heading']"),
+       IngredientsSection: () => cy.xpath("//h2[@id='pdp-ingredients-accord-heading']"),
+
+       DeluxeSandwich: () => cy.get("img[alt='Chick-fil-A® Deluxe Sandwich']"),
+       SpicyChickenSandwich: () => cy.get("img[alt='Spicy Chicken Sandwich']"),
+       SpicyDeluxeSandwich: () => cy.get("img[alt='Spicy Deluxe Sandwich']"),
+       GrilledChickenSandwich: () => cy.get("img[alt='Grilled Chicken Sandwich']"),
+       GrilledChickenClubSandwich: () => cy.get("img[alt='Chick-fil-A® Grilled Chicken Club Sandwich']"),
        Nuggets: () => cy.get("img[alt='Chick-fil-A® Nuggets']"),
        GrilledNuggets: () => cy.get("img[alt='Grilled Nuggets']"),
        SpicyChickStrips: () => cy.get("img[alt='Spicy Chick-fil-A Chick-n-Strips®']"),
@@ -104,12 +112,19 @@ class NationalMenu{
        ChickfilAChickenSandwich: () => cy.get("img[alt='Chick-fil-A® Chicken Sandwich']"),
        SpicyChickenSandwich: () => cy.get("img[alt='Spicy Chicken Sandwich']"),
        ChickfilANuggets: () => cy.get("img[alt='Chick-fil-A® Nuggets']"),
+       ClickheretostartacateringorderBtn: () => cy.xpath("//a[contains(text(),'Click here to start a catering order')]"),
     }
 
- 
+    callBack(){
+        cy.go('back');
+    }
 
-    clickmenulnk(){
-        this.elements.menulnk().click();
+    clickNationalmenulnk(){
+        this.elements.Nationalmenulnk().click();
+    }
+
+    assertNationalMenuUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu');
     }
 
     assertmenuAvailabilityCallout(){
@@ -120,28 +135,64 @@ class NationalMenu{
         this.elements.Availabilitymaydifferatdifferentlocations().should('be.visible');
     }
     
-    assertChickenSandwitch(){
-        this.elements.ChickenSandwitch().should('be.visible');
+    assertChickenSandwich(){
+        this.elements.ChickenSandwich().should('be.visible');
     }
 
-    assertDeluxSandwitch(){
-        this.elements.DeluxSandwitch().should('be.visible');
+    clickChickenSandwich(){
+        this.elements.ChickenSandwich().click();
     }
 
-    assertSpicyChickenSandwitch(){
-        this.elements.SpicyChickenSandwitch().should('be.visible');
+    assertChickenSandwichUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'menu/chick-fil-a-chicken-sandwich');
     }
 
-    assertSpicyDeluxSandwitch(){
-        this.elements.SpicyDeluxSandwitch().should('be.visible');
+    assertChickenSandwichImg(){
+        this.elements.ChickenSandwichImg().should('be.visible');
     }
 
-    assertGrilledChickenSandwitch(){
-        this.elements.GrilledChickenSandwitch().should('be.visible');
+    assertChickenSandwichPrdName(){
+        this.elements.ChickenSandwichPrdName().should('be.visible');
     }
 
-    assertGrilledChickenClubSandwitch(){
-        this.elements.GrilledChickenClubSandwitch().should('be.visible');
+    assertOrderFoodLink(){
+        this.elements.OrderFoodLink().should('be.visible');
+    }
+
+    clickOrderFoodLink(){
+        this.elements.OrderFoodLink().eq(0).click({force: true});
+    }
+
+    assertOrderFoodUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().orderPageUrl + 'load-dot-com?itemTag=SANDWICH_CFA_CHICKEN');
+    }
+
+    assertExtrasSection(){
+        this.elements.ExtrasSection().should('be.visible');
+    }
+
+    assertIngredientsSection(){
+        this.elements.IngredientsSection().should('be.visible');
+    }
+
+    assertDeluxeSandwich(){
+        this.elements.DeluxeSandwich().should('be.visible');
+    }
+
+    assertSpicyChickenSandwich(){
+        this.elements.SpicyChickenSandwich().should('be.visible');
+    }
+
+    assertSpicyDeluxeSandwich(){
+        this.elements.SpicyDeluxeSandwich().should('be.visible');
+    }
+
+    assertGrilledChickenSandwich(){
+        this.elements.GrilledChickenSandwich().should('be.visible');
+    }
+
+    assertGrilledChickenClubSandwich(){
+        this.elements.GrilledChickenClubSandwich().should('be.visible');
     }
 
     assertNuggets(){
@@ -153,13 +204,49 @@ class NationalMenu{
     }
 
     assertSpicyChickStrips(){
-        this.elements.ChickenSandwitch().should('be.visible');
+        this.elements.ChickenSandwich().should('be.visible');
     }   
 
-    hovermenulnk(){
-        this.elements.Menucl().trigger('mouseover')        
+    hoverNationalmenulnk(){
+        this.elements.NationalMenucl().trigger('mouseover')        
     }
 
+    assertEntréeslnk(){
+        this.elements.Entréeslnk().should('be.visible');
+    }
+
+    assertSaladslink(){
+        this.elements.Saladslink().should('be.visible');
+    }
+
+    assertSideslink(){
+        this.elements.Sideslink().should('be.visible');
+    }
+
+    assertKidsMeallink(){
+        this.elements.Saladslink().should('be.visible');
+    }
+
+    assertTreatslink(){
+        this.elements.Treatslink().should('be.visible');
+    }
+
+    assertBeverageslink(){
+        this.elements.Beverageslink().should('be.visible');
+    }
+
+    assertDippingSaucesDressingslink(){
+        this.elements.DippingSaucesDressingslink().should('be.visible');
+    }
+
+    assertCateringlink(){
+        this.elements.Cateringlink().should('be.visible');
+    }
+
+    assertTreatslink(){
+        this.elements.Treatslink().should('be.visible');
+    }
+    
     clickEntréeslnk(){
         this.elements.Entréeslnk().click({force: true});
     }
@@ -169,7 +256,7 @@ class NationalMenu{
     }
 
     clickSaladslink(){
-        this.elements.Saladslink().click();
+        this.elements.Saladslink().click({force: true});
     }
 
     assertSaladsUrl(){
@@ -185,7 +272,7 @@ class NationalMenu{
     }
 
     clickSideslink(){
-        this.elements.Sideslink().click();
+        this.elements.Sideslink().click({force: true});
     }
 
     assertSidesUrl(){
@@ -213,7 +300,7 @@ class NationalMenu{
     }
     
     clickKidsMeallink(){
-        this.elements.KidsMeallink().click();
+        this.elements.KidsMeallink().click({force: true});
     }
 
     assertKidsMealUrl(){
@@ -229,7 +316,7 @@ class NationalMenu{
     }
     
     clickTreatslink(){
-        this.elements.Treatslink().click();
+        this.elements.Treatslink().click({force: true});
     }
 
     assertTreatsUrl(){
@@ -281,7 +368,7 @@ class NationalMenu{
     }
 
     clickBeverageslink(){
-        this.elements.Beverageslink().click();
+        this.elements.Beverageslink().click({force: true});
     }
 
     assertBeveragesUrl(){
@@ -389,7 +476,7 @@ class NationalMenu{
     }
 
     clickDippingSaucesDressingslink(){
-        this.elements.DippingSaucesDressingslink().click();
+        this.elements.DippingSaucesDressingslink().click({force: true});
     }
 
     assertDippingSaucesDressingslinkUrl(){
@@ -457,7 +544,7 @@ class NationalMenu{
     }
     
     clickCateringlink(){
-        this.elements.Cateringlink().click();
+        this.elements.Cateringlink().click({force: true});
     }
 
     assertCateringUrl(){
@@ -476,6 +563,237 @@ class NationalMenu{
         this.elements.ChickfilANuggets().should('be.visible');
     }
 
+    assertOrderNowBtn(){        
+        this.elements.OrderNowBtn().should('be.visible');
+    }
+
+    clickOrderNowBtn(){        
+        this.elements.OrderNowBtn().click();
+    }
+
+    assertClickheretostartacateringorderBtn(){
+        this.elements.ClickheretostartacateringorderBtn().should("be.visible");
+    }
+
+    ClickheretostartacateringorderBtn(){
+        this.elements.ClickheretostartacateringorderBtn().click();
+    }
+
+    testNationalProductsdetails(){
+        cy.fixture("NationalProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl);                         
+            cy.go('back');                   
+        });
+        })
+    }
+
+    testEntréesProductsdetails(){
+        cy.fixture("EntréesProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickEntréeslnk();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl);                        
+            cy.go('back');                       
+        });
+        })
+    }
+
+
+    testSaladsProductsdetails(){
+        cy.fixture("SaladsProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickSaladslink();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl);                         
+            cy.go('back');                       
+        });
+        })
+    }
+
+    testSidesProductsdetails(){
+        cy.fixture("SidesProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickSideslink();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl);                   
+            cy.go('back');                      
+        });
+        });
+    }
+
+    testSidesProductsdetails(){
+        cy.fixture("KidsMealsProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickKidsMeallink();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();            
+            this.clickOrderFoodLink();             
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
+            cy.go('back');                   
+            });
+        })
+    }
+
+    testTreatsProductsdetails(){
+        cy.fixture("TreatsProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickTreatslink();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            //this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
+            cy.go('back');                   
+            });
+        });
+    }
+
+    testBeveragesProductsdetails(){
+        cy.fixture("BeveragesProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickBeverageslink();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),                    
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
+            cy.go('back');                   
+            });
+        });
+    }
+
+    testDippingSaucesandDressingsProductsdetails(){
+        cy.fixture("DippingSaucesandDressingsProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickDippingSaucesDressingslink();
+            cy.get(userdata.productname).should("be.visible");
+            cy.get(userdata.productname).eq(0).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            
+            this.assertIngredientsSection();
+            this.assertOrderFoodLink();
+            this.clickOrderFoodLink();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
+            cy.go('back');                           
+            });
+        });
+    }
+
+    testCateringProductsdetails(){
+        cy.fixture("CateringProductsList").then((data) => {
+            data.forEach((userdata) => {
+            this.clickNationalmenulnk();
+            this.clickCateringlink();
+            cy.get(userdata.productname).should("be.visible");
+            this.assertOrderNowBtn();
+            cy.get(userdata.productname).click();            
+            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+            cy.get(userdata.productimage).should("be.visible");            
+            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+            //this.assertExtrasSection();
+            this.assertIngredientsSection();
+            this.assertClickheretostartacateringorderBtn();
+            this.ClickheretostartacateringorderBtn();            
+            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
+            cy.go('back');                   
+            });
+        });
+    }
+
+    /*
+        cy.fixture("NationalSubMenuList").then((datasubmenu) => {
+            datasubmenu.forEach((submenu) => {
+                cy.fixture("JsonFileNameList").then((datafilename) => {
+                    //string datfilename = this.datafilename
+                    datafilename.forEach((filename) => {
+                        
+
+                        cy.fixture(filename).then((data) => {
+                            data.forEach((userdata) => {
+                            this.clickNationalmenulnk();
+                            //this.clickCateringlink();
+                            cy.contains(submenu.submenuname).click({force: true});
+                            cy.get(userdata.productname).should("be.visible");
+                            this.assertOrderNowBtn();
+                            cy.get(userdata.productname).click();            
+                            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
+                            cy.get(userdata.productimage).should("be.visible");            
+                            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
+                            //this.assertExtrasSection();
+                            this.assertIngredientsSection();
+                            this.assertClickheretostartacateringorderBtn();
+                            this.clickheretostartacateringorderBtn();            
+                            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
+                            cy.go('back');                   
+                });
+            });});
+        });});})
+    }*/
 }
 
 module.exports = new NationalMenu();

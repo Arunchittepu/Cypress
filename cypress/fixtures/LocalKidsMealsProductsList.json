@@ -1,0 +1,20 @@
+[
+{
+    "productname": "img[alt='5 Ct Nuggets Kid\\'s Meal']",
+    "PrdBuyNowBtn": "load-dot-com?itemTag=KD_MEAL_CA_NUGS_5CT",
+    "producturl": "locations/on/devonshire/menu/chickfila-nuggets-kids-meal",
+    "productimage": "img[alt='5 ct Chick-fil-A® Nuggets']",
+    "productnameheading": "5 Ct Nuggets Kid's Meal",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=5CT_NUGGETS"
+    
+},
+
+{
+    "productname": "img[alt='5 Ct Grilled Nuggets Kid\\'s Meal']",
+    "PrdBuyNowBtn": "load-dot-com?itemTag=KD_MEAL_CA_GRLDNUGS_5CT",
+    "producturl": "locations/on/devonshire/menu/grilled-nuggets-kids-meal",
+    "productimage": "img[alt='5 ct Grilled Nuggets']",
+    "productnameheading": "5 Ct Grilled Nuggets Kid's Meal",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=GRILLED_NUGS_5_CT"
+}
+]

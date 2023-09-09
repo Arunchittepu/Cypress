@@ -1,0 +1,41 @@
+[
+{
+    "productname": "img[alt='Chick-fil-A Waffle Potato Fries®']",
+    "producturl": "locations/on/devonshire/menu/chick-fil-a-waffle-potato-fries",
+    "productimage": "img[alt='Medium Chick-fil-A Waffle Potato Fries®']",
+    "productnameheading": "Chick-fil-A Waffle Potato Fries®",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=MD_WAFFLE_POTATO_FRIES"
+},
+
+{
+    "productname": "img[alt='Side Salad']",
+    "producturl": "locations/on/devonshire/menu/side-salad",
+    "productimage": "img[alt='Side Salad']",
+    "productnameheading": "Side Salad",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SALAD_SIDE"
+},
+
+{
+    "productname": "img[alt='Chicken Noodle Soup']",
+    "producturl": "locations/on/devonshire/menu/chicken-noodle-soup",
+    "productimage": "img[alt='Cup of Chicken Noodle Soup']",
+    "productnameheading": "Chicken Noodle Soup",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_CHICKEN_SOUP"
+},
+
+{
+    "productname": "img[alt='Waffle Potato Chips']",
+    "producturl": "locations/on/devonshire/menu/waffle-potato-chips",
+    "productimage": "img[alt='Waffle Potato Chips']",
+    "productnameheading": "Waffle Potato Chips",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=CHIPS_WAFFLE"
+},
+
+{
+    "productname": "img[alt='Buddy Fruits® Multifruit']",
+    "producturl": "locations/on/devonshire/menu/buddy-fruits-multifruit",
+    "productimage": "img[alt='Buddy Fruits® Multifruit']",
+    "productnameheading": "Buddy Fruits® Multifruit",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=BUDDY_FRUITS_MULTIPACK"
+}
+]

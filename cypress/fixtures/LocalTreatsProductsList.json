@@ -1,0 +1,75 @@
+[
+
+
+{
+    "productname": "img[alt='Frosted Lemonade']",
+    "producturl": "locations/on/devonshire/menu/frosted-lemonade",
+    "productimage": "img[alt='Frosted Lemonade']",
+    "productnameheading": "Frosted Lemonade",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_FROSTED_LEMONADE"
+},
+
+{
+    "productname": "img[alt='Frosted Coffee']",
+    "producturl": "locations/on/devonshire/menu/frosted-coffee",
+    "productimage": "img[alt='Frosted Coffee']",
+    "productnameheading": "Frosted Coffee",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_FROSTED_COFFEE"
+},
+
+{
+    "productname": "img[alt='Chocolate Chunk Cookie']",
+    "producturl": "locations/on/devonshire/menu/chocolate-chunk-cookie",
+    "productimage": "img[alt='Chocolate Chunk Cookie']",
+    "productnameheading": "Chocolate Chunk Cookie",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL"
+},
+
+{
+    "productname": "img[alt='Cookies & Cream Milkshake']",
+    "producturl": "locations/on/devonshire/menu/cookies-cream-milkshake",
+    "productimage": "img[alt='Cookies & Cream Milkshake']",
+    "productnameheading": "Cookies & Cream Milkshake",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_COOKIES_CREAM_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Chocolate Milkshake']",
+    "producturl": "locations/on/devonshire/menu/chocolate-milkshake",
+    "productimage": "img[alt='Chocolate Milkshake']",
+    "productnameheading": "Chocolate Milkshake",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_CHOCOLATE_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Strawberry Milkshake']",
+    "producturl": "locations/on/devonshire/menu/strawberry-milkshake",
+    "productimage": "img[alt='Strawberry Milkshake']",
+    "productnameheading": "Strawberry Milkshake",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_STRAWBERRY_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Vanilla Milkshake']",
+    "producturl": "locations/on/devonshire/menu/vanilla-milkshake",
+    "productimage": "img[alt='Vanilla Milkshake']",
+    "productnameheading": "Vanilla Milkshake",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_VANILLA_MILKSHAKE"
+},
+
+{
+    "productname": "img[alt='Chick-fil-A® Icedream® Cone']",
+    "producturl": "locations/on/devonshire/menu/icedream-cone",
+    "productimage": "img[alt='Chick-fil-A® Icedream® Cone']",
+    "productnameheading": "Chick-fil-A® Icedream® Cone",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=SM_ICEDREAM_CONE"
+},
+
+{
+    "productname": "img[alt='Small Icedream® Cup']",
+    "producturl": "locations/on/devonshire/menu/icedream-cup",
+    "productimage": "img[alt='Small Icedream® Cup']",
+    "productnameheading": "Small Icedream® Cup",
+    "orderfoodurl": "load-dot-com?locationNumber=30005&itemTag=KD_ICEDREAM_CUP"
+}
+]

@@ -1,0 +1,26 @@
+[
+{
+    "productname": "img[alt='Chick-fil-A® Chicken Sandwich Packaged Meal']",
+    "producturl": "locations/on/devonshire/catering/chick-fil-a-chicken-sandwich-packaged-meal",
+    "productimage": "img[alt='Regular Chick-fil-A® Chicken Sandwich Packaged Meal']",
+    "productnameheading": "Chick-fil-A® Chicken Sandwich Packaged Meal",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='Spicy Chicken Sandwich Packaged Meal']",
+    "producturl": "locations/on/devonshire/catering/spicy-chicken-sandwich-packaged-meal",
+    "productimage": "img[alt='Regular Spicy Chicken Sandwich Packaged Meal']",
+    "productnameheading": "Spicy Chicken Sandwich Packaged Meal",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+},
+
+{
+    "productname": "img[alt='8 ct Chick-fil-A® Nuggets Packaged Meal']",
+    "producturl": "locations/on/devonshire/catering/8-ct-chick-fil-a-nuggets-packaged-meal",
+    "productimage": "img[alt='Regular 8 ct Chick-fil-A® Nuggets Packaged Meal']",
+    "productnameheading": "8 ct Chick-fil-A® Nuggets Packaged Meal",
+    "orderfoodurl": "load-catering?locationNumber=30005"
+}
+
+]
