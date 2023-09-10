@@ -20,6 +20,9 @@ describe('National Menu sub links test', () => {
         LocalMenu.testLocalEntreesProductsdetails();
     });
     
+    it('Verify Local Beverages Sub Menu page', () => {       
+      LocalMenu.testLocalBeveragesProductsdetails();
+    });
         
     it('Verify Local Salads Sub Menu page', () => {       
       LocalMenu.testLocalSaladsProductsdetails(); 
@@ -36,11 +39,7 @@ describe('National Menu sub links test', () => {
     it('Verify Local Treats Sub Menu page', () => { 
       cy.visit(Cypress.config().baseUrl + "locations/on/devonshire/menu");
       LocalMenu.testLocalTreatsProductsdetails();
-    });
-
-    it('Verify Local Beverages Sub Menu page', () => {       
-      LocalMenu.testLocalBeveragesProductsdetails();
-    });
+    });   
 
     it('Verify Local Dipping Sauces Dressings Sub Menu page', () => { 
       LocalMenu.testLocalDippingSaucesandDressingsProductsdetails();

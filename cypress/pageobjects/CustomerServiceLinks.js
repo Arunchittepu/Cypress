@@ -1,4 +1,4 @@
-class footerleft{
+class CustomerServiceLinks{
 
     elements = {
         pageTitle: () => cy.title(),
@@ -49,7 +49,7 @@ class footerleft{
     
 
     testReadOurFAQsSection(){                                
-        cy.fixture("FooterLeft").then((data) => {
+        cy.fixture("CustomerServiceLinks").then((data) => {
                 data.forEach((userdata) => {
                    
                 cy.xpath("//span[contains(text(), '" +userdata.faq + "')]").should("be.visible");  
@@ -65,4 +65,4 @@ class footerleft{
 
 
 
-module.exports = new footerleft();
+module.exports = new CustomerServiceLinks();

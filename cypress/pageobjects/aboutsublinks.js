@@ -20,7 +20,12 @@ class aboutlinks{
        whoWeAreImg3: () => cy.get("img[alt='Picture of Truett Cathy sitting in a chair']"),
        moreThanChicken: () => cy.xpath("//h4[contains(text(),'More than chicken')]"),
        whoWeAreImg4: () => cy.get("img[alt='Who We Are CA more than chicken desktop']"),
-
+       AboutChickfilAWhoweareTitle: () => cy.xpath("//h1[contains(text(),'About Chick-fil-A: Who we are')]"),
+       AboutChickfilAWhoweareSubTitle: () => cy.xpath("//strong[contains(text(),'When was Chick-fil-A founded?')]"),
+       HowChickfilACanadaisgivingbacktolocalcommunitiesTitle: () => cy.xpath("//h1[contains(text(),'How Chick-fil-A Canada is giving back to local com')]"),
+       HowChickfilACanadaisgivingbacktolocalcommunitiesSubTitle: () => cy.xpath("//strong[contains(text(),'Caring for our communities')]"),
+       
+       
        greatFoodImg: () => cy.get('.promo-frame'),
        greatFoodImg1: () => cy.get(':nth-child(3) > .flex-wrapper > .img-wrapper > .desktop-img'),
        greatFoodImg2: () => cy.get(':nth-child(6) > .flex-wrapper > .img-wrapper > .desktop-img'),
@@ -35,7 +40,8 @@ class aboutlinks{
        GettoknowourfoodBtn: () => cy.xpath("//a[contains(text(),'Get to know our food')]"),
        ItsOurPleasureToServeYou: () => cy.xpath(`//h1[contains(text(),"It's our pleasure to serve you")]`),
        OrderCarryOut: () => cy.xpath("//p[contains(text(),'Order carry-out')]"),
-              
+        
+       ReadHowCanadaOperatorsareGivinBack: () => cy.xpath("//a[contains(text(),'Read how Canada Operators are giving back')]"),
        givingBackHeading: () => cy.xpath("//h1[contains(text(),'Giving back')]"),
        Caringforothersthroughourfood: () => cy.xpath("//h4[contains(text(),'Caring for others through our food')]"),
        ChickfilASharedTable: () => cy.xpath("//p[contains(text(),'Chick-fil-A Shared Table')]"),
@@ -119,6 +125,43 @@ class aboutlinks{
         this.elements.readMoreaboutOurCultureNValue().should("be.visible");
     }
 
+    clickreadMoreaboutOurCultureNValue(){
+        this.elements.readMoreaboutOurCultureNValue().click();
+    }
+
+    assertAboutChickfilAWhoweareUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'about-chick-fil-a-who-we-are'); 
+    }
+
+    assertAboutChickfilAWhoweareTitle(){
+        this.elements.AboutChickfilAWhoweareTitle().should("be.visible");
+    }
+
+    assertAboutChickfilAWhoweareSubTitle(){
+        this.elements.AboutChickfilAWhoweareSubTitle().should("be.visible");
+    }
+
+    assertReadHowCanadaOperatorsareGivinBackBtn(){
+        this.elements.ReadHowCanadaOperatorsareGivinBack().should("be.visible");
+    }
+
+    clickReadHowCanadaOperatorsareGivinBackBtn(){
+        this.elements.ReadHowCanadaOperatorsareGivinBack().click();
+    }
+
+    assertHowChickfilACanadaisgivingbacktolocalcommunitiesUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/how-chick-fil-a-canada-is-giving-back-to-local-communities'); 
+    }
+
+    assertHowChickfilACanadaisgivingbacktolocalcommunitiesTitle(){
+        this.elements.HowChickfilACanadaisgivingbacktolocalcommunitiesTitle().should("be.visible");
+    }
+
+    assertHowChickfilACanadaisgivingbacktolocalcommunitiesSubTitle(){
+        this.elements.HowChickfilACanadaisgivingbacktolocalcommunitiesSubTitle().should("be.visible");
+    }
+
+
     assertwhoWeAreImg2(){
         this.elements.whoWeAreImg2().should("be.visible");        
     }
@@ -182,6 +225,10 @@ class aboutlinks{
     assertGettoknowourfoodBtn(){
         this.elements.GettoknowourfoodBtn().should("be.visible"); 
     }
+
+    clickGettoknowourfoodBtn(){
+        this.elements.GettoknowourfoodBtn().click(); 
+    }
     
     assertItsOurPleasureToServeYou(){
         this.elements.ItsOurPleasureToServeYou().should("be.visible");
@@ -189,6 +236,14 @@ class aboutlinks{
 
     assertOrderCarryOut(){
         this.elements.OrderCarryOut().should("be.visible"); 
+    }
+
+    clickOrderCarryOut(){
+        this.elements.OrderCarryOut().click(); 
+    }
+
+    assertOrderCarryOutUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().orderPageUrl + 'location'); 
     }
 
     assertgreatFoodImg4(){

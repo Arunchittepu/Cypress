@@ -1,21 +1,5 @@
 [
 {
-    "productname": "img[alt='Peach Milkshake']",
-    "producturl": "menu/peach-milkshake",
-    "productimage": "img[alt='Peach Milkshake']",
-    "productnameheading": "Peach Milkshake",
-    "orderfoodurl": "load-dot-com?itemTag=SM_PEACH_MILKSHAKE"
-},
-
-{
-    "productname": "img[alt='Seasonal Frosted White Peach Lemonade']",
-    "producturl": "menu/frosted-white-peach-lemonade",
-    "productimage": "img[alt='Frosted White Peach Lemonade']",
-    "productnameheading": "Seasonal Frosted White Peach Lemonade",
-    "orderfoodurl": "load-dot-com?itemTag=FROSTED_WHITE_PEACH_LEM"
-},
-
-{
     "productname": "img[alt='Frosted Lemonade']",
     "producturl": "menu/frosted-lemonade",
     "productimage": "img[alt='Frosted Lemonade']",

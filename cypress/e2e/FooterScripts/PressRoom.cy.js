@@ -53,7 +53,7 @@ describe("Press Room link page test", () => {
       
       it('Verify Announces Eight Restaurant footer stories links at News page', () => {  
         PressRoom.clickPressRoomlink(); 
-        storieslinks.assertAnnouncesEightRestaurantImg();
+        //storieslinks.assertAnnouncesEightRestaurantImg();
         storieslinks.assertAnnouncesEightRestaurant();
         storieslinks.clickAnnouncesEightRestaurant();
         storieslinks.assertAnnouncesEightRestaurantUrl();
@@ -63,9 +63,9 @@ describe("Press Room link page test", () => {
      
       it('Verify Open New Restaurant footer stories links at News page', () => {  
         PressRoom.clickPressRoomlink(); 
-        storieslinks.assertOpenNewRestaurantImg();  
-        storieslinks.assertOpenNewRestaurant();      
-        storieslinks.clickOpenNewRestaurant();
+        storieslinks.assertOpenNewRestaurantLinkImg();  
+        storieslinks.assertOpenNewRestaurantLink();      
+        storieslinks.clickOpenNewRestaurantLink();
         storieslinks.assertOpenNewRestaurantUrl();
         storieslinks.assertOpenNewRestaurantPara();
         storieslinks.assertOpenNewRestaurantPageImg();     

@@ -185,7 +185,7 @@ class LocalMenu{
     }
 
     clickLocalSaladslink(){
-        this.elements.LocalSaladslink().click({force: true});
+        this.elements.LocalSaladslink().eq(0).click({force: true});
     }
 
     assertLocalSaladsUrl(){
@@ -533,6 +533,10 @@ class LocalMenu{
 
     ClickheretostartacateringorderBtn(){
         this.elements.ClickheretostartacateringorderBtn().click();
+    }
+
+    assertExtrasSection(){
+        this.elements.ExtrasSection().should('be.visible');
     }
 
     testLocalEntreesProductsdetails(){

@@ -2,7 +2,7 @@
 import homepage from "../../pageobjects/homepage";
 import careerslink from "../../pageobjects/careerslink";
 import storiesSublinks from "../../pageobjects/storiesSublinks";
-describe("Home page test", () => {
+describe("Careers page test", () => {
     beforeEach(() => {
       cy.visit("/");
       })
