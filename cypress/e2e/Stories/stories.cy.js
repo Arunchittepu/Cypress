@@ -62,6 +62,9 @@ describe('Stories sub links test', () => {
         storieslinks.assertallowustointroduceourselvesUrl();
         storieslinks.assertallowustointroduceourselvesTitle();
         storieslinks.assertallowustointroduceourselvesSubTitle();
+        storieslinks.assertCaptionImg();
+        storieslinks.assertChickenSandwichImg();
+        storieslinks.assertNuggetsImg();
     });
 
     it('Verify Five Things You Need to Know section on InsideChick-fil-A page', () => { 

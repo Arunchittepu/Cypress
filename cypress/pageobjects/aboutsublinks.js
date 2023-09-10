@@ -24,7 +24,8 @@ class aboutlinks{
        AboutChickfilAWhoweareSubTitle: () => cy.xpath("//strong[contains(text(),'When was Chick-fil-A founded?')]"),
        HowChickfilACanadaisgivingbacktolocalcommunitiesTitle: () => cy.xpath("//h1[contains(text(),'How Chick-fil-A Canada is giving back to local com')]"),
        HowChickfilACanadaisgivingbacktolocalcommunitiesSubTitle: () => cy.xpath("//strong[contains(text(),'Caring for our communities')]"),
-       
+       AboutWhoWeAreCaptionImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2021/09/Canada%20Stories/ONE_9754.jpg?h=800&w=1200&la=en']"),
+       RemarkableFutureScholarshipLink: () => cy.xpath("//a[contains(text(),'Chick-fil-A Remarkable Futures Scholarship')]"),
        
        greatFoodImg: () => cy.get('.promo-frame'),
        greatFoodImg1: () => cy.get(':nth-child(3) > .flex-wrapper > .img-wrapper > .desktop-img'),
@@ -132,6 +133,15 @@ class aboutlinks{
     assertAboutChickfilAWhoweareUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'about-chick-fil-a-who-we-are'); 
     }
+    
+    assertRemarkableFutureScholarshipLink(){
+        this.elements.RemarkableFutureScholarshipLink().should("be.visible");
+    }
+    
+    assertAboutWhoWeAreCaptionImg(){
+        this.elements.AboutWhoWeAreCaptionImg().should("be.visible");
+    }
+
 
     assertAboutChickfilAWhoweareTitle(){
         this.elements.AboutChickfilAWhoweareTitle().should("be.visible");
@@ -140,6 +150,8 @@ class aboutlinks{
     assertAboutChickfilAWhoweareSubTitle(){
         this.elements.AboutChickfilAWhoweareSubTitle().should("be.visible");
     }
+
+
 
     assertReadHowCanadaOperatorsareGivinBackBtn(){
         this.elements.ReadHowCanadaOperatorsareGivinBack().should("be.visible");

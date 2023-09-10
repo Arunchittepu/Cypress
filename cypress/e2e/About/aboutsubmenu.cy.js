@@ -46,6 +46,8 @@ describe('About sub links test', () => {
       aboutlinks.assertAboutChickfilAWhoweareUrl();
       aboutlinks.assertAboutChickfilAWhoweareTitle();
       aboutlinks.assertAboutChickfilAWhoweareSubTitle();
+      aboutlinks.assertAboutWhoWeAreCaptionImg();
+      aboutlinks.assertRemarkableFutureScholarship();
     })
 
     it('Check Read More about our culture and Value button', () =>{
@@ -101,7 +103,10 @@ describe('About sub links test', () => {
         aboutlinks.clickGettoknowourfoodBtn(); 
         storiesSublinks.assertallowustointroduceourselvesUrl(); 
         storiesSublinks.assertallowustointroduceourselvesTitle();
-        storiesSublinks.assertallowustointroduceourselvesSubTitle();      
+        storiesSublinks.assertallowustointroduceourselvesSubTitle(); 
+        storieslinks.assertCaptionImg();
+        storieslinks.assertChickenSandwichImg();
+        storieslinks.assertNuggetsImg();     
       })
 
       it('Check Order CarryOut button', () => {               

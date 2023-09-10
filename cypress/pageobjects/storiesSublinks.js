@@ -29,7 +29,10 @@ class storieslinks{
        AnnouncesNewVaughan: () => cy.xpath("//a[contains(text(),'Chick-fil-A Announces New Vaughan, Ontario Restaurant to Open on Thursday, November 17')]"),
        FromBasketCourtImg: () => cy.get("assertInsideChickfilCategoryTitle"),
        FromBasketCourt: () => cy.get("a[href='/stories/inside-chick-fil-a/meet-al-jones-the-newest-chick-fil-a-owner-operator-in-canada']"),
-       
+       CaptionImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Story%20Images/Header-allow-us-to-introduce-ourselves_compressed.jpg?h=960&w=1440&la=en']"),      
+       ChickenSandwichImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/websandwich.jpg']"),      
+       NuggetsImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/webnuggets.jpg']"),
+  
        IntheCommunity: () => cy.contains("In the Community"),
        InTheCategoryTitle: () => cy.xpath("//h1[contains(text(),'In the Community')]"),
        InTheCatgorySlider: () => cy.xpath("//a[contains(text(),'The 2024 Chick-fil-A True Inspiration Awards™ Applications are open')]"),
@@ -184,6 +187,21 @@ class storieslinks{
     assertallowustointroduceourselvesSubTitle(){
         this.elements.allowustointroduceourselvesSubTitle().should('be.visible');
     }
+
+   
+    assertCaptionImg(){
+        this.elements.CaptionImg().should('be.visible');
+    }
+
+    assertChickenSandwichImg(){
+        this.elements.ChickenSandwichImg().should('be.visible');
+    }
+
+    assertNuggetsImg(){
+        this.elements.NuggetsImg().should('be.visible');
+    }
+
+
 
     assertwhichchickfilasauceisyourperfectmatchforsurePageUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/inside-chick-fil-a/where-does-the-a-in-chick-fil-a-come-from');
