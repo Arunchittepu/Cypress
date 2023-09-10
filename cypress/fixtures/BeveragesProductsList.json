@@ -1,11 +1,4 @@
 [
-{
-    "productname": "img[alt='Seasonal White Peach Beverages']",
-    "producturl": "menu/white-peach-sunjoy",
-    "productimage": "img[alt='White Peach Sunjoy® (Sweet Tea, Lemonade)']",
-    "productnameheading": "Seasonal White Peach Beverages",
-    "orderfoodurl": "load-dot-com?itemTag=WHITE_PEACH_SM"
-},
 
 {
     "productname": "img[alt='Freshly-Brewed Iced Tea Sweetened']",
@@ -143,37 +136,7 @@
     "orderfoodurl": "load-dot-com?itemTag=SM_COFFEE"
 },
 
-{
-    "productname": "img[alt='Hot Teas']",
-    "producturl": "menu/hot-teas",
-    "productimage": "img[alt='Hibiscus Berries Herbal Tea']",
-    "productnameheading": "Hot Teas",
-    "orderfoodurl": "load-dot-com?itemTag=HOT_HERBAL_TEA"
-},
 
-{
-    "productname": "img[alt='Gallon Beverages']",
-    "producturl": "menu/gallon-beverages",
-    "productimage": "img[alt='Gallon Chick-fil-A® Lemonade']",
-    "productnameheading": "Gallon Beverages",
-    "orderfoodurl": "load-dot-com?itemTag=GALLON_LEMONADE_REG"
-},
-
-{
-    "productname": "img[alt='Canada Dry® Ginger Ale']",
-    "producturl": "menu/canada-dry-ginger-ale",
-    "productimage": "img[alt='Medium Canada Dry® Ginger Ale']",
-    "productnameheading": "Canada Dry® Ginger Ale",
-    "orderfoodurl": "load-dot-com?itemTag=MD_CANADA_DRY"
-},
-
-{
-    "productname": "img[alt='Strawberry Passion Fruitopia®']",
-    "producturl": "menu/strawberry-passion-fruitopia",
-    "productimage": "img[alt='Medium Strawberry Passion Fruitopia®']",
-    "productnameheading": "Strawberry Passion Fruitopia®",
-    "orderfoodurl": "load-dot-com?itemTag=MD_FRUITOPIA_STRAWBERRY"
-},
 
 {
     "productname": "img[alt='Fruitopia® Orange Groove']",

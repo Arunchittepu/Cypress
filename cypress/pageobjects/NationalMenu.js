@@ -34,7 +34,7 @@ class NationalMenu{
        Sideslink: () => cy.contains("Sides"),
        KidsMealslink: () => cy.contains("Kid's Meals"),
        Treatslink: () => cy.contains("Treats"),
-       Beverageslink: () => cy.contains("Beverages"),
+       Beverageslink: () => cy.get(`a[href="/menu#beverages"]`),
        DippingSaucesandDressingslink: () => cy.contains("Dipping Sauces and Dressings"),
        Cateringlink: () => cy.contains("Catering"),
 
@@ -62,8 +62,7 @@ class NationalMenu{
        VanillaMilkshake: () => cy.get("img[alt='Vanilla Milkshake']"),       
        ChickfilAIcedreamCone: () => cy.get("img[alt='Chick-fil-A® Icedream® Cone']"),
        SmallIcedreamCup: () => cy.get("img[alt='Small Icedream® Cup']"),       
-       
-       Beverageslink: () => cy.contains("Beverages"),
+              
        SeasonalWhitePeachBeverages: () => cy.get("img[alt='Seasonal White Peach Beverages']"),
        FreshlyBrewedIcedTeaSweetened: () => cy.get("img[alt='Freshly-Brewed Iced Tea Sweetened']"),
        FreshlyBrewedIcedTeaUnsweetened: () => cy.get("img[alt='Freshly-Brewed Iced Tea Unsweetened']"),
@@ -120,7 +119,7 @@ class NationalMenu{
     }
 
     clickNationalmenulnk(){
-        this.elements.Nationalmenulnk().click();
+        this.elements.Nationalmenulnk().click({force: true});
     }
 
     assertNationalMenuUrl(){

@@ -66,6 +66,15 @@ class homePage{
        ChickFillAPrivacyPolicy: () => cy.xpath("//h3[contains(text(),'Chick-fil-A Privacy Policy')]"),
        WeMakeUpdatestoThisPrivacyPolicyTxt: () => cy.xpath("//strong[contains(text(),'We Make Updates to This Privacy Policy')]"),
 
+       WheredidtheChickfilANuggetscomefromLink: () => cy.xpath("//a[contains(text(),'Where did the Chick-fil-A Nuggets come from?')]"),
+       WheredidtheChickfilANuggetscomefromImg:() => cy.get("a[href='/stories/inside-chick-fil-a/the-origin-of-the-chick-fil-a-nuggets']"),
+       
+       ChickintroducesnewCaramelCrumbleMilkshakeseasonLink: () => cy.xpath("//a[contains(text(),'Chick-fil-A introduces new Caramel Crumble Milksha')]"),
+       ChickintroducesnewCaramelCrumbleMilkshakeseasonImg: () => cy.get("a[href='/stories/news/chick-fil-a-introduces-new-caramel-crumble-milkshake-in-time-for-the-fall-season']"),
+
+       WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink: () => cy.xpath("//a[contains(text(),'What makes the Caramel Crumble Milkshake the perfe')]"),
+       WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg: () => cy.get("a[href='/stories/inside-chick-fil-a/what-makes-the-caramel-crumble-milkshake-the-perfect-fall-treat']"),
+
     }
 
     callBack(){
@@ -413,7 +422,41 @@ class homePage{
         this.elements.disclaimernutritionTxt().should('be.visible');
     }
     
+    assertWheredidtheChickfilANuggetscomefromLink(){
+        this.elements.WheredidtheChickfilANuggetscomefromLink().should("be.visible");
+    }
+
+    assertWheredidtheChickfilANuggetscomefromImg(){
+        this.elements.WheredidtheChickfilANuggetscomefromImg().should("be.visible");
+    }
+
+    clickWheredidtheChickfilANuggetscomefromLink(){
+        this.elements.WheredidtheChickfilANuggetscomefromLink().click();
+    }
+
+    assertChickintroducesnewCaramelCrumbleMilkshakeseasonLink(){
+        this.elements.ChickintroducesnewCaramelCrumbleMilkshakeseasonLink().should("be.visible");
+    }
+
+    assertChickintroducesnewCaramelCrumbleMilkshakeseasonImg(){
+        this.elements.ChickintroducesnewCaramelCrumbleMilkshakeseasonImg().should("be.visible");
+    }
+
+    clickChickintroducesnewCaramelCrumbleMilkshakeseasonLink(){
+        this.elements.ChickintroducesnewCaramelCrumbleMilkshakeseasonLink().click();
+    }
     
+    assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink(){
+        this.elements.WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink().should("be.visible");
+    }
+
+    assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg(){
+        this.elements.WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg().should("be.visible");
+    }
+
+    clickWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink(){
+        this.elements.WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink().click();
+    }
 }
 
 module.exports = new homePage();

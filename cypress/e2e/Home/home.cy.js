@@ -79,7 +79,7 @@ describe("Home page test", () => {
         homepage.assertNutritionAllergensHeadTxt();
         homepage.assertdisclaimernutritionTxt();        
       })
-
+/*
     it("Verify Related Stories section of Home page", () => {
         homepage.assertNewRestaurantInmississauga();
         homepage.clickNewRestaurantInmississauga();
@@ -98,7 +98,36 @@ describe("Home page test", () => {
         homepage.assertPeachbeveragesthroughouttheyearsUrl();
         homepage.assertPeachbeveragesthroughouttheyearsHeadTxt();
         homepage.assertSummerishereandsoarepeachbeveragesTxt();        
-      });  
+      });  */
+
+      it("Home page Releated stories 1st image", () =>{
+        homepage.assertWheredidtheChickfilANuggetscomefromLink();
+        homepage.assertWheredidtheChickfilANuggetscomefromImg();
+        homepage.clickWheredidtheChickfilANuggetscomefromLink();
+        storieslinks.assertWheredidtheChickfilANuggetscomefromPageUrl();
+        storieslinks.assertWheredidtheChickfilANuggetscomefromTitle();
+        storieslinks.assertWheredidtheChickfilANuggetscomefromSubTitle();
+      });
+
+      it("Home page Releated stories 2nd image", () =>{
+        homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
+        homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonImg();
+        homepage.clickChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
+        storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonPageUrl();
+        storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonTitle();
+        storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonSubTitle();
+      });
+
+      it("Home page Releated stories 3rd image", () =>{
+        homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
+        homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg();
+        homepage.clickWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
+        storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatPageUrl();
+        storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatTitle();
+        storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle();
+      });
+
+
 
       it("Test Footer links of Home page", () => {
         homepage.assertCustomerserviceLnk();

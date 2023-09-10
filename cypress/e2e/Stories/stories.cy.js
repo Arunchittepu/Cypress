@@ -5,6 +5,7 @@ describe('Stories sub links test', () => {
    
     beforeEach(() => {
       cy.visit('/')
+      storieslinks.clickstorieslnk();
     });
 
     it("Check the redirection when click on Logo link", () => {
@@ -14,19 +15,19 @@ describe('Stories sub links test', () => {
 
     it("Verify Stories page Title", () => {
         cy.fixture("storiessublinks").then((data) => {
-        storieslinks.elements.pageTitle().should('eq', data.homepagetitle);        
+        storieslinks.elements.pageTitle().should('eq', data.Storyhomepagetitle);        
       });
     });
 
 
-  it('Verify sub menus links under Stories', () => {         
-       storieslinks.clickstorieslnk();
-       storieslinks.assertInsideChick_Fil_A_link(); 
-       storieslinks.assertIntheCommunityLink(); 
-       storieslinks.assertNewsLink();  
-  });
+    it('Verify sub menus links under Stories', () => {         
+        //storieslinks.clickstorieslnk();
+        storieslinks.assertInsideChick_Fil_A_link(); 
+        storieslinks.assertIntheCommunityLink(); 
+        storieslinks.assertNewsLink();  
+    });
   
-  it('Verify Stories page', () => {   
+    it('Verify Stories page', () => {   
         storieslinks.clickstorieslnk();
         storieslinks.assertStoriesPageUrl();
         storieslinks.assertstoriesSlider(); 
@@ -36,23 +37,24 @@ describe('Stories sub links test', () => {
         storieslinks.asserttheLittleThingsSection(); 
         storieslinks.assertMentorshipSection(); 
         storieslinks.assertletsBeFriend();     
-  });
+    });
   
 
-  it('Verify InsideChick-fil-A page', () => {  
+    it('Verify InsideChick-fil-A page', () => {  
         storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertChickFilAUrl();
         storieslinks.assertInsideChickfilCategoryTitle();
         storieslinks.assertInsideChickfilSlider();
         storieslinks.clickInsideChickfilSlider();
-        storieslinks.assertwhichchickfilasauceisyourperfectmatchforsurePageUrl();
-        storieslinks.assertwhichchickfilasauceisyourperfectmatchforsurePageTitle();
-        storieslinks.assertwhichchickfilasauceisyourperfectmatchforsurePageSubTitle();
+        
+        storieslinks.assertWhyChickfilAgrilledchickentastessogoodPageUrl();
+        storieslinks.assertWhyChickfilAgrilledchickentastessogoodTitle();
+        storieslinks.assertWhyChickfilAgrilledchickentastessogoodSubTitle();
        
-  });
+    });
 
 
-  it('Verify What Visit is it all about section on InsideChick-fil-A page', () => { 
+    it('Verify What Visit is it all about section on InsideChick-fil-A page', () => { 
         storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertWhatVisitAllAboutImg();
         storieslinks.assertWhatVisitAllAbout();
@@ -60,18 +62,9 @@ describe('Stories sub links test', () => {
         storieslinks.assertallowustointroduceourselvesUrl();
         storieslinks.assertallowustointroduceourselvesTitle();
         storieslinks.assertallowustointroduceourselvesSubTitle();
-  });
+    });
 
-  it('Verify how a high school job became a mission Link section on InsideChick-fil-A page', () => { 
-        storieslinks.clickInsideChick_fil_Alnk();
-        storieslinks.asserttheCoopSection();
-        storieslinks.clickhowahighschooljobbecameamissionLink();
-        storieslinks.asserthowahighschooljobbecameamissionUrl();
-        storieslinks.asserthowahighschooljobbecameamissionLinkTitle();
-        storieslinks.asserthowahighschooljobbecameamissionLinkSubTitle();
-  });
-
-  it('Verify Five Things You Need to Know section on InsideChick-fil-A page', () => { 
+    it('Verify Five Things You Need to Know section on InsideChick-fil-A page', () => { 
         storieslinks.clickInsideChick_fil_Alnk();
         storieslinks.assertFiveThingsYouNeedtoKnowImg();
         storieslinks.assertFiveThingsYouNeedtoKnow();
@@ -79,29 +72,8 @@ describe('Stories sub links test', () => {
         storieslinks.assertwhattoknowaboutourwafflepotatofriesUrl();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesTitle();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesSubTitle();
-   });
-
-  it('Verify Announces New Vaughan section on InsideChick-fil-A page', () => { 
-        storieslinks.clickInsideChick_fil_Alnk();
-        storieslinks.assertAnnouncesNewVaughanImg();
-        storieslinks.assertAnnouncesNewVaughan();
-        storieslinks.clickAnnouncesNewVaughan();
-        storieslinks.assertchickfilaannouncesnewvaughanontariorestaurantUrl();
-        storieslinks.assertchickfilaannouncesnewvaughanontariorestaurantPara();
-        storieslinks.assertchickfilaannouncesnewvaughanontariorestaurantSubTitle();
-      });
-
-
-   it('Verify From Basket Court section on InsideChick-fil-A page', () => { 
-          storieslinks.clickInsideChick_fil_Alnk();
-        storieslinks.assertFromBasketCourtImg();
-        storieslinks.assertFromBasketCourt();
-        storieslinks.clickFromBasketCourt();
-        storieslinks.assertmeetaljonesthenewestchickfilaowneroperatorincanadaUrl();
-        storieslinks.assertmeetaljonesthenewestchickfilaowneroperatorincanadaPublishDate();
-        storieslinks.assertmeetaljonesthenewestchickfilaowneroperatorincanadaSubTitle();
-        
     });
+    
 
     it('Verify In The Catgory Slider section In The Community page', () => {  
       storieslinks.clickIntheCommunitylink();
@@ -114,7 +86,7 @@ describe('Stories sub links test', () => {
       storieslinks.assertTrueInspirationAwardsApplicationsopenSubTitle();
       
     });
-
+ 
     it('Verify Hub Of Opportunity section In The Community page', () => {  
       storieslinks.clickIntheCommunitylink();
       storieslinks.assertHubOfOpportunityImg();
@@ -200,11 +172,11 @@ describe('Stories sub links test', () => {
    
     it('Verify Open New Restaurant footer stories links at News page', () => {  
       storieslinks.clickNewsLink(); 
-      storieslinks.assertOpenNewRestaurantImg();  
-      storieslinks.assertOpenNewRestaurant();      
-      storieslinks.clickOpenNewRestaurant();
+      storieslinks.assertOpenNewRestaurantLinkImg();  
+      storieslinks.assertOpenNewRestaurantLink();      
+      storieslinks.clickOpenNewRestaurantLink();
       storieslinks.assertOpenNewRestaurantUrl();
       storieslinks.assertOpenNewRestaurantPara();
-      storieslinks.assertOpenNewRestaurantPageImg();     
+      storieslinks.assertOpenNewRestaurantPageImg();      
     });     
   });
