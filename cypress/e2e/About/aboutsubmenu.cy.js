@@ -1,6 +1,8 @@
+
 /// <reference types="cypress"/>
 import homepage from "../../pageobjects/homepage"
 import aboutlinks from "../../pageobjects/aboutsublinks"
+import storiesSublinks from "../../pageobjects/storiesSublinks";
 describe('About sub links test', () => {
    
   beforeEach(() => {
@@ -37,6 +39,26 @@ describe('About sub links test', () => {
         aboutlinks.assertwhoWeAreImg4();           
     })
 
+    it('Check Read More about our culture and Value button', () =>{
+      aboutlinks.clickaboutlnk();  
+      aboutlinks.clickWhoWeAre(); 
+      aboutlinks.clickreadMoreaboutOurCultureNValue();
+      aboutlinks.assertAboutChickfilAWhoweareUrl();
+      aboutlinks.assertAboutChickfilAWhoweareTitle();
+      aboutlinks.assertAboutChickfilAWhoweareSubTitle();
+    })
+
+    it('Check Read More about our culture and Value button', () =>{
+      aboutlinks.clickaboutlnk();  
+      aboutlinks.clickWhoWeAre(); 
+      aboutlinks.assertReadHowCanadaOperatorsareGivinBackBtn();
+      aboutlinks.clickReadHowCanadaOperatorsareGivinBackBtn();
+      aboutlinks.assertHowChickfilACanadaisgivingbacktolocalcommunitiesUrl();
+      aboutlinks.assertHowChickfilACanadaisgivingbacktolocalcommunitiesTitle();
+      aboutlinks.assertHowChickfilACanadaisgivingbacktolocalcommunitiesSubTitle();
+    })
+
+
     it('Check Great Food link page under About menu', () => {              
         aboutlinks.clickGreatFoodlink();   
         aboutlinks.assertgreatFoodHeadingUrl(); 
@@ -65,13 +87,30 @@ describe('About sub links test', () => {
         aboutlinks.assertGettoknowourfoodBtn();
       })
 
-    it('Check Its Our Pleasure to Serve you section', () => {               
+      it('Check Its Our Pleasure to Serve you section', () => {               
+          aboutlinks.clickGreatFoodlink();
+          aboutlinks.assertItsOurPleasureToServeYou();
+          aboutlinks.assertOrderCarryOut(); 
+          aboutlinks.assertgreatFoodImg4(); 
+          aboutlinks.assertgreatFoodImg5();      
+      })
+
+      it('Check Get to Know our food button', () => {               
         aboutlinks.clickGreatFoodlink();
-        aboutlinks.assertItsOurPleasureToServeYou();
-        aboutlinks.assertOrderCarryOut(); 
-        aboutlinks.assertgreatFoodImg4(); 
-        aboutlinks.assertgreatFoodImg5();      
-    })
+        aboutlinks.assertGettoknowourfoodBtn();
+        aboutlinks.clickGettoknowourfoodBtn(); 
+        storiesSublinks.assertallowustointroduceourselvesUrl(); 
+        storiesSublinks.assertallowustointroduceourselvesTitle();
+        storiesSublinks.assertallowustointroduceourselvesSubTitle();      
+      })
+
+      it('Check Order CarryOut button', () => {               
+        aboutlinks.clickGreatFoodlink();
+        aboutlinks.assertOrderCarryOut();
+        aboutlinks.clickOrderCarryOut(); 
+        aboutlinks.assertOrderCarryOutUrl();               
+      })
+
 
     it('Check Giving Back link page under About menu', () => {                 
         aboutlinks.clickGivingBackLink();      
