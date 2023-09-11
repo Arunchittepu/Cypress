@@ -1,6 +1,7 @@
 class PressRoom{
 
     elements = {
+        
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
         PressRoomlink: () => cy.xpath("//span[contains(text(),'Press Room')]"),

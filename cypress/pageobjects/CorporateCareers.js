@@ -1,7 +1,6 @@
 class CorporateCareers{
 
     elements = {
-
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
         CorporateCareerslink: () => cy.xpath("//span[contains(text(),'Corporate Careers')]"),

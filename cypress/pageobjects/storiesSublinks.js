@@ -51,6 +51,7 @@ class storieslinks{
        LearnAboutFirstCanadianReceipientLink: () => cy.xpath("//a[contains(text(),'Learn about the first Canadian recipient, Yonge St')]"),
        CorporateSocialResponsibilityReportLink: () => cy.xpath("//a[contains(text(),'2020 Corporate Social Responsibility Report')]"),
        howatrueinspirationawardsgrantPageImg: () => cy.get("img[alt='a group of people holding a large True Inspiration award check']"),
+       
        ThreePeopleInAFoodKitchenImg: () => cy.get("img[alt='three people in a food kitchen']"),
        GroupOfPeopleHoldingLargeTrueInspirationAwardCheckImg: () => cy.get("img[alt='a group of people holding a large True Inspiration award check']"),              
        BoxOfFreshProduceImg: () => cy.get("img[alt='a box of fresh produce including eggs, carrots, apples and vegetables']"),
@@ -159,6 +160,7 @@ class storieslinks{
        WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle: () => cy.xpath("//p[contains(text(),'Rich in flavour and oh so yummy, this new milkshak')]"),
        SharedTableProgramTxtLink: () => cy.xpath("//a[contains(text(),'program')]"),
        GlassdoorTxtLink: () => cy.xpath("//a[contains(text(),'Glassdoor')]"),
+       
     }
 
     clickhowahighschooljobbecameamissionLink(){

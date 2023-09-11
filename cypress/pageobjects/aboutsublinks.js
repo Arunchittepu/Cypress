@@ -1,6 +1,7 @@
 class aboutlinks{
 
     elements = {
+        
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
        logolink: () => cy.get("a[class='icon-logo-desktop logo']"),

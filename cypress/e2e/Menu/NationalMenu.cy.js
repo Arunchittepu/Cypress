@@ -67,8 +67,6 @@ describe('National Menu sub links test', () => {
 
       it('Verify Catering Sub Menu page', () => { 
           NationalMenu.testCateringProductsdetails();
-      });
-
-    
+      });    
 
   });

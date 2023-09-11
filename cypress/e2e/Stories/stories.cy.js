@@ -19,7 +19,6 @@ describe('Stories sub links test', () => {
       });
     });
 
-
     it('Verify sub menus links under Stories', () => {                 
         storieslinks.assertInsideChick_Fil_A_link(); 
         storieslinks.assertIntheCommunityLink(); 
@@ -36,8 +35,7 @@ describe('Stories sub links test', () => {
         storieslinks.asserttheLittleThingsSection(); 
         storieslinks.assertMentorshipSection(); 
         storieslinks.assertletsBeFriend();     
-    });
-  
+    });  
 
     it('Verify InsideChick-fil-A page', () => {  
         storieslinks.clickInsideChick_fil_Alnk();
@@ -50,7 +48,6 @@ describe('Stories sub links test', () => {
         storieslinks.assertWhyChickfilAgrilledchickentastessogoodSubTitle();
         storieslinks.assertWhyChickfilAgrilledchickentastessogoodImg();       
     });
-
 
     it('Verify What Visit is it all about section on InsideChick-fil-A page', () => { 
         storieslinks.clickInsideChick_fil_Alnk();

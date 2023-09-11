@@ -10,6 +10,7 @@ module.exports = defineConfig({
     experimentalModifyObstructiveThirdPartyCode: true,
     failOnStatusCode: false,
     redirectionLimit: 100,
+    
   e2e: {
     baseUrl: 'https://www.chick-fil-a.ca/',  
     //baseUrl: 'https://www.chick-fil-astage.ca/', 

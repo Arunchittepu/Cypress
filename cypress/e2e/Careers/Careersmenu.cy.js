@@ -3,12 +3,12 @@ import homepage from "../../pageobjects/homepage";
 import careerslink from "../../pageobjects/careerslink";
 import storieslinks from "../../pageobjects/storiesSublinks";
 describe("Careers page test", () => {
-    beforeEach(() => {
-      cy.visit("/");
-      })
-    it("Check the redirection when click on Logo link", () => {
-        homepage.clickLogo();
-        homepage.verifyLogoRedirect();
+      beforeEach(() => {
+        cy.visit("/");
+        })
+      it("Check the redirection when click on Logo link", () => {
+          homepage.clickLogo();
+          homepage.verifyLogoRedirect();
       })
 
       it("Check Careers menu link page", () => {

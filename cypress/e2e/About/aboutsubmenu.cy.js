@@ -5,9 +5,9 @@ import aboutlinks from "../../pageobjects/aboutsublinks"
 import storiesSublinks from "../../pageobjects/storiesSublinks";
 describe('About sub links test', () => {
    
-  beforeEach(() => {
-    cy.visit('/')
-  });
+    beforeEach(() => {
+      cy.visit('/')
+    });
 
     it("Check the redirection when click on Logo link", () => {
         homepage.clickLogo();

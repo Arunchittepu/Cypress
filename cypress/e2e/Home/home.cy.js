@@ -79,26 +79,6 @@ describe("Home page test", () => {
         homepage.assertNutritionAllergensHeadTxt();
         homepage.assertdisclaimernutritionTxt();        
       })
-/*
-    it("Verify Related Stories section of Home page", () => {
-        homepage.assertNewRestaurantInmississauga();
-        homepage.clickNewRestaurantInmississauga();
-        homepage.NewRestaurantInmississaugaPageUrl();
-        homepage.assertNewRestaurantInmississaugaPageTitle();
-        homepage.assertNewRestaurantInmississaugaDonate();
-        homepage.callBack();
-        homepage.assertAPassonateLeader();  
-        homepage.clickAPassonateLeader();
-        homepage.assertAPassonateLeaderUrl();
-        homepage.assertIntroducingMufutiSanusiHeadTxt();
-        homepage.assertMufutiSanusiembodiesTxt();
-        homepage.callBack();  
-        homepage.assertPeachbeveragesthroughouttheyears();
-        homepage.clickPeachbeveragesthroughouttheyears();
-        homepage.assertPeachbeveragesthroughouttheyearsUrl();
-        homepage.assertPeachbeveragesthroughouttheyearsHeadTxt();
-        homepage.assertSummerishereandsoarepeachbeveragesTxt();        
-      });  */
 
       it("Home page Releated stories 1st image", () =>{
         homepage.assertWheredidtheChickfilANuggetscomefromLink();
@@ -127,8 +107,6 @@ describe("Home page test", () => {
         storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle();
       });
 
-
-
       it("Test Footer links of Home page", () => {
         homepage.assertCustomerserviceLnk();
         homepage.clickCustomerserviceLnk();     
@@ -143,11 +121,6 @@ describe("Home page test", () => {
         homepage.assertdisclaimernutritionTxt();
         homepage.callBack();
         homepage.assertFranchisingLnk();
-        // homepage.clickFranchisingLnk();      // Commented as its failing , this will be automated as part of Footer test cases
-        // homepage.assertFranchisingLnkDialog();
-        // homepage.assertFranchisingLnkDialog();
-        // homepage.assertProceedBtn();
-        // homepage.closeFranchisingDialog();
         homepage.assertCorporateCareersLnk();            
         homepage.clickCorporateCareersLnk();
         homepage.assertCorporateCareersLnkUrl();

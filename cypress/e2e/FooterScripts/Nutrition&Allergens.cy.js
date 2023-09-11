@@ -1,11 +1,11 @@
 import NutritionNAllergens from "../../pageobjects/Nutrition&Allergens";
 
 describe("Nutrition & Allergens link page test", () => {
-    beforeEach(() => {
+      beforeEach(() => {
       cy.visit("/");
       })
 
-    it("Check the redirection when click on Logo link", () => {
+      it("Check the redirection when click on Logo link", () => {
         homepage.clickLogo();
         homepage.verifyLogoRedirect();
       })
