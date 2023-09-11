@@ -29,31 +29,59 @@ class storieslinks{
        AnnouncesNewVaughan: () => cy.xpath("//a[contains(text(),'Chick-fil-A Announces New Vaughan, Ontario Restaurant to Open on Thursday, November 17')]"),
        FromBasketCourtImg: () => cy.get("assertInsideChickfilCategoryTitle"),
        FromBasketCourt: () => cy.get("a[href='/stories/inside-chick-fil-a/meet-al-jones-the-newest-chick-fil-a-owner-operator-in-canada']"),
-       
+       CaptionImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Story%20Images/Header-allow-us-to-introduce-ourselves_compressed.jpg?h=960&w=1440&la=en']"),
+       ChickenSandwichImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/websandwich.jpg']"),      
+       NuggetsImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/webnuggets.jpg']"),
+  
        IntheCommunity: () => cy.contains("In the Community"),
        InTheCategoryTitle: () => cy.xpath("//h1[contains(text(),'In the Community')]"),
-       InTheCatgorySlider: () => cy.xpath("//a[contains(text(),'The 2024 Chick-fil-A True Inspiration Awards™ Applications are open')]"),
+       InTheCatgorySlider: () => cy.xpath("//a[contains(text(),'How Chick-fil-A Canada is giving back to local communities')]"),
+       TrueInspirationAwardsApplicationsopenLink: () =>cy.xpath("//a[contains(text(),'The 2024 Chick-fil-A True Inspiration Awards™ Applications are open')]"),
        HubOfOpportunityImg: () => cy.get("a[href='/stories/in-the-community/chick-fil-a-and-uhc-hub-of-operations-partnership-in-windsor-essex-community']"),
-              
+       TrueInspirationAwardsApplicationsopenImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2023/TIA%202023%20Press%20Release/2023-TIA-press-release_compressed.jpg?h=960&w=1443&la=en']"),   
+       TrueInspirationAwardsWinnersLink: () => cy.xpath("//a[contains(text(),'True Inspiration Award Winners')]"),   
        HubOfOpportunity: () => cy.xpath("//a[contains(text(),'Chick-fil-A and UHC - Hub of Opportunities aim to create meaningful partnerships to positively impact the Windsor-Essex Community')]"),
        FightingHungerWithSecondHarvestImg: () => cy.get("a[href='/stories/in-the-community/fighting-hunger-with-second-harvest']"),
        FightingHungerWithSecondHarvest: () => cy.xpath("//a[contains(text(),'Fighting hunger with Second Harvest')]"),
        TrueInspirationAwrdImg: () => cy.get("a[href='/stories/in-the-community/how-a-true-inspiration-awards-grant-is-helping-rebuild-lives-in-toronto'"),
        TrueInspirationAwrd: () => cy.xpath("//a[contains(text(),'How a US$300,000 True Inspiration Awards™ Grant is')]"),
-                                   
+       HowCanadaisgivingbacktolocalcommunitiesTitle: () => cy.xpath("//h1[contains(text(),'How Chick-fil-A Canada is giving back to local com')]"),
+       HowCanadaisgivingbacktolocalcommunitiesImg: () => cy.get("img[href='https://d1fd34dzzl09j.cloudfront.net/2022/03/yonge-street-mission-1.jpg?h=1106&w=1440&la=en']"),
+       WePartnerWithSecondHarvestLink: () => cy.xpath("//a[contains(text(),'we partner with Second Harvest')]"),
+       LearnAboutFirstCanadianReceipientLink: () => cy.xpath("//a[contains(text(),'Learn about the first Canadian recipient, Yonge St')]"),
+       CorporateSocialResponsibilityReportLink: () => cy.xpath("//a[contains(text(),'2020 Corporate Social Responsibility Report')]"),
+       howatrueinspirationawardsgrantPageImg: () => cy.get("img[alt='a group of people holding a large True Inspiration award check']"),
+       ThreePeopleInAFoodKitchenImg: () => cy.get("img[alt='three people in a food kitchen']"),
+       GroupOfPeopleHoldingLargeTrueInspirationAwardCheckImg: () => cy.get("img[alt='a group of people holding a large True Inspiration award check']"),              
+       BoxOfFreshProduceImg: () => cy.get("img[alt='a box of fresh produce including eggs, carrots, apples and vegetables']"),
        SharedTableProgramImg: () => cy.get("a[href='/stories/in-the-community/the-chick-fil-a-shared-table-program']"),
        SharedTableProgram: () => cy.xpath("//a[contains(text(),'The Chick-fil-A Shared Table Program')]"),
-       
+       TrueInspirationAwardsLink: () => cy.xpath("//a[contains(text(),'chick-fil-a.com/true-inspiration-awards')]"),
+       SharedTableProgramLink: () => cy.xpath("//a[contains(text(),'Shared Table program')]"),
+       HubofOpportunitiesaimCapImg: () => cy.get("img[href='https://d1fd34dzzl09j.cloudfront.net/2021/10/Devonshire%20Canada/UHC_Devonshire.JPG?h=666&w=1000&la=en']"),
+        UHCHubofOpportunitiesLink: () => cy.xpath("//a[contains(text(),'UHC – Hub of Opportunities')]"),
+        ChickFilACommitmentLink: () => cy.xpath(`//a[contains(text(),"Chick-fil-A, Inc.'s commitment")]`),
+        SharedTableCapImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Headliners/Canada/About%20CFA/Shared%20Table-14.jpg?h=998&w=1440&la=en']"),      
+        SharedTableWorkImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Headliners/Canada/About%20CFA/Shared%20Table/Shared%20Table%20infographics_how%20it%20works_6.11.20[1][1].png']"),      
+        SecondHarvestLink: () => cy.xpath("//a[contains(text(),'Second Harvest')]"),
+        ARestaurantsTakePartInSharedTableLink: () => cy.xpath("//a[contains(text(),'more than 1,500 Chick-fil-A restaurants take part ')]"),
+        PersoncarryingaredtrayofsaladsincontainersImg: () => cy.get("img[alt='Person carrying a red tray of salads in containers']"),
+        
        News: () => cy.contains("News"),
        NewsTitle: () => cy.xpath("//h1[contains(text(),'News')]"),
        NewsSlider: () => cy.xpath("//a[contains(text(),'Chick-fil-A springs into the season with Watermelo')]"),
-       
+       ChickFilAStoryLink: () => cy.xpath("//a[contains(text(),'chick-fil-a.ca/stories')]"),
+        ChickFilAWebLink: () => cy.xpath("//a[contains(text(),'www.chick-fil-a.ca')]"),
+        ChickFilANewsatWaterMelonPageLink: () => cy.get("a[href='https://twitter.com/chickfilanews?lang=en"),
        TheLatestNews: () => cy.xpath("//h3[contains(text(),'The latest news')]"),
-       
+       MillioninScholarshipstoRestaurantTeamMembersImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2022/04/Canada%20Scholarship%20Announcement/CFA%20Scholars%202022_Winners%206.jpg?h=695&w=1000&la=en']"),
+        MillioninScholarshipsBenefitsLink: () => cy.xpath("//a[contains(text(),'benefits')]"),
+
        MillionInScholarshipsImg: () => cy.get("a[href='/stories/news/chick-fil-a-awards-us24-million-in-scholarships-to-restaurant-team-members']"),
        MillionInScholarships: () => cy.xpath("//a[contains(text(),'Chick-fil-A Awards US$24 Million in Scholarships t')]"),
        NewTorontoRestautantImg: () =>   cy.get("a[href='/stories/news/chick-fil-a-announces-new-toronto-restaurant-to-open-on-thursday-may-25-at-cf-toronto-eaton-centre']"),
-                                                        
+       WafflePotatoFriesLink: () =>     cy.get("a[href='https://www.chick-fil-a.ca/menu/chick-fil-a-waffle-potato-fries']"),                                          
+       ChickFilANuggetsLink: () =>     cy.get("a[href='https://www.chick-fil-a.ca/menu/chick-fil-a-nuggets']"),                                          
        NewTorontoRestautant: () => cy.xpath("//a[contains(text(),'Chick-fil-A announces new Toronto restaurant to op')]"),
        AnnouncesEightRestaurantImg: () =>   cy.get("a[href='/stories/news/eighth-canada-restaurant']"),
        AnnouncesEightRestaurant: () => cy.xpath("//p[contains(text(),'Chick-fil-A® announces another restaurant opening ')]"),              
@@ -94,7 +122,11 @@ class storieslinks{
        howahighschooljobbecameamissionLinkSubTitle: () => cy.get("img[alt='Operator Jazmine standing with another male Team Member smiling']"),
        MillionInScholarshipsImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2022/04/Canada%20Scholarship%20Announcement/CFA%20Scholars%202022_Winners%206.jpg?h=695&w=1000&la=en']"),
        MillionInScholarships: () => cy.xpath("//a[contains(text(),'Chick-fil-A Awards US$24 Million in Scholarships t')]"),
-                        
+       TalalChaudhryLink: () => cy.xpath("//a[contains(text(),'Talal Chaudhry')]"),
+       TwoChickenSandwichmealswithWafflePotatoFriesdrinkImg: () => cy.ge("img[alt='Two Chick-fil-AChicken Sandwich meals with Waffle Potato Fries® and a drink']"),
+       ChichFilASharedTableTmLink: () => cy.xpath("//a[contains(text(),'Chick-fil-A Shared Table™')]"),
+       ChichFranchisingPageLink: () => cy.xpath("ChichFranchisingPageLink"),       
+       
        NewTorontoRestautantpImg: () =>   cy.get("img[alt='Headshot of Talal Chaudhry, the Owner/Operator of Chick-fil-A Toronto Eaton Centre']"),
        NewTorontoRestautant: () => cy.xpath("//a[contains(text(),'Chick-fil-A announces new Toronto restaurant to op')]"),
        //AnnouncesEightRestaurantImg: () =>   cy.get("img[alt='New Owner/Operator of Chick-fil-A North Barrie, Lincoln Nikkel, stands outside the restaurant smiling']"),
@@ -108,22 +140,67 @@ class storieslinks{
        HubofOpportunitiesaimParaLink: () => cy.xpath("//a[contains(text(),'UHC – Hub of Opportunities')]"),
        WhyChickfilAgrilledchickentastessogoodTitle: () => cy.xpath("//h1[contains(text(),'Why Chick-fil-A grilled chicken tastes so good')]"),
        WhyChickfilAgrilledchickentastessogoodSubTitle: () => cy.xpath("//p[contains(text(),'The science and art behind Chick-fil-A grilled chi')]"),
-        
+       WhyChickfilAgrilledchickentastessogoodImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Why%20Chick%20fil%20A%20Grilled%20Chicken%20tastes%20so%20good/big-Chick-fil-A-Grilled-Chicken-Club-Sandwich.jpg?h=300&w=450&la=en']"),
        WheredidtheChickfilANuggetscomefromLink: () => cy.xpath("//a[contains(text(),'Where did the Chick-fil-A Nuggets come from?')]"),
        WheredidtheChickfilANuggetscomefromImg:() => cy.get("a[href='/stories/inside-chick-fil-a/the-origin-of-the-chick-fil-a-nuggets']"),
         WheredidtheChickfilANuggetscomefromTitle: () => cy.xpath("//h1[contains(text(),'Where did the Chick-fil-A Nuggets come from?')]"),
        WheredidtheChickfilANuggetscomefromSubTitle: () => cy.xpath("//p[contains(text(),'See how the humble nugget became the tiny hero of ')]"),
-    
+       whattoknowaboutourwafflepotatofriesCapImg: () => cy.get("img[alt='Close up photo of Chick-fil-A Waffle Potato Fries']"),
        ChickintroducesnewCaramelCrumbleMilkshakeseasonTitle:() => cy.xpath("//h1[contains(text(),'Chick-fil-A introduces new Caramel Crumble Milksha')]"),
        ChickintroducesnewCaramelCrumbleMilkshakeseasonSubTitle:() => cy.xpath("//p[contains(text(),'The limited-time menu item is the brand’s fourth s')]"),
-
+       LincolnNikkelLink: () => cy.xpath("//a[contains(text(),'Lincoln Nikkel')]"),
+       LeadershipDevelopmentProgramLink: () => cy.xpath("//a[contains(text(),'Leadership Development Program')]"),
+       ChickenSandwichImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Stories/Canada Expansion Press Release/Chick-fil-A Chicken Sandwich .jpg']"),
+       DriveThruodelHereLink: () => cy.xpath("//a[contains(text(),'drive-thru model here')]"),
+       HockeyHelpstheHomelessLink: () => cy.xpath("//a[contains(text(),'Hockey Helps the Homeless (HHTH)')]"),
+       RedwoodParkCommunitiesLink: () => cy.xpath("//a[contains(text(),'Redwood Park Communities')]"),
+       BusbyCentreLink: () => cy.xpath("//a[contains(text(),'Busby Centre')]"),
        WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatTitle: () => cy.xpath("//h1[contains(text(),'What makes the Caramel Crumble Milkshake the perfe')]"),
        WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle: () => cy.xpath("//p[contains(text(),'Rich in flavour and oh so yummy, this new milkshak')]"),
+       SharedTableProgramTxtLink: () => cy.xpath("//a[contains(text(),'program')]"),
+       GlassdoorTxtLink: () => cy.xpath("//a[contains(text(),'Glassdoor')]"),
     }
 
     clickhowahighschooljobbecameamissionLink(){
         this.elements.howahighschooljobbecameamissionLink().click();   
     }
+
+    assertWhyChickfilAgrilledchickentastessogoodImg(){
+        this.elements.WhyChickfilAgrilledchickentastessogoodImg().should('be.visible');
+    }
+
+    assertwhattoknowaboutourwafflepotatofriesCapImg(){
+        this.elements.whattoknowaboutourwafflepotatofriesCapImg().should('be.visible');
+    }
+
+    assertWafflePotatoFriesLink(){
+        this.elements.WafflePotatoFriesLink().should('be.visible');
+    }
+
+    assertChickFilANuggetsLink(){
+        this.elements.ChickFilANuggetsLink().should('be.visible');
+    }
+
+    assertHowCanadaisgivingbacktolocalcommunitiesUrl(){
+        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/how-chick-fil-a-canada-is-giving-back-to-local-communities');
+    }
+
+    assertHowCanadaisgivingbacktolocalcommunitiesTitle(){
+        this.elements.HowCanadaisgivingbacktolocalcommunitiesTitle().should('be.visible');
+    }
+
+    assertHowCanadaisgivingbacktolocalcommunitiesImg(){
+        this.elements.HowCanadaisgivingbacktolocalcommunitiesImg().should('be.visible');
+    }
+
+    assertLearnAboutFirstCanadianReceipientLink(){
+        this.elements.LearnAboutFirstCanadianReceipientLink().should('be.visible');
+    }
+
+    assertCorporateSocialResponsibilityReportLink(){
+        this.elements.CorporateSocialResponsibilityReportLink().should('be.visible');
+    }
+
 
     asserthowahighschooljobbecameamissionUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/inside-chick-fil-a/introducing-operator-jazmine-funes');
@@ -147,6 +224,14 @@ class storieslinks{
 
     assertmeetaljonesthenewestchickfilaowneroperatorincanadaSubTitle(){
         this.elements.meetaljonesthenewestchickfilaowneroperatorincanadaSubTitle().should('be.visible');
+    }
+
+    assertTrueInspirationAwardsApplicationsopenLink(){
+        this.elements.TrueInspirationAwardsApplicationsopenLink().should('be.visible');
+    }
+
+    clickTrueInspirationAwardsApplicationsopenLink(){
+        this.elements.TrueInspirationAwardsApplicationsopenLink().click();
     }
 
     assertchickfilaannouncesnewvaughanontariorestaurantUrl(){
@@ -185,6 +270,19 @@ class storieslinks{
         this.elements.allowustointroduceourselvesSubTitle().should('be.visible');
     }
 
+   
+    assertCaptionImg(){
+        this.elements.CaptionImg().should('be.visible');
+    }
+
+    assertChickenSandwichImg(){
+        this.elements.ChickenSandwichImg().should('be.visible');
+    }
+
+    assertNuggetsImg(){
+        this.elements.NuggetsImg().should('be.visible');
+    }
+
     assertwhichchickfilasauceisyourperfectmatchforsurePageUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/inside-chick-fil-a/where-does-the-a-in-chick-fil-a-come-from');
     }
@@ -209,6 +307,26 @@ class storieslinks{
         this.elements.TheChickfilASharedTableProgramPageParaHead().should('be.visible');
     }
 
+
+    assertSharedTableCapImg(){
+        this.elements.SharedTableCapImg().should('be.visible');
+    }
+
+    assertSharedTableWorkImg(){
+        this.elements.SharedTableWorkImg().should('be.visible');
+    }
+
+    assertSecondHarvestLink(){
+        this.elements.SecondHarvestLink().should('be.visible');
+    }
+
+    assertARestaurantsTakePartInSharedTableLink(){
+        this.elements.ARestaurantsTakePartInSharedTableLink().should('be.visible');
+    }
+
+    assertPersoncarryingaredtrayofsaladsincontainersImg(){
+        this.elements.PersoncarryingaredtrayofsaladsincontainersImg().should('be.visible');
+    }
       
     asserthowatrueinspirationawardsgrantPageUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/how-a-true-inspiration-awards-grant-is-helping-rebuild-lives-in-toronto');
@@ -220,6 +338,22 @@ class storieslinks{
 
     asserthowatrueinspirationawardsgrantPageParaTitle(){
         this.elements.howatrueinspirationawardsgrantPageParaTitle().should('be.visible');
+    }
+    
+    asserthowatrueinspirationawardsgrantPageImg(){
+        this.elements.howatrueinspirationawardsgrantPageImg().should('be.visible');
+    }
+
+    assertThreePeopleInAFoodKitchenImg(){
+        this.elements.ThreePeopleInAFoodKitchenImg().should('be.visible');
+    }
+    
+    assertGroupOfPeopleHoldingLargeTrueInspirationAwardCheckImg(){
+        this.elements.GroupOfPeopleHoldingLargeTrueInspirationAwardCheckImg().should('be.visible');
+    }
+
+    assertTrueInspirationAwardsLink(){
+        this.elements.TrueInspirationAwardsLink().should('be.visible');
     }
 
     assertFightinghungerwithSecondHarvestPageUrl(){
@@ -234,6 +368,13 @@ class storieslinks{
         this.elements.FightinghungerwithSecondHarvestPageSubTitle().should('be.visible');
     }
 
+    assertBoxOfFreshProduceImg(){
+        this.elements.BoxOfFreshProduceImg().should('be.visible');
+    }
+
+    assertSharedTableProgramLink(){
+        this.elements.SharedTableProgramLink().should('be.visible');
+    }
 
     assertHubofOpportunitiesaimUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/in-the-community/chick-fil-a-and-uhc-hub-of-operations-partnership-in-windsor-essex-community');
@@ -245,6 +386,18 @@ class storieslinks{
 
     assertHubofOpportunitiesaimUrlSubTitle(){
         this.elements.HubofOpportunitiesaimUrlSubTitle().should('be.visible');
+    }
+    
+    assertHubofOpportunitiesaimCapImg(){
+        this.elements.HubofOpportunitiesaimCapImg().should('be.visible');
+    }
+
+    assertUHCHubofOpportunitiesLink(){
+        this.elements.UHCHubofOpportunitiesLink().should('be.visible');
+    }
+
+    assertChickFilACommitmentLink(){
+        this.elements.ChickFilACommitmentLink().should('be.visible');
     }
 
     assertTrueInspirationAwardsApplicationsopenUrl(){
@@ -258,6 +411,15 @@ class storieslinks{
     assertTrueInspirationAwardsApplicationsopenSubTitle(){
         this.elements.TrueInspirationAwardsApplicationsopenSubTitle().should('be.visible');
     }
+
+    assertTrueInspirationAwardsApplicationsopenImg(){
+        this.elements.TrueInspirationAwardsApplicationsopenImg().should('be.visible');
+    }
+
+    assertTrueInspirationAwardsWinnersLink(){
+        this.elements.TrueInspirationAwardsWinnersLink().should('be.visible');
+    }
+
 
     callBack(){
         cy.go('back');
@@ -491,9 +653,23 @@ class storieslinks{
     {        
         this.elements.SeasonWithWaterMelonImg().should("be.visible"); 
     }
+    
+    assertChickFilAStoryLink()
+    {        
+        this.elements.ChickFilAStoryLink().should("be.visible"); 
+    }
+
+    assertChickFilAWebLink()
+    {        
+        this.elements.ChickFilAWebLink().should("be.visible"); 
+    }
 
     assertTheLatestNews(){
         this.elements.TheLatestNews().should("be.visible");        
+    }
+
+    assertChickFilANewsatWaterMelonPageLink(){
+        this.elements.ChickFilANewsatWaterMelonPageLink().should("be.visible");        
     }
 
     assertMillionInScholarshipsImg(){
@@ -567,6 +743,74 @@ class storieslinks{
     assertBenefitsBodyTxt(){
         this.elements.BenefitsBodyTxt().should("be.visible");
     }
+    
+    assertMillioninScholarshipstoRestaurantTeamMembersImg(){
+        this.elements.MillioninScholarshipstoRestaurantTeamMembersImg().should("be.visible");
+    }
+
+    assertMillioninScholarshipsBenefitsLink(){
+        this.elements.MillioninScholarshipsBenefitsLink().should("be.visible");
+    }
+
+    assertNewTorontoRestautantHead(){
+        this.elements.NewTorontoRestautantHead().should("be.visible");
+    }
+
+    assertNewTorontoRestautantHeadImg(){
+        this.elements.NewTorontoRestautantHeadImg().should("be.visible");
+    }  
+
+    assertTalalChaudhryLink(){
+        this.elements.TalalChaudhryLink().should("be.visible");
+    }
+
+    assertTwoChickenSandwichmealswithWafflePotatoFriesdrinkImg(){
+        this.elements.TwoChickenSandwichmealswithWafflePotatoFriesdrinkImg().should("be.visible");
+    }
+
+    assertChichFilASharedTableTmLink(){
+        this.elements.ChichFilASharedTableTmLink().should("be.visible");
+    }
+
+    assertChichFranchisingPageLink(){
+        this.elements.ChichFranchisingPageLink().should("be.visible");
+    }
+
+    assertAnnouncesEightRestaurantPara(){
+        this.elements.AnnouncesEightRestaurantPara().should("be.visible");
+    }
+
+    assertAnnouncesEightRestaurantPgImg(){
+        this.elements.AnnouncesEightRestaurantPgImg().should("be.visible");
+    }
+   
+    assertLincolnNikkelLink(){
+        this.elements.LincolnNikkelLink().should("be.visible");
+    }
+
+    assertLeadershipDevelopmentProgramLink(){
+        this.elements.LeadershipDevelopmentProgramLink().should("be.visible");
+    }
+
+    assertChickenSandwichImg(){
+        this.elements.ChickenSandwichImg().should("be.visible");
+    }
+
+    assertDriveThruodelHereLink(){
+        this.elements.DriveThruodelHereLink().should("be.visible");
+    }
+
+    assertHockeyHelpstheHomelessLink(){
+        this.elements.HockeyHelpstheHomelessLink().should("be.visible");
+    }
+
+    assertRedwoodParkCommunitiesLink(){
+        this.elements.RedwoodParkCommunitiesLink().should("be.visible");
+    }
+
+    assertBusbyCentreLink(){
+        this.elements.BusbyCentreLink().should("be.visible");
+    }
 
     assertNewTorontoRestautantHead(){
         this.elements.NewTorontoRestautantHead().should("be.visible");
@@ -581,32 +825,7 @@ class storieslinks{
     assertAnnouncesEightRestaurantPgImg(){
         this.elements.AnnouncesEightRestaurantPgImg().should("be.visible");
     }
-
-    assertNewTorontoRestautantHead(){
-        this.elements.NewTorontoRestautantHead().should("be.visible");
-    }
-    assertNewTorontoRestautantHeadImg(){
-        this.elements.NewTorontoRestautantHeadImg().should("be.visible");
-    }
-
-    assertAnnouncesEightRestaurantPara(){
-        this.elements.AnnouncesEightRestaurantPara().should("be.visible");
-    }
-    assertAnnouncesEightRestaurantPgImg(){
-        this.elements.AnnouncesEightRestaurantPgImg().should("be.visible");
-    }
-
-    assertOpenNewRestaurantPara(){
-        this.elements.OpenNewRestaurantPara().should("be.visible");
-    }
-    assertOpenNewRestaurantPageImg(){
-        this.elements.OpenNewRestaurantPageImg().should("be.visible");
-    }
-
-
-    assertNewTorontoRestautantUrl(){
-        this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-announces-new-toronto-restaurant-to-open-on-thursday-may-25-at-cf-toronto-eaton-centre');
-    }
+  
 
     assertAnnouncesEightRestaurantUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/eighth-canada-restaurant');
@@ -622,7 +841,14 @@ class storieslinks{
     assertOpenNewRestaurantPageImg(){
         this.elements.OpenNewRestaurantPageImg().should("be.visible");
     }
-
+    
+    assertSharedTableProgramTxtLink(){
+        this.elements.OpenNewRestaurantPageImg().should("be.visible");
+    }
+    
+    assertGlassdoorTxtLink(){
+        this.elements.GlassdoorTxtLink().should("be.visible");
+    }
 
     assertNewTorontoRestautantUrl(){
         this.elements.urlAssert().should('include', Cypress.config().baseUrl + 'stories/news/chick-fil-a-announces-new-toronto-restaurant-to-open-on-thursday-may-25-at-cf-toronto-eaton-centre');
