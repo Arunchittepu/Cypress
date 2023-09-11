@@ -52,8 +52,7 @@ describe("Press Room link page test", () => {
       });
       
       it('Verify Announces Eight Restaurant footer stories links at News page', () => {  
-        PressRoom.clickPressRoomlink(); 
-        //storieslinks.assertAnnouncesEightRestaurantImg();
+        PressRoom.clickPressRoomlink();         
         storieslinks.assertAnnouncesEightRestaurant();
         storieslinks.clickAnnouncesEightRestaurant();
         storieslinks.assertAnnouncesEightRestaurantUrl();

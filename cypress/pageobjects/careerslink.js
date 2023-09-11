@@ -25,7 +25,6 @@ class careerslink{
         EmployeementTypeColumn: () => cy.xpath("//div[contains(text(),'EmploymentType')]"),
         FountainHomeLink: () => cy.xpath("//a[contains(text(),'Home')]"),
         FountainHelpLink: () => cy.xpath("//a[contains(text(),'Help')]"),
-
     }
 
     clickcareerslnk(){

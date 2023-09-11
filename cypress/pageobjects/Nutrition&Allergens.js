@@ -16,7 +16,6 @@ class NutritionNAllergens{
         this.elements.NutritionNAllergenslink().click();
     }
 
-
 }
 module.exports = new NutritionNAllergens();
 

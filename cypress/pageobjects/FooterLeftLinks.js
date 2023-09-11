@@ -1,6 +1,7 @@
 class footerleft{
 
     elements = {
+        
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
        

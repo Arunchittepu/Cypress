@@ -76,6 +76,7 @@ class homePage{
        WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg: () => cy.get("a[href='/stories/inside-chick-fil-a/what-makes-the-caramel-crumble-milkshake-the-perfect-fall-treat']"),
 
     }
+    
 
     callBack(){
         cy.go('back');

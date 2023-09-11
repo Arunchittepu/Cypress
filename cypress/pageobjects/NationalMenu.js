@@ -763,36 +763,7 @@ class NationalMenu{
             });
         });
     }
-
-    /*
-        cy.fixture("NationalSubMenuList").then((datasubmenu) => {
-            datasubmenu.forEach((submenu) => {
-                cy.fixture("JsonFileNameList").then((datafilename) => {
-                    //string datfilename = this.datafilename
-                    datafilename.forEach((filename) => {
-                        
-
-                        cy.fixture(filename).then((data) => {
-                            data.forEach((userdata) => {
-                            this.clickNationalmenulnk();
-                            //this.clickCateringlink();
-                            cy.contains(submenu.submenuname).click({force: true});
-                            cy.get(userdata.productname).should("be.visible");
-                            this.assertOrderNowBtn();
-                            cy.get(userdata.productname).click();            
-                            cy.url().should('include', Cypress.config().baseUrl + userdata.producturl);            
-                            cy.get(userdata.productimage).should("be.visible");            
-                            cy.get('.p-details__h1').should('include.text', userdata.productnameheading),
-                            //this.assertExtrasSection();
-                            this.assertIngredientsSection();
-                            this.assertClickheretostartacateringorderBtn();
-                            this.clickheretostartacateringorderBtn();            
-                            cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
-                            cy.go('back');                   
-                });
-            });});
-        });});})
-    }*/
+   
 }
 
 module.exports = new NationalMenu();

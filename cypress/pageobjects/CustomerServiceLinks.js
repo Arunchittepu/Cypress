@@ -1,6 +1,7 @@
 class CustomerServiceLinks{
 
     elements = {
+        
         pageTitle: () => cy.title(),
         urlAssert: () => cy.url(),
        
