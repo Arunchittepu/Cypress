@@ -20,8 +20,7 @@ describe('Stories sub links test', () => {
     });
 
 
-    it('Verify sub menus links under Stories', () => {         
-        //storieslinks.clickstorieslnk();
+    it('Verify sub menus links under Stories', () => {                 
         storieslinks.assertInsideChick_Fil_A_link(); 
         storieslinks.assertIntheCommunityLink(); 
         storieslinks.assertNewsLink();  
@@ -45,12 +44,11 @@ describe('Stories sub links test', () => {
         storieslinks.assertChickFilAUrl();
         storieslinks.assertInsideChickfilCategoryTitle();
         storieslinks.assertInsideChickfilSlider();
-        storieslinks.clickInsideChickfilSlider();
-        
+        storieslinks.clickInsideChickfilSlider();        
         storieslinks.assertWhyChickfilAgrilledchickentastessogoodPageUrl();
         storieslinks.assertWhyChickfilAgrilledchickentastessogoodTitle();
         storieslinks.assertWhyChickfilAgrilledchickentastessogoodSubTitle();
-       
+        storieslinks.assertWhyChickfilAgrilledchickentastessogoodImg();       
     });
 
 
@@ -75,6 +73,9 @@ describe('Stories sub links test', () => {
         storieslinks.assertwhattoknowaboutourwafflepotatofriesUrl();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesTitle();
         storieslinks.assertwhattoknowaboutourwafflepotatofriesSubTitle();
+        storieslinks.assertwhattoknowaboutourwafflepotatofriesCapImg();
+        storieslinks.assertWafflePotatoFriesLink();
+        storieslinks.assertChickFilANuggetsLink();
     });
     
 
@@ -84,12 +85,50 @@ describe('Stories sub links test', () => {
       storieslinks.assertInTheCategoryTitle();
       storieslinks.assertInTheCatgorySlider();
       storieslinks.clickInTheCatgorySlider();
+      storieslinks.assertHowCanadaisgivingbacktolocalcommunitiesUrl();
+      storieslinks.assertHowCanadaisgivingbacktolocalcommunitiesTitle();
+      storieslinks.assertHowCanadaisgivingbacktolocalcommunitiesImg();
+      storieslinks.assertLearnAboutFirstCanadianReceipientLink();
+      storieslinks.assertCorporateSocialResponsibilityReportLink();
+    });
+
+    it('Verify True Inspiration Awards Applications open section In The Community page', () => {  
+      storieslinks.clickIntheCommunitylink();
+      storieslinks.assertCommunityPageUrl();
+      storieslinks.clickTrueInspirationAwardsApplicationsopen();
       storieslinks.assertTrueInspirationAwardsApplicationsopenUrl();
       storieslinks.assertTrueInspirationAwardsApplicationsopenTitle();
       storieslinks.assertTrueInspirationAwardsApplicationsopenSubTitle();
-      
+      storieslinks.assertTrueInspirationAwardsApplicationsopenImg();
+      storieslinks.assertTrueInspirationAwardsWinnersLink();
+    });
+          
+    it('Verify True Inspiration Award section In The Community page', () => {  
+      storieslinks.clickIntheCommunitylink();
+      storieslinks.assertTrueInspirationAwrdImg();
+      storieslinks.assertTrueInspirationAwrd();
+      storieslinks.clickTrueInspirationAwrd();
+      storieslinks.asserthowatrueinspirationawardsgrantPageUrl();
+      storieslinks.asserthowatrueinspirationawardsgrantPageTitle();
+      storieslinks.asserthowatrueinspirationawardsgrantPageParaTitle();
+      storieslinks.asserthowatrueinspirationawardsgrantPageImg();
+      storieslinks.assertThreePeopleInAFoodKitchenImg();
+      storieslinks.assertGroupOfPeopleHoldingLargeTrueInspirationAwardCheckImg();
+      storieslinks.assertTrueInspirationAwardsLink();
     });
  
+    it('Verify Fighting Hunger With Second Harvest section In The Community page', () => {  
+      storieslinks.clickIntheCommunitylink();
+      storieslinks.assertFightingHungerWithSecondHarvestImg();
+      storieslinks.assertFightingHungerWithSecondHarvest();
+      storieslinks.clickFightingHungerWithSecondHarvest();
+      storieslinks.assertFightinghungerwithSecondHarvestPageUrl();
+      storieslinks.assertFightinghungerwithSecondHarvestPageTitle();
+      storieslinks.assertFightinghungerwithSecondHarvestPageSubTitle();
+      storieslinks.assertBoxOfFreshProduceImg();
+      storieslinks.assertSharedTableProgramLink();
+    });
+
     it('Verify Hub Of Opportunity section In The Community page', () => {  
       storieslinks.clickIntheCommunitylink();
       storieslinks.assertHubOfOpportunityImg();
@@ -98,88 +137,103 @@ describe('Stories sub links test', () => {
       storieslinks.assertHubofOpportunitiesaimUrl();
       storieslinks.assertHubofOpportunitiesaimUrlTitle();
       storieslinks.assertHubofOpportunitiesaimUrlSubTitle();
+      storieslinks.assertHubofOpportunitiesaimCapImg();
+      storieslinks.assertUHCHubofOpportunitiesLink();
+      storieslinks.assertChickFilACommitmentLink();
+
     });
 
-  it('Verify Fighting Hunger With Second Harvest section In The Community page', () => {  
-       storieslinks.clickIntheCommunitylink();
-      storieslinks.assertFightingHungerWithSecondHarvestImg();
-      storieslinks.assertFightingHungerWithSecondHarvest();
-      storieslinks.clickFightingHungerWithSecondHarvest();
-      storieslinks.assertFightinghungerwithSecondHarvestPageUrl();
-      storieslinks.assertFightinghungerwithSecondHarvestPageTitle();
-      storieslinks.assertFightinghungerwithSecondHarvestPageSubTitle();
-   });
 
-   it('Verify True Inspiration Award section In The Community page', () => {  
-      storieslinks.clickIntheCommunitylink();
-      storieslinks.assertTrueInspirationAwrdImg();
-      storieslinks.assertTrueInspirationAwrd();
-      storieslinks.clickTrueInspirationAwrd();
-      storieslinks.asserthowatrueinspirationawardsgrantPageUrl();
-      storieslinks.asserthowatrueinspirationawardsgrantPageTitle();
-      storieslinks.asserthowatrueinspirationawardsgrantPageParaTitle();
-   });
+    it('Verify Shared Table Program section In The Community page', () => {  
+        storieslinks.clickIntheCommunitylink();
+        storieslinks.assertSharedTableProgramImg();
+        storieslinks.assertSharedTableProgram();  
+        storieslinks.clickSharedTableProgram();
+        storieslinks.assertTheChickfilASharedTableProgramPageUrl();
+        storieslinks.assertTheChickfilASharedTableProgramPageTitle();
+        storieslinks.assertTheChickfilASharedTableProgramPageParaHead(); 
+        storieslinks.assertSharedTableCapImg();
+        storieslinks.assertSharedTableWorkImg();
+        storieslinks.assertSecondHarvestLink();
+        storieslinks.assertARestaurantsTakePartInSharedTableLink();
+        storieslinks.assertPersoncarryingaredtrayofsaladsincontainersImg();
+      }); 
 
-   it('Verify Shared Table Program section In The Community page', () => {  
-      storieslinks.clickIntheCommunitylink();
-      storieslinks.assertSharedTableProgramImg();
-      storieslinks.assertSharedTableProgram();  
-      storieslinks.clickSharedTableProgram();
-      storieslinks.assertTheChickfilASharedTableProgramPageUrl();
-      storieslinks.assertTheChickfilASharedTableProgramPageTitle();
-      storieslinks.assertTheChickfilASharedTableProgramPageParaHead();      
-    }); 
+      it('Verify News page', () => {  
+        storieslinks.clickNewsLink();
+        storieslinks.assertNewsPageUrl();
+        storieslinks.assertNewsTitle();
+        storieslinks.assertNewsSlider();
+        storieslinks.clickNewsSliderLink();
+        storieslinks.assertSpringsintotheseasonwithWatermelonMintbeverageflavoursUrl();
+        storieslinks.assertSeasonWithWaterMelonHead();
+        storieslinks.assertSeasonWithWaterMelonImg();
+        storieslinks.assertChickFilAStoryLink();
+        storieslinks.assertChickFilAWebLink();
+        storieslinks.assertTheLatestNews();
+        storieslinks.assertChickFilANewsatWaterMelonPageLink();
+      });
 
-    it('Verify News page', () => {  
-      storieslinks.clickNewsLink();
-      storieslinks.assertNewsPageUrl();
-      storieslinks.assertNewsTitle();
-      storieslinks.assertNewsSlider();
-      storieslinks.clickNewsSliderLink();
-      storieslinks.assertSpringsintotheseasonwithWatermelonMintbeverageflavoursUrl();
-      storieslinks.assertSeasonWithWaterMelonHead();
-      storieslinks.assertSeasonWithWaterMelonImg();
-    });
+      it('Verify Million In Scholarships section at News page', () => {  
+        storieslinks.clickNewsLink(); 
+        storieslinks.assertTheLatestNews();
+        storieslinks.assertMillionInScholarshipsImg();
+        storieslinks.assertMillionInScholarships();
+        storieslinks.clickMillionInScholarships();
+        storieslinks.assertMillionInScholarshipsUrl();
+        storieslinks.assertMilionScholarshipHead();
+        storieslinks.assertBenefitsBodyTxt();
+        storieslinks.assertMillioninScholarshipstoRestaurantTeamMembersImg();
+        storieslinks.assertMillioninScholarshipsBenefitsLink();
+        storieslinks.assertChickFilAWebLink();
+        storieslinks.assertChickFilANewsatWaterMelonPageLink();
+      });
 
-    it('Verify Million In Scholarships section at News page', () => {  
-      storieslinks.clickNewsLink(); 
-      storieslinks.assertTheLatestNews();
-      storieslinks.assertMillionInScholarshipsImg();
-      storieslinks.assertMillionInScholarships();
-      storieslinks.clickMillionInScholarships();
-      storieslinks.assertMillionInScholarshipsUrl();
-      storieslinks.assertMilionScholarshipHead();
-      storieslinks.assertBenefitsBodyTxt();
-     
-    });
-
-    it('Verify New Toronto Restautant footer stories links at News page', () => {  
-      storieslinks.clickNewsLink();      
-      storieslinks.assertNewTorontoRestautantImg();
-      storieslinks.assertNewTorontoRestautant();
-      storieslinks.clickNewTorontoRestautant();
-      storieslinks.assertNewTorontoRestautantUrl();
-      storieslinks.assertNewTorontoRestautantHead();
-      storieslinks.assertNewTorontoRestautantHeadImg();
-    });
+      it('Verify New Toronto Restautant footer stories links at News page', () => {  
+        storieslinks.clickNewsLink();      
+        storieslinks.assertNewTorontoRestautantImg();
+        storieslinks.assertNewTorontoRestautant();
+        storieslinks.clickNewTorontoRestautant();
+        storieslinks.assertNewTorontoRestautantUrl();
+        storieslinks.assertNewTorontoRestautantHead();
+        storieslinks.assertNewTorontoRestautantHeadImg();
+        storieslinks.assertTalalChaudhryLink();
+        storieslinks.assertTwoChickenSandwichmealswithWafflePotatoFriesdrinkImg();
+        storieslinks.assertChichFilASharedTableTmLink();
+        storieslinks.assertChichFranchisingPageLink();
+        storieslinks.assertChickFilAWebLink();
+        storieslinks.assertChickFilANewsatWaterMelonPageLink();
+      });
+      
+      it('Verify Announces Eight Restaurant footer stories links at News page', () => {  
+        storieslinks.clickNewsLink(); 
+        storieslinks.assertAnnouncesEightRestaurantImg();
+        storieslinks.assertAnnouncesEightRestaurant();
+        storieslinks.clickAnnouncesEightRestaurant();
+        storieslinks.assertAnnouncesEightRestaurantUrl();
+        storieslinks.assertAnnouncesEightRestaurantPara();
+        storieslinks.assertAnnouncesEightRestaurantPgImg();
+        storieslinks.assertLincolnNikkelLink();
+        storieslinks.assertLeadershipDevelopmentProgramLink();
+        storieslinks.assertChickenSandwichImg();
+        storieslinks.assertDriveThruodelHereLink();
+        storieslinks.assertHockeyHelpstheHomelessLink();
+        storieslinks.assertRedwoodParkCommunitiesLink();
+        storieslinks.assertBusbyCentreLink();
+        storieslinks.assertChichFilASharedTableTmLink();
+        storieslinks.assertChickFilAWebLink();
+        storieslinks.assertChickFilANewsatWaterMelonPageLink();
+      });
     
-    it('Verify Announces Eight Restaurant footer stories links at News page', () => {  
-      storieslinks.clickNewsLink(); 
-      storieslinks.assertAnnouncesEightRestaurantImg();
-      storieslinks.assertAnnouncesEightRestaurant();
-      storieslinks.clickAnnouncesEightRestaurant();
-      storieslinks.assertAnnouncesEightRestaurantUrl();
-      storieslinks.assertAnnouncesEightRestaurantPara();
-      storieslinks.assertAnnouncesEightRestaurantPgImg();
-    });
-   
-    it('Verify Open New Restaurant footer stories links at News page', () => {  
-      storieslinks.clickNewsLink(); 
-      storieslinks.assertOpenNewRestaurantLinkImg();  
-      storieslinks.assertOpenNewRestaurantLink();      
-      storieslinks.clickOpenNewRestaurantLink();
-      storieslinks.assertOpenNewRestaurantUrl();
-      storieslinks.assertOpenNewRestaurantPara();
-      storieslinks.assertOpenNewRestaurantPageImg();      
-    });     
+      it('Verify Open New Restaurant footer stories links at News page', () => {  
+        storieslinks.clickNewsLink(); 
+        storieslinks.assertOpenNewRestaurantLinkImg();  
+        storieslinks.assertOpenNewRestaurantLink();      
+        storieslinks.clickOpenNewRestaurantLink();
+        storieslinks.assertOpenNewRestaurantUrl();
+        storieslinks.assertOpenNewRestaurantPara();
+        storieslinks.assertOpenNewRestaurantPageImg();    
+        storieslinks.assertSharedTableProgramTxtLink();
+        storieslinks.assertGlassdoorTxtLink();
+      });     
   });

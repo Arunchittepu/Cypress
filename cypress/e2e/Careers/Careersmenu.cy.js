@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 import homepage from "../../pageobjects/homepage";
 import careerslink from "../../pageobjects/careerslink";
-import storiesSublinks from "../../pageobjects/storiesSublinks";
+import storieslinks from "../../pageobjects/storiesSublinks";
 describe("Careers page test", () => {
     beforeEach(() => {
       cy.visit("/");
@@ -20,26 +20,35 @@ describe("Careers page test", () => {
         careerslink.clickReceivesupportwhileyoustudyHereLink();
         careerslink.assertHereComUrl();
         careerslink.assertComSignInBtn();
-        careerslink.assertComOrderNowBtn();
-        homepage.callBack();
+        careerslink.assertComOrderNowBtn();       
       })
 
       it("Check Shared Table Program link redirection", () => {
         careerslink.clickcareerslnk();
         careerslink.assertSharedTableProgramLink();
         careerslink.clickSharedTableProgramLink();
-        storiesSublinks.assertTheChickfilASharedTableProgramUrl();
-        storiesSublinks.assertTheChickfilASharedTableProgramTxt();
-        storiesSublinks.assertSharedTableImpactTxt();
+        storieslinks.assertTheChickfilASharedTableProgramUrl();
+        storieslinks.assertTheChickfilASharedTableProgramTxt();
+        storieslinks.assertSharedTableImpactTxt();
+        storieslinks.assertTheChickfilASharedTableProgramPageTitle();
+        storieslinks.assertTheChickfilASharedTableProgramPageParaHead(); 
+        storieslinks.assertSharedTableCapImg();
+        storieslinks.assertSharedTableWorkImg();
+        storieslinks.assertSecondHarvestLink();
+        storieslinks.assertARestaurantsTakePartInSharedTableLink();
+        storieslinks.assertPersoncarryingaredtrayofsaladsincontainersImg();
       })
 
       it("Check Donate to Non profit UHC link redirection", () => {
         careerslink.clickcareerslnk();
         careerslink.assertDonateToNonProfitUHCLink();
         careerslink.clickDonateToNonProfitUHCLink();
-        storiesSublinks.assertHubofOpportunitiesaimPageUrl();
-        storiesSublinks.assertHubofOpportunitiesaimPageSubTitle();
-        storiesSublinks.assertHubofOpportunitiesaimParaLink();          
+        storieslinks.assertHubofOpportunitiesaimPageUrl();
+        storieslinks.assertHubofOpportunitiesaimPageSubTitle();
+        storieslinks.assertHubofOpportunitiesaimParaLink(); 
+        storieslinks.assertHubofOpportunitiesaimCapImg();
+        storieslinks.assertUHCHubofOpportunitiesLink();
+        storieslinks.assertChickFilACommitmentLink();         
       })
 
       it("Check the links under Job opportunities near you section", () => {
