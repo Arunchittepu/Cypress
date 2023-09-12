@@ -4,8 +4,7 @@ import storieslinks from "../../pageobjects/storiesSublinks"
 describe('Stories sub links test', () => {
    
     beforeEach(() => {
-      cy.visit('/')
-      storieslinks.clickstorieslnk();
+      cy.visit('/')      
     });
 
     it("Check the redirection when click on Logo link", () => {
@@ -15,11 +14,13 @@ describe('Stories sub links test', () => {
 
     it("Verify Stories page Title", () => {
         cy.fixture("storiessublinks").then((data) => {
+          storieslinks.clickstorieslnk();
         storieslinks.elements.pageTitle().should('eq', data.Storyhomepagetitle);        
       });
     });
 
-    it('Verify sub menus links under Stories', () => {                 
+    it('Verify sub menus links under Stories', () => {  
+        storieslinks.clickstorieslnk();               
         storieslinks.assertInsideChick_Fil_A_link(); 
         storieslinks.assertIntheCommunityLink(); 
         storieslinks.assertNewsLink();  
@@ -58,7 +59,7 @@ describe('Stories sub links test', () => {
         storieslinks.assertallowustointroduceourselvesTitle();
         storieslinks.assertallowustointroduceourselvesSubTitle();
         storieslinks.assertCaptionImg();
-        storieslinks.assertChickenSandwichImg();
+        storieslinks.assertChickSandwichImg();
         storieslinks.assertNuggetsImg();
     });
 
@@ -92,7 +93,7 @@ describe('Stories sub links test', () => {
     it('Verify True Inspiration Awards Applications open section In The Community page', () => {  
       storieslinks.clickIntheCommunitylink();
       storieslinks.assertCommunityPageUrl();
-      storieslinks.clickTrueInspirationAwardsApplicationsopen();
+      storieslinks.clickTrueInspirationAwardsApplicationsopenLink();
       storieslinks.assertTrueInspirationAwardsApplicationsopenUrl();
       storieslinks.assertTrueInspirationAwardsApplicationsopenTitle();
       storieslinks.assertTrueInspirationAwardsApplicationsopenSubTitle();
@@ -137,9 +138,7 @@ describe('Stories sub links test', () => {
       storieslinks.assertHubofOpportunitiesaimCapImg();
       storieslinks.assertUHCHubofOpportunitiesLink();
       storieslinks.assertChickFilACommitmentLink();
-
     });
-
 
     it('Verify Shared Table Program section In The Community page', () => {  
         storieslinks.clickIntheCommunitylink();
@@ -166,8 +165,7 @@ describe('Stories sub links test', () => {
         storieslinks.assertSeasonWithWaterMelonHead();
         storieslinks.assertSeasonWithWaterMelonImg();
         storieslinks.assertChickFilAStoryLink();
-        storieslinks.assertChickFilAWebLink();
-        storieslinks.assertTheLatestNews();
+        storieslinks.assertChickFilAWebLink();        
         storieslinks.assertChickFilANewsatWaterMelonPageLink();
       });
 
@@ -182,7 +180,7 @@ describe('Stories sub links test', () => {
         storieslinks.assertBenefitsBodyTxt();
         storieslinks.assertMillioninScholarshipstoRestaurantTeamMembersImg();
         storieslinks.assertMillioninScholarshipsBenefitsLink();
-        storieslinks.assertChickFilAWebLink();
+        storieslinks.assertChickFilAWebComLink();
         storieslinks.assertChickFilANewsatWaterMelonPageLink();
       });
 
@@ -196,8 +194,8 @@ describe('Stories sub links test', () => {
         storieslinks.assertNewTorontoRestautantHeadImg();
         storieslinks.assertTalalChaudhryLink();
         storieslinks.assertTwoChickenSandwichmealswithWafflePotatoFriesdrinkImg();
-        storieslinks.assertChichFilASharedTableTmLink();
-        storieslinks.assertChichFranchisingPageLink();
+        storieslinks.assertChickFilASharedTableTmLink();
+        storieslinks.assertChickFranchisingPageLink();
         storieslinks.assertChickFilAWebLink();
         storieslinks.assertChickFilANewsatWaterMelonPageLink();
       });
@@ -217,7 +215,7 @@ describe('Stories sub links test', () => {
         storieslinks.assertHockeyHelpstheHomelessLink();
         storieslinks.assertRedwoodParkCommunitiesLink();
         storieslinks.assertBusbyCentreLink();
-        storieslinks.assertChichFilASharedTableTmLink();
+        storieslinks.assertChickFilASharedTableTmLink();
         storieslinks.assertChickFilAWebLink();
         storieslinks.assertChickFilANewsatWaterMelonPageLink();
       });

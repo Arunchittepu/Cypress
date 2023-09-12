@@ -3,7 +3,7 @@
 import LocalMenu from "../../pageobjects/LocalMenu";
 import homepage from "../../pageobjects/homepage";
 
-describe('National Menu sub links test', () => {
+describe('Local Menu sub links test', () => {
    
       beforeEach(() => {        
         cy.visit(Cypress.config().baseUrl + "locations/on/devonshire/menu"); 

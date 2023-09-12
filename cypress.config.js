@@ -5,7 +5,7 @@ module.exports = defineConfig({
 
    "chromeWebSecurity": false,
    "experimentalSessionAndrigin": true,
-    projectId: 'hxh9w2',
+    projectId: '9k5viv',
     chromeWebSecurity: false,
     experimentalModifyObstructiveThirdPartyCode: true,
     failOnStatusCode: false,

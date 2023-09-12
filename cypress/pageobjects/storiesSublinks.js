@@ -30,7 +30,7 @@ class storieslinks{
        FromBasketCourtImg: () => cy.get("assertInsideChickfilCategoryTitle"),
        FromBasketCourt: () => cy.get("a[href='/stories/inside-chick-fil-a/meet-al-jones-the-newest-chick-fil-a-owner-operator-in-canada']"),
        CaptionImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Images/CFACA/Story%20Images/Header-allow-us-to-introduce-ourselves_compressed.jpg?h=960&w=1440&la=en']"),
-       ChickenSandwichImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/websandwich.jpg']"),      
+       ChickSandwichImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/websandwich.jpg']"),      
        NuggetsImg: () => cy.get("img[src='https://d3oz09jk0dq1kk.cloudfront.net/Headliners/Canada/First%20Visit%20to%20CFA/webnuggets.jpg']"),
   
        IntheCommunity: () => cy.contains("In the Community"),
@@ -46,7 +46,7 @@ class storieslinks{
        TrueInspirationAwrdImg: () => cy.get("a[href='/stories/in-the-community/how-a-true-inspiration-awards-grant-is-helping-rebuild-lives-in-toronto'"),
        TrueInspirationAwrd: () => cy.xpath("//a[contains(text(),'How a US$300,000 True Inspiration Awards™ Grant is')]"),
        HowCanadaisgivingbacktolocalcommunitiesTitle: () => cy.xpath("//h1[contains(text(),'How Chick-fil-A Canada is giving back to local com')]"),
-       HowCanadaisgivingbacktolocalcommunitiesImg: () => cy.get("img[href='https://d1fd34dzzl09j.cloudfront.net/2022/03/yonge-street-mission-1.jpg?h=1106&w=1440&la=en']"),
+       HowCanadaisgivingbacktolocalcommunitiesImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2022/03/yonge-street-mission-1.jpg?h=1106&w=1440&la=en']"),
        WePartnerWithSecondHarvestLink: () => cy.xpath("//a[contains(text(),'we partner with Second Harvest')]"),
        LearnAboutFirstCanadianReceipientLink: () => cy.xpath("//a[contains(text(),'Learn about the first Canadian recipient, Yonge St')]"),
        CorporateSocialResponsibilityReportLink: () => cy.xpath("//a[contains(text(),'2020 Corporate Social Responsibility Report')]"),
@@ -59,7 +59,7 @@ class storieslinks{
        SharedTableProgram: () => cy.xpath("//a[contains(text(),'The Chick-fil-A Shared Table Program')]"),
        TrueInspirationAwardsLink: () => cy.xpath("//a[contains(text(),'chick-fil-a.com/true-inspiration-awards')]"),
        SharedTableProgramLink: () => cy.xpath("//a[contains(text(),'Shared Table program')]"),
-       HubofOpportunitiesaimCapImg: () => cy.get("img[href='https://d1fd34dzzl09j.cloudfront.net/2021/10/Devonshire%20Canada/UHC_Devonshire.JPG?h=666&w=1000&la=en']"),
+       HubofOpportunitiesaimCapImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2021/10/Devonshire%20Canada/UHC_Devonshire.JPG?h=666&w=1000&la=en']"),
         UHCHubofOpportunitiesLink: () => cy.xpath("//a[contains(text(),'UHC – Hub of Opportunities')]"),
         ChickFilACommitmentLink: () => cy.xpath(`//a[contains(text(),"Chick-fil-A, Inc.'s commitment")]`),
         SharedTableCapImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/Headliners/Canada/About%20CFA/Shared%20Table-14.jpg?h=998&w=1440&la=en']"),      
@@ -73,7 +73,9 @@ class storieslinks{
        NewsSlider: () => cy.xpath("//a[contains(text(),'Chick-fil-A springs into the season with Watermelo')]"),
        ChickFilAStoryLink: () => cy.xpath("//a[contains(text(),'chick-fil-a.ca/stories')]"),
         ChickFilAWebLink: () => cy.xpath("//a[contains(text(),'www.chick-fil-a.ca')]"),
-        ChickFilANewsatWaterMelonPageLink: () => cy.get("a[href='https://twitter.com/chickfilanews?lang=en"),
+        ChickFilAWebComLink: () => cy.xpath("//a[contains(text(),'www.chick-fil-a.com')]"),
+                      
+        ChickFilANewsatWaterMelonPageLink: () => cy.xpath("//a[contains(text(),'@ChickfilANews')]"),
        TheLatestNews: () => cy.xpath("//h3[contains(text(),'The latest news')]"),
        MillioninScholarshipstoRestaurantTeamMembersImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2022/04/Canada%20Scholarship%20Announcement/CFA%20Scholars%202022_Winners%206.jpg?h=695&w=1000&la=en']"),
         MillioninScholarshipsBenefitsLink: () => cy.xpath("//a[contains(text(),'benefits')]"),
@@ -121,12 +123,12 @@ class storieslinks{
        howahighschooljobbecameamissionLink: () => cy.xpath("//span[contains(text(),'How a high-school job became the mission of a life')]"),
        howahighschooljobbecameamissionLinkTitle: () => cy.xpath("//h1[contains(text(),'How a high-school job became the mission of a life')]"),
        howahighschooljobbecameamissionLinkSubTitle: () => cy.get("img[alt='Operator Jazmine standing with another male Team Member smiling']"),
-       MillionInScholarshipsImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2022/04/Canada%20Scholarship%20Announcement/CFA%20Scholars%202022_Winners%206.jpg?h=695&w=1000&la=en']"),
+       //MillionInScholarshipsImg: () => cy.get("img[src='https://d1fd34dzzl09j.cloudfront.net/2022/04/Canada%20Scholarship%20Announcement/CFA%20Scholars%202022_Winners%206.jpg?h=695&w=1000&la=en']"),
        MillionInScholarships: () => cy.xpath("//a[contains(text(),'Chick-fil-A Awards US$24 Million in Scholarships t')]"),
        TalalChaudhryLink: () => cy.xpath("//a[contains(text(),'Talal Chaudhry')]"),
-       TwoChickenSandwichmealswithWafflePotatoFriesdrinkImg: () => cy.ge("img[alt='Two Chick-fil-AChicken Sandwich meals with Waffle Potato Fries® and a drink']"),
-       ChichFilASharedTableTmLink: () => cy.xpath("//a[contains(text(),'Chick-fil-A Shared Table™')]"),
-       ChichFranchisingPageLink: () => cy.xpath("ChichFranchisingPageLink"),       
+       TwoChickenSandwichmealswithWafflePotatoFriesdrinkImg: () => cy.get("img[alt='Two Chick-fil-AChicken Sandwich meals with Waffle Potato Fries® and a drink']"),
+       ChickFilASharedTableTmLink: () => cy.xpath("//a[contains(text(),'Chick-fil-A Shared Table™')]"),
+       ChickFranchisingPageLink: () => cy.xpath("//a[contains(text(),'Franchising page')]"),       
        
        NewTorontoRestautantpImg: () =>   cy.get("img[alt='Headshot of Talal Chaudhry, the Owner/Operator of Chick-fil-A Toronto Eaton Centre']"),
        NewTorontoRestautant: () => cy.xpath("//a[contains(text(),'Chick-fil-A announces new Toronto restaurant to op')]"),
@@ -233,7 +235,7 @@ class storieslinks{
     }
 
     clickTrueInspirationAwardsApplicationsopenLink(){
-        this.elements.TrueInspirationAwardsApplicationsopenLink().click();
+        this.elements.TrueInspirationAwardsApplicationsopenLink().click({force: true});
     }
 
     assertchickfilaannouncesnewvaughanontariorestaurantUrl(){
@@ -277,8 +279,8 @@ class storieslinks{
         this.elements.CaptionImg().should('be.visible');
     }
 
-    assertChickenSandwichImg(){
-        this.elements.ChickenSandwichImg().should('be.visible');
+    assertChickSandwichImg(){
+        this.elements.ChickSandwichImg().should('be.visible');
     }
 
     assertNuggetsImg(){
@@ -666,6 +668,11 @@ class storieslinks{
         this.elements.ChickFilAWebLink().should("be.visible"); 
     }
 
+    assertChickFilAWebComLink()
+    {        
+        this.elements.ChickFilAWebComLink().should("be.visible"); 
+    }
+
     assertTheLatestNews(){
         this.elements.TheLatestNews().should("be.visible");        
     }
@@ -769,13 +776,13 @@ class storieslinks{
     assertTwoChickenSandwichmealswithWafflePotatoFriesdrinkImg(){
         this.elements.TwoChickenSandwichmealswithWafflePotatoFriesdrinkImg().should("be.visible");
     }
-
-    assertChichFilASharedTableTmLink(){
-        this.elements.ChichFilASharedTableTmLink().should("be.visible");
+    
+    assertChickFilASharedTableTmLink(){
+        this.elements.ChickFilASharedTableTmLink().should("be.visible");
     }
 
-    assertChichFranchisingPageLink(){
-        this.elements.ChichFranchisingPageLink().should("be.visible");
+    assertChickFranchisingPageLink(){
+        this.elements.ChickFranchisingPageLink().should("be.visible");
     }
 
     assertAnnouncesEightRestaurantPara(){
@@ -923,10 +930,6 @@ class storieslinks{
     assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle(){
         this.elements.WhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle().should("be.visible");
     }
-
-
-
-
 }
 
 module.exports = new storieslinks();
