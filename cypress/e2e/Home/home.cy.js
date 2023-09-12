@@ -80,7 +80,7 @@ describe("Home page test", () => {
         homepage.assertdisclaimernutritionTxt();        
       })
 
-      it("Home page Releated stories 1st image", () =>{
+      it("Home page Releated stories 1st story", () =>{
         homepage.assertWheredidtheChickfilANuggetscomefromLink();
         homepage.assertWheredidtheChickfilANuggetscomefromImg();
         homepage.clickWheredidtheChickfilANuggetscomefromLink();
@@ -89,7 +89,7 @@ describe("Home page test", () => {
         storieslinks.assertWheredidtheChickfilANuggetscomefromSubTitle();
       });
 
-      it("Home page Releated stories 2nd image", () =>{
+      it("Home page Releated stories 2nd story", () =>{
         homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
         homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonImg();
         homepage.clickChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
@@ -98,7 +98,7 @@ describe("Home page test", () => {
         storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonSubTitle();
       });
 
-      it("Home page Releated stories 3rd image", () =>{
+      it("Home page Releated stories 3rd story", () =>{
         homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
         homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg();
         homepage.clickWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
@@ -107,46 +107,56 @@ describe("Home page test", () => {
         storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle();
       });
 
-      it("Test Footer links of Home page", () => {
+      it("Test Customer service link at Footer section of Home page", () => {
         homepage.assertCustomerserviceLnk();
         homepage.clickCustomerserviceLnk();     
         homepage.assertCustomerserviceLnkUrl();
         homepage.assertCustomerSupportTxt();
         homepage.assertWereheretohelpTxt();
-        homepage.callBack();
+      })
+
+      it("Test Nutrition and Allergens link at Footer section of Home page", () => {
         homepage.assertNutritionNAllergensLnk();
         homepage.clickNutritionNAllergensLnk();     
         homepage.assertNutritionNAllergensLnkUrl();
         homepage.assertNutritionAllergensHeadTxt();
         homepage.assertdisclaimernutritionTxt();
-        homepage.callBack();
+      })
+
+      it("Test Franchising link at Footer section of Home page", () => {
         homepage.assertFranchisingLnk();
         homepage.assertCorporateCareersLnk();            
         homepage.clickCorporateCareersLnk();
         homepage.assertCorporateCareersLnkUrl();
         homepage.assertEmploymentopportunitieswithChickfilACanadaHeadTxt();
         homepage.assertViewavailableopportunitiesBtn(); 
-        homepage.callBack();
+       })
+
+       it("Test Press Room link at Footer section of Home page", () => {
         homepage.assertPressRoomLnk();
         homepage.clickPressRoomLnk();     
         homepage.assertPressRoomLnkUrl();
         storieslinks.assertNewsTitle();
         storieslinks.assertTheLatestNews();        
-      }) 
+        }) 
 
-      it("Test right side links at footer section of Home page", () => {
+      it("Test Terms and Conditions links at footer section of Home page", () => {
         homepage.assertTermsNConditionsLnk();
         homepage.clickTermsNConditionsLnk();     
         homepage.assertTermsNConditionsUrl();
         homepage.assertLegalTxt();
         homepage.assertGiftCardslLink();
-        homepage.callBack();
+      })
+
+      it("Test Privacy Policy link at Footer section of Home page", () => {
         homepage.assertPrivacyPolicyLnk();
         homepage.clickPrivacyPolicyLnk();     
         homepage.assertPrivacyPolicyLnkUrl(); 
         homepage.assertChickFillAPrivacyPolicy();
         homepage.assertWeMakeUpdatestoThisPrivacyPolicyTxt();       
-        homepage.callBack();
+      })
+
+      it("Test Cookie Preference Center link at Footer section of Home page", () => {
         homepage.assertCookiePreferenceCenterLnk();
         homepage.clickCookiePreferenceCenterLnk();     
         homepage.assertCookiePreferenceCenterLnkUrl();

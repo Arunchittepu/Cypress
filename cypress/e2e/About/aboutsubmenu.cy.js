@@ -2,7 +2,7 @@
 /// <reference types="cypress"/>
 import homepage from "../../pageobjects/homepage"
 import aboutlinks from "../../pageobjects/aboutsublinks"
-import storiesSublinks from "../../pageobjects/storiesSublinks";
+import storieslinks from "../../pageobjects/storiesSublinks";
 describe('About sub links test', () => {
    
     beforeEach(() => {
@@ -47,7 +47,7 @@ describe('About sub links test', () => {
       aboutlinks.assertAboutChickfilAWhoweareTitle();
       aboutlinks.assertAboutChickfilAWhoweareSubTitle();
       aboutlinks.assertAboutWhoWeAreCaptionImg();
-      aboutlinks.assertRemarkableFutureScholarship();
+      aboutlinks.assertRemarkableFutureScholarshipLink();
     })
 
     it('Check Read More about our culture and Value button', () =>{
@@ -101,11 +101,11 @@ describe('About sub links test', () => {
         aboutlinks.clickGreatFoodlink();
         aboutlinks.assertGettoknowourfoodBtn();
         aboutlinks.clickGettoknowourfoodBtn(); 
-        storiesSublinks.assertallowustointroduceourselvesUrl(); 
-        storiesSublinks.assertallowustointroduceourselvesTitle();
-        storiesSublinks.assertallowustointroduceourselvesSubTitle(); 
+        storieslinks.assertallowustointroduceourselvesUrl(); 
+        storieslinks.assertallowustointroduceourselvesTitle();
+        storieslinks.assertallowustointroduceourselvesSubTitle(); 
         storieslinks.assertCaptionImg();
-        storieslinks.assertChickenSandwichImg();
+        storieslinks.assertChickSandwichImg();
         storieslinks.assertNuggetsImg();     
       })
 
