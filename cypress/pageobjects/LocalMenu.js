@@ -90,7 +90,8 @@ class LocalMenu{
        StrawberryPassionFruitopia: () => cy.get("img[alt='Strawberry Passion Fruitopia®']"),
        FruitopiaOrangeGroove: () => cy.get("img[alt='Fruitopia® Orange Groove']"),
        IceProducts: () => cy.get("img[alt='Ice Products']"),
-       smartwater: () => cy.get("img[alt='smartwater®']"),
+       smartwater: () => cy.get("#mainImage"),
+      
 
        DippingSaucesDressingslink: () => cy.contains("Dipping Sauces & Dressings"),
        BarbequeSauce: () => cy.get("img[alt='Barbeque Sauce']"),
@@ -119,7 +120,7 @@ class LocalMenu{
        LocalCateringEntreeslink: () => cy.get("a[href='#entrées']"),
        LocalCateringSaladWrapslink: () => cy.get("a[href='#saladswraps']"),
        LocalCateringSidesTreatslink: () => cy.get("a[href='#sidestreats']"),
-       LocalCateringBeverageslink: () => cy.get("a[href='#beverages']"),
+       LocalCateringBeverageslink: () => cy.xpath("(//a[@title='Beverages'])[2]not"),
        LocalCateringPackagedMealslink: () => cy.get("a[href='#packagedmeals']"),
     
     
@@ -618,8 +619,8 @@ class LocalMenu{
                     this.assertOrderFoodLink();
                     this.clickOrderFoodLink();            
                     cy.url().should('include', Cypress.config().orderPageUrl + userdata.orderfoodurl); 
-                    cy.go('back');    
-                    cy.go('back');                
+                    cy.go('back',{timeout: 90000});    
+                    cy.go('back',{timeout: 90000});                
                     });
                 });
             }

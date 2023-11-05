@@ -46,7 +46,7 @@ describe('National Menu sub links test', () => {
       
       it('Verify Salads Sub Menu page', () => { 
           NationalMenu.testSaladsProductsdetails(); 
-      });
+     });
 
       it('Verify Sides Sub Menu page', () => { 
           NationalMenu.testSidesProductsdetails();

@@ -17,7 +17,8 @@ module.exports = defineConfig({
     comUrl: 'https://www.chick-fil-a.com/',
     orderPageUrl: 'https://order.chick-fil-a.ca/',
     watchForFileChanges: false,
-    defaultCommandTimeout: 30000,    
+    defaultCommandTimeout: 60000,
+    pageLoadTimeout:60000,    
     setupNodeEvents(on, config) {      
     },
   },

@@ -33,7 +33,7 @@ class aboutlinks{
        greatFoodImg2: () => cy.get(':nth-child(6) > .flex-wrapper > .img-wrapper > .desktop-img'),
        greatFoodImg3: () => cy.get(':nth-child(7) > .flex-wrapper > .img-wrapper > .desktop-img'),
        greatFoodImg4: () => cy.get("img[alt='Closeup of Chick-fil-A® Spicy Chicken Sandwich Meal with Waffle Potato Fries™ and an Iced Tea']"),
-       greatFoodImg5: () => cy.get("img[alt='Chicken Sandwich']"),
+       greatFoodImg5: () => cy.xpath("//img[@alt='Chicken Sandwich']"),
        greatFoodHeading: () => cy.xpath("//h1[contains(text(),'Great Food')]"),       
        Realchickenrigorousstandards: () => cy.xpath("//h4[contains(text(),'Real chicken, rigorous standards')]"),
        Foodyoucansmileabout: () => cy.xpath("//p[contains(text(),'Food you can smile about')]"),
