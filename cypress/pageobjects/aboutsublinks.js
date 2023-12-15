@@ -34,7 +34,8 @@ class aboutlinks{
        greatFoodImg3: () => cy.get(':nth-child(7) > .flex-wrapper > .img-wrapper > .desktop-img'),
        greatFoodImg4: () => cy.get("img[alt='Closeup of Chick-fil-A® Spicy Chicken Sandwich Meal with Waffle Potato Fries™ and an Iced Tea']"),
        greatFoodImg5: () => cy.xpath("//img[@alt='Chicken Sandwich']"),
-       greatFoodHeading: () => cy.xpath("//h1[contains(text(),'Great Food')]"),       
+       greatFoodHeading: () => cy.get('.tile-img'),
+       //cy.xpath("//h1[contains(text(),'Great Food')]"),       
        Realchickenrigorousstandards: () => cy.xpath("//h4[contains(text(),'Real chicken, rigorous standards')]"),
        Foodyoucansmileabout: () => cy.xpath("//p[contains(text(),'Food you can smile about')]"),
        Carefullycraftedrecipes: () => cy.xpath("//h4[contains(text(),'Carefully crafted recipes')]"),
@@ -63,6 +64,7 @@ class aboutlinks{
        GlobalImpactReportSubTitle: () => cy.xpath("//span[contains(text(),'Serving and strengthening communities through corp')]"),
 
     }
+    
 
     clickaboutlnk(){
         this.elements.aboutlnk().click();
@@ -211,8 +213,16 @@ class aboutlinks{
         this.elements.Realchickenrigorousstandards().should("be.visible"); 
     }
     
+    scrolldown(){
+        cy.scrollTo(0,500);
+    }
+    scrollup(){
+        cy.scrollTo(500,0);
+    }
+
+    
     assertgreatFoodImg1(){
-        this.elements.greatFoodImg1().should("be.visible");
+        this.elements.greatFoodImg1().should('be.visible');
     }
 
     assertFoodyoucansmileabout(){

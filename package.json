@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:About": "npx cypress run --spec cypress/e2e/About/aboutsubmenu.cy.js",
+    "cypress-cloud-run": "npx cypress run --record --key 98d4f1ec-faa4-4c9d-949e-bf40e7341d60",
+    "html-report": "cypress run — — spec <file-path>.js — — browser chrome — — headed"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +15,7 @@
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
     "cypress": "^13.4.0",
+    "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1"
   }
 }

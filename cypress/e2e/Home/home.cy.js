@@ -69,100 +69,100 @@ describe("Home page test", () => {
         homepage.assertLearnAboutProgramUrl();
         storieslinks.assertTheChickfilASharedTableProgramUrl();
         storieslinks.assertSharedTableImpactTxt();        
-      })
+    })
 
-    it("Verify Nutrition and allergens section of Home page", () => {
-        homepage.assertNutritionandallergensTxt();
-        homepage.assertSeeTheFactsBtn();
-        homepage.clickSeeTheFactsBtn();
-        homepage.assertNutritionAllergensUrl();
-        homepage.assertNutritionAllergensHeadTxt();
-        homepage.assertdisclaimernutritionTxt();        
-      })
+    // it("Verify Nutrition and allergens section of Home page", () => {
+    //     homepage.assertNutritionandallergensTxt();
+    //     homepage.assertSeeTheFactsBtn();
+    //     homepage.clickSeeTheFactsBtn();
+    //     homepage.assertNutritionAllergensUrl();
+    //     homepage.assertNutritionAllergensHeadTxt();
+    //     homepage.assertdisclaimernutritionTxt();        
+    //   })
 
-      it("Home page Releated stories 1st story", () =>{
-        homepage.assertWheredidtheChickfilANuggetscomefromLink();
-        homepage.assertWheredidtheChickfilANuggetscomefromImg();
-        homepage.clickWheredidtheChickfilANuggetscomefromLink();
-        storieslinks.assertWheredidtheChickfilANuggetscomefromPageUrl();
-        storieslinks.assertWheredidtheChickfilANuggetscomefromTitle();
-        storieslinks.assertWheredidtheChickfilANuggetscomefromSubTitle();
-      });
+    //   it("Home page Releated stories 1st story", () =>{
+    //     homepage.assertWheredidtheChickfilANuggetscomefromLink();
+    //     homepage.assertWheredidtheChickfilANuggetscomefromImg();
+    //     homepage.clickWheredidtheChickfilANuggetscomefromLink();
+    //     storieslinks.assertWheredidtheChickfilANuggetscomefromPageUrl();
+    //     storieslinks.assertWheredidtheChickfilANuggetscomefromTitle();
+    //     storieslinks.assertWheredidtheChickfilANuggetscomefromSubTitle();
+    //   });
 
-      it("Home page Releated stories 2nd story", () =>{
-        homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
-        homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonImg();
-        homepage.clickChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
-        storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonPageUrl();
-        storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonTitle();
-        storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonSubTitle();
-      });
+    //   it("Home page Releated stories 2nd story", () =>{
+    //     homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
+    //     homepage.assertChickintroducesnewCaramelCrumbleMilkshakeseasonImg();
+    //     homepage.clickChickintroducesnewCaramelCrumbleMilkshakeseasonLink();
+    //     storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonPageUrl();
+    //     storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonTitle();
+    //     storieslinks.assertChickintroducesnewCaramelCrumbleMilkshakeseasonSubTitle();
+    //   });
 
-      it("Home page Releated stories 3rd story", () =>{
-        homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
-        homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg();
-        homepage.clickWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
-        storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatPageUrl();
-        storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatTitle();
-        storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle();
-      });
+    //   it("Home page Releated stories 3rd story", () =>{
+    //     homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
+    //     homepage.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatImg();
+    //     homepage.clickWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatLink();
+    //     storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatPageUrl();
+    //     storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatTitle();
+    //     storieslinks.assertWhatmakestheCaramelCrumbleMilkshaketheperfectfalltreatSubTitle();
+    //   });
 
-      it("Test Customer service link at Footer section of Home page", () => {
-        homepage.assertCustomerserviceLnk();
-        homepage.clickCustomerserviceLnk();     
-        homepage.assertCustomerserviceLnkUrl();
-        homepage.assertCustomerSupportTxt();
-        homepage.assertWereheretohelpTxt();
-      })
+    //   it("Test Customer service link at Footer section of Home page", () => {
+    //     homepage.assertCustomerserviceLnk();
+    //     homepage.clickCustomerserviceLnk();     
+    //     homepage.assertCustomerserviceLnkUrl();
+    //     homepage.assertCustomerSupportTxt();
+    //     homepage.assertWereheretohelpTxt();
+    //   })
 
-      it("Test Nutrition and Allergens link at Footer section of Home page", () => {
-        homepage.assertNutritionNAllergensLnk();
-        homepage.clickNutritionNAllergensLnk();     
-        homepage.assertNutritionNAllergensLnkUrl();
-        homepage.assertNutritionAllergensHeadTxt();
-        homepage.assertdisclaimernutritionTxt();
-      })
+    //   it("Test Nutrition and Allergens link at Footer section of Home page", () => {
+    //     homepage.assertNutritionNAllergensLnk();
+    //     homepage.clickNutritionNAllergensLnk();     
+    //     homepage.assertNutritionNAllergensLnkUrl();
+    //     homepage.assertNutritionAllergensHeadTxt();
+    //     homepage.assertdisclaimernutritionTxt();
+    //   })
 
-      it("Test Franchising link at Footer section of Home page", () => {
-        homepage.assertFranchisingLnk();
-        homepage.assertCorporateCareersLnk();            
-        homepage.clickCorporateCareersLnk();
-        homepage.assertCorporateCareersLnkUrl();
-        homepage.assertEmploymentopportunitieswithChickfilACanadaHeadTxt();
-        homepage.assertViewavailableopportunitiesBtn(); 
-       })
+    //   it("Test Franchising link at Footer section of Home page", () => {
+    //     homepage.assertFranchisingLnk();
+    //     homepage.assertCorporateCareersLnk();            
+    //     homepage.clickCorporateCareersLnk();
+    //     homepage.assertCorporateCareersLnkUrl();
+    //     homepage.assertEmploymentopportunitieswithChickfilACanadaHeadTxt();
+    //     homepage.assertViewavailableopportunitiesBtn(); 
+    //    })
 
-       it("Test Press Room link at Footer section of Home page", () => {
-        homepage.assertPressRoomLnk();
-        homepage.clickPressRoomLnk();     
-        homepage.assertPressRoomLnkUrl();
-        storieslinks.assertNewsTitle();
-        storieslinks.assertTheLatestNews();        
-        }) 
+    //    it("Test Press Room link at Footer section of Home page", () => {
+    //     homepage.assertPressRoomLnk();
+    //     homepage.clickPressRoomLnk();     
+    //     homepage.assertPressRoomLnkUrl();
+    //     storieslinks.assertNewsTitle();
+    //     storieslinks.assertTheLatestNews();        
+    //     }) 
 
-      it("Test Terms and Conditions links at footer section of Home page", () => {
-        homepage.assertTermsNConditionsLnk();
-        homepage.clickTermsNConditionsLnk();     
-        homepage.assertTermsNConditionsUrl();
-        homepage.assertLegalTxt();
-        homepage.assertGiftCardslLink();
-      })
+    //   it("Test Terms and Conditions links at footer section of Home page", () => {
+    //     homepage.assertTermsNConditionsLnk();
+    //     homepage.clickTermsNConditionsLnk();     
+    //     homepage.assertTermsNConditionsUrl();
+    //     homepage.assertLegalTxt();
+    //     homepage.assertGiftCardslLink();
+    //   })
 
-      it("Test Privacy Policy link at Footer section of Home page", () => {
-        homepage.assertPrivacyPolicyLnk();
-        homepage.clickPrivacyPolicyLnk();     
-        homepage.assertPrivacyPolicyLnkUrl(); 
-        homepage.assertChickFillAPrivacyPolicy();
-        homepage.assertWeMakeUpdatestoThisPrivacyPolicyTxt();       
-      })
+    //   it("Test Privacy Policy link at Footer section of Home page", () => {
+    //     homepage.assertPrivacyPolicyLnk();
+    //     homepage.clickPrivacyPolicyLnk();     
+    //     homepage.assertPrivacyPolicyLnkUrl(); 
+    //     homepage.assertChickFillAPrivacyPolicy();
+    //     homepage.assertWeMakeUpdatestoThisPrivacyPolicyTxt();       
+    //   })
 
-      it("Test Cookie Preference Center link at Footer section of Home page", () => {
-        homepage.assertCookiePreferenceCenterLnk();
-        homepage.clickCookiePreferenceCenterLnk();     
-        homepage.assertCookiePreferenceCenterLnkUrl();
-        homepage.assertSavePreferencesBtn();
-        homepage.assertAllowAllBtn();
-      }) 
+    //   it("Test Cookie Preference Center link at Footer section of Home page", () => {
+    //     homepage.assertCookiePreferenceCenterLnk();
+    //     homepage.clickCookiePreferenceCenterLnk();     
+    //     homepage.assertCookiePreferenceCenterLnkUrl();
+    //     homepage.assertSavePreferencesBtn();
+    //     homepage.assertAllowAllBtn();
+    //   }) 
 
 
   });

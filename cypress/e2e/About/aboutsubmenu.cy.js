@@ -62,9 +62,10 @@ describe('About sub links test', () => {
 
 
     it('Check Great Food link page under About menu', () => {              
-        aboutlinks.clickGreatFoodlink();   
+         aboutlinks.clickGreatFoodlink();   
         aboutlinks.assertgreatFoodHeadingUrl(); 
-        aboutlinks.assertgreatFoodImg(); 
+           aboutlinks.scrolldown();
+      aboutlinks.assertgreatFoodImg(); 
         aboutlinks.assertgreatFoodHeading();
       })
        
@@ -72,6 +73,7 @@ describe('About sub links test', () => {
     it('Check Real Chicken Rigorous standards section at Great Food link page', () => {             
         aboutlinks.clickGreatFoodlink();  
         aboutlinks.assertRealchickenrigorousstandards();
+        aboutlinks.scrolldown();
         aboutlinks.assertgreatFoodImg1();
       })
       
@@ -79,12 +81,14 @@ describe('About sub links test', () => {
         aboutlinks.clickGreatFoodlink();  
         aboutlinks.assertFoodyoucansmileabout();
         aboutlinks.assertCarefullycraftedrecipes();
+        aboutlinks.scrolldown();
         aboutlinks.assertgreatFoodImg2();
       })
       
     it('Check What is visit All About section', () => {              
         aboutlinks.clickGreatFoodlink();
         aboutlinks.assertWhatavisitisallabout();
+        aboutlinks.scrolldown();
         aboutlinks.assertgreatFoodImg3();
         aboutlinks.assertGettoknowourfoodBtn();
       })
@@ -92,8 +96,9 @@ describe('About sub links test', () => {
       it('Check Its Our Pleasure to Serve you section', () => {               
           aboutlinks.clickGreatFoodlink();
           aboutlinks.assertItsOurPleasureToServeYou();
-          aboutlinks.assertOrderCarryOut(); 
-          aboutlinks.assertgreatFoodImg4(); 
+          aboutlinks.assertOrderCarryOut();
+             aboutlinks.scrolldown();
+          aboutlinks.assertgreatFoodImg4();
           aboutlinks.assertgreatFoodImg5();      
       })
 

@@ -26,6 +26,7 @@
 import './commands';
 
 require('cypress-xpath');
+import 'cypress-iframe';
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
@@ -40,6 +41,24 @@ Cypress.on('uncaught:exception', (err, runnable) => {
         .should('not.be.empty')
         .then(cy.wrap);
     });
+    // cypress/support/commands/iframeCommand.js
+
+Cypress.Commands.add('switchToIframe', (iframeSelector) => {
+  cy.get(iframeSelector).should('be.visible').then(($iframe) => {
+    const iframeDocument = $iframe.contents();
+    cy.wrap(iframeDocument).as('iframeContent');
+  });
+});
+
+// Usage in your test
+// Cypress.Commands.import('./commands/iframeCommand');
+// cy.switchToIframe('your-iframe-selector');
+// cy.get('@iframeContent').find('#elementInsideIframe').click();
+
+Cypress.Commands.add('getInIframe', (iframeSelector, selector) => {
+  return cy.iframe(iframeSelector).find(selector);
+});
+
 
     Cypress.Commands.add('getIframe', () => {
       return cy
@@ -47,6 +66,14 @@ Cypress.on('uncaught:exception', (err, runnable) => {
           .its('0.contentDocument.body').should('not.be.empty')      
           .then(cy.wrap)
       });
+
+      // Cypress.Commands.add('getIframe2', () => {
+      //   return cy
+      //       .get('#locatoriframe')
+      //       .its('0.contentDocument.body').should('not.be.empty')      
+      //       .then(cy.wrap)
+      //   });
+      
 
       Cypress.Commands.add('getIframeBodyWithSelector', (waitForSelector) => {
         return cy.get('iframe.locatoriframe')
